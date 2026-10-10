@@ -1,7 +1,7 @@
 # GrowNear — Objetivos do Estudo de Mercado
 
 > Base: diretrizes do R1 (ponto ⑤, objetivo geral e objetivos específicos do estudo de mercado). Criado a 08/10/2026.
-> Alimenta `GrowNear_5_Inquerito_Estrutura_e_Perguntas.md`.
+> Alimenta `GrowNear_Inquerito_Estrutura_e_Perguntas.md`.
 > **Decisão do grupo (08/10):** um só estudo de mercado, dirigido aos **compradores**.
 
 ## 1. Objetivo geral
@@ -32,7 +32,7 @@ Notas:
 | Método | Inquérito por questionário online, autoadministrado |
 | Ferramenta | Google Forms |
 | População-alvo | Residentes em Portugal com 18 anos ou mais |
-| Pergunta-filtro | Não há. O papel do inquirido nas compras do agregado é recolhido como variável de perfil (P30), sem excluir ninguém |
+| Pergunta-filtro | Não há. O papel do inquirido nas compras do agregado é recolhido como variável de perfil (P29), sem excluir ninguém |
 | Amostragem | Não probabilística, por conveniência (partilha por contactos e redes sociais) |
 | Dimensão da amostra | Mínimo de 100 respostas completas. Alvo de trabalho: 120 ou mais |
 | Tipo de perguntas | Só perguntas fechadas, de resposta única. Escalas de 1 a 5 para interesse, importância e concordância |
@@ -45,12 +45,12 @@ Exemplos de hipóteses que o questionário permite testar. A confirmar com a mat
 
 | # | Hipótese | Perguntas | Tipo de teste |
 |---|---|---|---|
-| H1 | O interesse médio na app é superior ao ponto médio da escala (3) | P20 | Teste a uma média |
-| H2 | O interesse médio difere entre residentes em zona urbana e em zona rural | P20 × P27 | Comparação de duas médias |
-| H3 | Quem já comprou diretamente a um produtor tem maior interesse | P20 × P4 | Comparação de duas médias |
-| H4 | Quem tem acesso a horta própria ou de familiares tem menor interesse | P20 × P5 | Comparação de duas médias |
-| H5 | Pelo menos metade dos inquiridos aceita deslocar-se mais de 10 minutos | P10 | Teste a uma proporção |
-| H6 | Pelo menos metade dos inquiridos aceita uma taxa de 1,00 € numa encomenda de 10 € | P15 | Teste a uma proporção |
+| H1 | O interesse médio na app é superior ao ponto médio da escala (3) | P19 | Teste a uma média |
+| H2 | O interesse médio difere entre residentes em zona urbana e em zona rural | P19 × P26 | Comparação de duas médias |
+| H3 | Quem já comprou diretamente a um produtor tem maior interesse | P19 × P4 | Comparação de duas médias |
+| H4 | Quem tem acesso a horta própria ou de familiares tem menor interesse | P19 × P5 | Comparação de duas médias |
+| H5 | Pelo menos metade dos inquiridos aceita deslocar-se mais de 10 minutos | P9 | Teste a uma proporção |
+| H6 | Pelo menos metade dos inquiridos aceita uma taxa de 1,00 € numa encomenda de 10 € | P14 | Teste a uma proporção |
 
 Com 100 respostas, a margem de erro de uma proporção é de cerca de ±10 pontos percentuais (nível de confiança de 95 %).
 
@@ -59,7 +59,7 @@ Com 100 respostas, a margem de erro de uma proporção é de cerca de ±10 ponto
 | Limitação | Consequência | Como reduzir |
 |---|---|---|
 | Amostra por conveniência | Não é representativa da população portuguesa; tende a ficar jovem, urbana e do Norte | Partilhar também por familiares, grupos locais e faixas etárias mais altas; declarar a limitação |
-| Intenção declarada não é comportamento | O interesse medido sobrestima a utilização real | Usar também comportamentos reais (P4, P5) e não só a intenção (P20 a P22) |
+| Intenção declarada não é comportamento | O interesse medido sobrestima a utilização real | Usar também comportamentos reais (P4, P5) e não só a intenção (P19 a P21) |
 | Só o lado dos compradores | As hipóteses sobre produtores (adesão à app, literacia digital) ficam por validar | Entrevistas a produtores numa fase seguinte, fora do R1 |
 | Comparações entre segmentos | Cada grupo comparado precisa de cerca de 30 respostas | Agrupar categorias na análise (por exemplo, três faixas etárias em vez de seis) |
 | Escalas de 1 a 5 | São ordinais; o cálculo de médias é uma convenção | Prática aceite em estudos de mercado; indicar no trabalho |

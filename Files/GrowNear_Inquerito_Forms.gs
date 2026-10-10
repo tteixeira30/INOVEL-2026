@@ -1,7 +1,7 @@
 /**
  * GrowNear — Cria o inquérito no Google Forms
  *
- * Base: GrowNear_5_Inquerito_Estrutura_e_Perguntas.md (29 perguntas, 8 secções).
+ * Base: GrowNear_Inquerito_Estrutura_e_Perguntas.md (29 perguntas, 8 secções).
  *
  * Como usar:
  *   1. Abrir https://script.google.com com a conta Google do grupo → "Novo projeto".
