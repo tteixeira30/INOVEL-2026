@@ -2,7 +2,7 @@
 
 Projeto de grupo da UC **Empreendedorismo e Inovação (INOVEL)**, ISEP, 2025/2026. Não é código: é o plano de negócio da **GrowNear**, uma app marketplace que liga pequenos produtores não profissionais (excedentes de horta, pomar, galinheiro) a compradores vizinhos, com descoberta por mapa, reserva na app e recolha em casa do produtor ou num ponto de recolha (sem entrega ao domicílio).
 
-Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico ("objetivo", "ação"). Exceção: a declaração de proposta de valor (For/Who/The/That/Unlike) está em inglês.
+Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico ("objetivo", "ação"). A declaração de proposta de valor também está em português (Para/Que/A/Que/Ao contrário de); o `GrowNear_Proposta_Valor.docx` ainda tem a versão antiga, em inglês.
 
 ## Estrutura
 
@@ -13,14 +13,15 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 
 | Ficheiro | Conteúdo |
 |---|---|
-| `GrowNear_Relatorio.docx` | Relatório consolidado: Missão/Visão → Proposta de valor → BMC → SWOT → Objetivos do estudo de mercado → Inquérito |
+| `GrowNear_Relatorio.docx` | Relatório consolidado: Capa → Ideia de negócio → Missão/Visão → Proposta de valor → BMC → SWOT → Objetivos do estudo de mercado → Inquérito |
 | `GrowNear_Missao_Visao.md` | Missão, visão e mantra ("Do quintal para a mesa do vizinho") |
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
 | `GrowNear_Objetivos_Estudo_Mercado.md` | Objetivo geral, objetivos específicos OE1–OE8 e ficha técnica do estudo |
-| `GrowNear_Inquerito_Estrutura_e_Perguntas.md` | Estrutura e perguntas do inquérito (P1–P30), ligadas aos OE |
+| `GrowNear_Inquerito_Estrutura_e_Perguntas.md` | Estrutura e perguntas do inquérito (P1–P29), ligadas aos OE |
 | `GrowNear_Inquerito_Forms.gs` | Google Apps Script que cria/atualiza o formulário no Google Forms a partir do `.md` do inquérito |
+| `GrowNear_Apresentacao.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC, SWOT, objetivos do estudo, recolha de respostas |
 
 ## Convenções
 
