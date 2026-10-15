@@ -23,13 +23,13 @@
 |---|---|
 | Respostas recebidas | 114 (todas completas, sem duplicados) |
 | Amostra válida | **113**. Excluída 1 resposta "Resido fora de Portugal" (fora da população-alvo) |
-| Período real de recolha | 08/10 a 11/10/2026 (104 respostas a 09/10). A ficha técnica previa 10/10 a 18/10: **atualizar** |
+| Período real de recolha | 08/10 a 11/10/2026 (104 respostas a 09/10) |
 | Margem de erro | ±9,2 pontos percentuais para uma proporção (95 %, n = 113) |
 | Análise de sensibilidade | Sem os 2 que nunca compram fruta (P2) e os 9 que não fazem compras (P29), n = 103: interesse médio 3,45, taxa aceite por 63 %, mais de 10 minutos 35 %. **As conclusões não mudam** |
 
-Pontos a confirmar no grupo:
-- A primeira resposta (08/10, 20:29) é anterior à divulgação. Se foi um pré-teste do grupo, deve ser retirada (§6 do documento do inquérito).
-- Uma resposta repete "3" em todas as 12 linhas de P7 e P8 (09/10, 13:51). Mantida, porque o resto é coerente.
+Respostas verificadas e mantidas (decisão do grupo, 15/10):
+- A primeira resposta (08/10, 20:29) é anterior à divulgação, mas não foi um pré-teste do grupo.
+- Uma resposta repete "3" em todas as 12 linhas de P7 e P8 (09/10, 13:51). O resto é coerente.
 
 ## 2. Perfil dos inquiridos (OE1)
 

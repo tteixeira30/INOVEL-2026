@@ -36,7 +36,7 @@ Notas:
 | Amostragem | Não probabilística, por conveniência (partilha por contactos e redes sociais) |
 | Dimensão da amostra | Mínimo de 100 respostas completas. Alvo de trabalho: 120 ou mais |
 | Tipo de perguntas | Só perguntas fechadas, de resposta única. Escalas de 1 a 5 para interesse, importância e concordância |
-| Período de recolha | De 10/10 a 18/10/2026 |
+| Período de recolha | De 08/10 a 11/10/2026 |
 | Entrega no R1 | Excel com as respostas em bruto, exportado do Google Forms sem tratamento |
 
 ## 4. Como os objetivos serão usados depois (R2)
