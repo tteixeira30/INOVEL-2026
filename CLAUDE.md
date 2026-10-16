@@ -17,8 +17,9 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Missao_Visao.md` | Missão, visão e mantra ("Do quintal para a mesa do vizinho") |
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
+| `GrowNear_Guiao_Estudo_Mercado.md` | Guião falado dos slides 7–8 da apresentação (objetivos do estudo e inquérito), sem resultados |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
-| `GrowNear_Apresentacao.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC, SWOT, objetivos do estudo, recolha de respostas, principais resultados, hipóteses e segmento, implicações |
+| `GrowNear_Apresentacao.pptx` | Apresentação do Momento 1 (5 min, 9 slides): capa, ideia de negócio, proposta de valor, BMC (back stage e front stage), SWOT, objetivos do estudo de mercado, inquérito (114 respostas), encerramento. Sem resultados do inquérito |
 
 ### Ficheiros em `Files/GrowNear_Inquerito/` (estudo de mercado)
 
