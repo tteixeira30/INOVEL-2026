@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Projeto de grupo da UC **Empreendedorismo e Inovação (INOVEL)**, ISEP, 2025/2026. Não é código: é o plano de negócio da **GrowNear**, uma app marketplace que liga pequenos produtores não profissionais (excedentes de horta, pomar, galinheiro) a compradores vizinhos, com descoberta por mapa, reserva na app e recolha em casa do produtor ou num ponto de recolha (sem entrega ao domicílio).
+Projeto de grupo da UC **Empreendedorismo e Inovação (INOVEL)**, ISEP, 2026/2027. Não é código: é o plano de negócio da **GrowNear**, uma app marketplace que liga pequenos produtores não profissionais (excedentes de horta, pomar, galinheiro) a compradores vizinhos, com descoberta por mapa, reserva na app e recolha em casa do produtor ou num ponto de recolha (sem entrega ao domicílio).
 
 Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico ("objetivo", "ação"). A declaração de proposta de valor também está em português (Para/Que/A/Que/Ao contrário de).
 
@@ -18,7 +18,7 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
-| `GrowNear_Apresentacao.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC, SWOT, objetivos do estudo, recolha de respostas, principais resultados, hipóteses e segmento, implicações |
+| `GrowNear — Momento 1.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC (front stage, depois back stage), SWOT, objetivos do estudo, inquérito. Resultados, hipóteses e implicações não entram no Momento 1. O guião está nas notas do orador |
 
 ### Ficheiros em `Files/GrowNear_Inquerito/` (estudo de mercado)
 
