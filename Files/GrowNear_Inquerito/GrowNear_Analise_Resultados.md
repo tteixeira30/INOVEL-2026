@@ -39,6 +39,8 @@ Decisões do grupo sobre a análise (05/11):
 - **Classes abertas:** mantêm-se os pontos médios da §11.1, os mais prudentes; a alternativa fica como teste de sensibilidade.
 - **Segmento-alvo:** definido pela necessidade e pela atitude, não pela idade (§12).
 
+Validado pelos professores na aula de 05/11: (1) testes não paramétricos como principais e paramétricos como confirmação (§11.2.1); (2) IC e testes com amostra por conveniência, desde que a limitação esteja declarada (§14); (3) cálculos feitos no script `GrowNear_Analise_Estatistica.js`, sem necessidade de SPSS ou Python.
+
 ## 2. Variáveis em estudo
 
 Cada pergunta do inquérito é uma variável; as perguntas em grelha (P6, P7, P8, P15, P17) dão uma variável por linha, num total de 46. O tipo e a escala de medida determinam as estatísticas descritivas e os testes que se podem usar.

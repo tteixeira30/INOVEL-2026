@@ -14,7 +14,7 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 
 | Ficheiro | Conteúdo |
 |---|---|
-| `GrowNear_Relatorio.docx` | Relatório consolidado: Capa → Ideia de negócio → Missão/Visão → Proposta de valor → BMC → SWOT → Objetivos do estudo de mercado → Inquérito → Resultados do inquérito |
+| `GrowNear_Relatorio.docx` / `.pdf` | Relatório consolidado: Capa → Ideia de negócio → Missão/Visão → Proposta de valor → BMC → SWOT → Objetivos do estudo de mercado → Inquérito. Os resultados do inquérito ainda não estão no relatório (estão em `GrowNear_Inquerito/GrowNear_Analise_Resultados.md`). O BMC entra como imagem (`word/media/image1.png`), exportada do PDF do BMC: ao mudar o BMC, atualizar também a imagem. O PDF exporta-se do Word |
 | `GrowNear_Missao_Visao.md` | Missão, visão e mantra ("Do quintal para a mesa do vizinho") |
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
