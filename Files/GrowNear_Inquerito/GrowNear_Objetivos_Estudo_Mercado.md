@@ -41,14 +41,14 @@ Notas:
 
 ## 4. Como os objetivos serão usados depois (R2)
 
-Exemplos de hipóteses que o questionário permite testar. A confirmar com a matéria de inferência das semanas 7 e 8.
+Hipóteses definidas antes da recolha. Os testes foram revistos com a matéria de inferência das semanas 7 e 8: como P19 é ordinal, os testes principais são não paramétricos. As restantes questões de investigação estão em `GrowNear_Analise_Resultados.md`, §3.
 
 | # | Hipótese | Perguntas | Tipo de teste |
 |---|---|---|---|
-| H1 | O interesse médio na app é superior ao ponto médio da escala (3) | P19 | Teste a uma média |
-| H2 | O interesse médio difere entre residentes em zona urbana e em zona rural | P19 × P26 | Comparação de duas médias |
-| H3 | Quem já comprou diretamente a um produtor tem maior interesse | P19 × P4 | Comparação de duas médias |
-| H4 | Quem tem acesso a horta própria ou de familiares tem menor interesse | P19 × P5 | Comparação de duas médias |
+| H1 | O interesse na app é superior ao ponto médio da escala (3) | P19 | Wilcoxon a uma amostra (confirmação: teste z a uma média) |
+| H2 | O interesse difere entre residentes em zona urbana e em zona rural | P19 × P26 | Mann-Whitney |
+| H3 | Quem já comprou diretamente a um produtor tem maior interesse | P19 × P4 | Mann-Whitney |
+| H4 | Quem tem acesso a horta própria ou de familiares tem menor interesse | P19 × P5 | Mann-Whitney |
 | H5 | Pelo menos metade dos inquiridos aceita deslocar-se mais de 10 minutos | P9 | Teste a uma proporção |
 | H6 | Pelo menos metade dos inquiridos aceita uma taxa de 1,00 € numa encomenda de 10 € | P14 | Teste a uma proporção |
 

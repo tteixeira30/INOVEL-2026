@@ -8,6 +8,7 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 
 - `Files/` — trabalho do grupo (entregáveis).
 - `Inovel.Context/` — material da UC (slides, templates, enunciado do inquérito). Só leitura; não renomear nem editar.
+- `Apoio_Aulas/` — material de estudo do grupo, não entregável (ex.: resolução das fichas de IC e testes de hipóteses).
 
 ### Ficheiros em `Files/`
 
@@ -28,7 +29,8 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Inquerito_Estrutura_e_Perguntas.md` | Estrutura e perguntas do inquérito (P1–P29), ligadas aos OE |
 | `GrowNear_Inquerito_Forms.gs` | Google Apps Script que cria/atualiza o formulário no Google Forms a partir do `.md` do inquérito |
 | `GrowNear_Inquerito_Respostas.xlsx` / `.csv` | Respostas em bruto exportadas do Google Forms (114 respostas, 08–11/10), sem alterações ao conteúdo |
-| `GrowNear_Analise_Resultados.md` | Análise das respostas: resultados por OE, testes H1–H6, segmentos (OE7) e implicações para o negócio |
+| `GrowNear_Analise_Resultados.md` | Análise das respostas: variáveis e escalas, questões de investigação (QI1–QI18), resultados por OE, inferência (IC e testes, incluindo H1–H6), segmentos (OE7) e implicações para o negócio |
+| `GrowNear_Analise_Estatistica.js` | Script Node que calcula a partir do CSV os IC e os testes da §11 da análise (`node GrowNear_Analise_Estatistica.js`) |
 
 Página com os gráficos da análise (privada; partilhar no menu Share): https://claude.ai/artifact/RGzz4j5PXWpg6aCHwVu8jy
 
