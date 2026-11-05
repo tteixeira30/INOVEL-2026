@@ -12,10 +12,10 @@
 | 2 | Cerca de 45 % formam um núcleo de potenciais utilizadores | Interesse ≥ 4, probabilidade de compra ≥ 4 e uso pelo menos mensal (IC: 36 % a 54 %). Estimativa conservadora (5 nas duas): 16 % (IC: 9 % a 23 %) |
 | 3 | A frescura é o argumento principal; saber quem produziu é o critério menos valorizado | Frescura acima de todos os outros fatores (Friedman, p < 0,001; pares com Bonferroni) e com a maior lacuna face à satisfação atual (p < 0,001) |
 | 4 | O raio de recolha tem de ser curto: 10 minutos | Só 33 % aceitam mais de 10 minutos (H5 rejeitada, p < 0,001); tempo médio aceite 9,4 min (IC: 8,3 a 10,5) |
-| 5 | A taxa é aceite, o pagamento antecipado na app não | 64 % aceitam 1,00 € numa encomenda de 10 € (H6 confirmada, p = 0,002), em todas as formas de pagamento (p = 0,585); 52 % preferem pagar ao produtor na recolha e só 16 % na app |
+| 5 | A taxa é aceite, o pagamento antecipado na app não | 64 % aceitam 1,00 € numa encomenda de 10 € (H6 confirmada, p = 0,002), em todas as formas de pagamento (p = 0,585); 52 % preferem pagar ao produtor na recolha e só 16 % na app. Decisão: pagar o produto na app ou na recolha, com a taxa cobrada na reserva |
 | 6 | A confiança é a alavanca mais forte do interesse | Sentir-se seguro a pagar na app e as avaliações estão entre as 3 associações com o interesse que resistem à correção de Bonferroni (ρ = 0,39 e 0,30); 54 % não se sentem seguros; quem prefere pagar na recolha fá-lo por desconfiança (Kruskal-Wallis, p < 0,001) |
 | 7 | A sazonalidade é aceite, mas não fideliza | 69 % aceitam só produtos da época; quando falta um produto, 60 % compram noutro lado e só 12 % pedem alerta. Aceitar comprar "o que houver" é o fator mais associado ao interesse (ρ = 0,43) |
-| 8 | Não há um segmento sociodemográfico estatisticamente distinto; o que separa é o acesso e a atitude | Idade, género, região, zona e papel nas compras: todos p > 0,12. Sem horta: mais interesse (H4 confirmada no limite, p = 0,046). Aberto a pagar na app: mais interesse (p = 0,030) |
+| 8 | Não há um segmento sociodemográfico estatisticamente distinto; o que separa é o acesso e a atitude | Idade, género, região, zona e papel nas compras: todos p > 0,12. Aberto a pagar na app: mais interesse (p = 0,030). Sem horta: indício de mais interesse (H4, p = 0,046, no limite) |
 
 ## 1. Dados e amostra
 
@@ -24,12 +24,20 @@
 | Respostas recebidas | 114 (todas completas, sem duplicados) |
 | Amostra válida | **113**. Excluída 1 resposta "Resido fora de Portugal" (fora da população-alvo) |
 | Período real de recolha | 08/10 a 11/10/2026 (104 respostas a 09/10) |
-| Margem de erro | ±9,2 pontos percentuais para uma proporção (95 %, n = 113) |
+| Amostragem | Por conveniência: o inquérito foi partilhado por contactos do grupo. Assume-se que se aproxima de uma amostra aleatória, com a limitação declarada (§14) |
+| Margem de erro | ±9,2 pontos percentuais para uma proporção (95 %, n = 113), assumindo amostragem aleatória. Mede só o erro do acaso, não o enviesamento de quem escolheu responder |
 | Análise de sensibilidade | Sem os 2 que nunca compram fruta (P2) e os 9 que não fazem compras (P29), n = 103: interesse médio 3,45, taxa aceite por 63 %, mais de 10 minutos 35 %. **As conclusões não mudam** |
 
 Respostas verificadas e mantidas (decisão do grupo, 15/10):
 - A primeira resposta (08/10, 20:29) é anterior à divulgação, mas não foi um pré-teste do grupo.
 - Uma resposta repete "3" em todas as 12 linhas de P7 e P8 (09/10, 13:51). O resto é coerente.
+
+Decisões do grupo sobre a análise (05/11):
+- **Amostra:** é por conveniência, mas mantêm-se os IC e os testes, assumindo que se aproxima de uma amostra aleatória. A limitação fica declarada (§14).
+- **H4:** p = 0,046 fica abaixo de α, mas lê-se como **indício**, não como confirmação (§11.2.2).
+- **Pagamento:** o produto paga-se na app ou ao produtor na recolha; a taxa é cobrada sempre na app, no momento da reserva (§8).
+- **Classes abertas:** mantêm-se os pontos médios da §11.1, os mais prudentes; a alternativa fica como teste de sensibilidade.
+- **Segmento-alvo:** definido pela necessidade e pela atitude, não pela idade (§12).
 
 ## 2. Variáveis em estudo
 
@@ -256,7 +264,7 @@ Leitura:
 - A **taxa não é o problema**: 64 % aceitam-na e só 5 % a apontam como principal motivo para não usar a app (P22). A aceitação não depende da forma de pagamento preferida (59 % a 69 %, χ² p = 0,59).
 - O **problema é pagar antecipadamente a um desconhecido**: 54 % discordam de que se sentiriam seguros. Quem prefere pagar na recolha tem confiança média de 2,03; quem prefere pagar na app, 3,56.
 - **Risco de fuga à plataforma (W3, T6):** 30 % admitem que passariam a combinar fora da app. Como as pessoas tendem a não o admitir, é um valor mínimo.
-- Implicação: o modelo de receita assenta no pagamento na app, mas só 16 % o preferem. Opções a discutir: (a) aceitar pagamento na recolha com a taxa cobrada na reserva; (b) garantir reembolso e destacar as avaliações para converter os 32 % indiferentes; (c) só libertar o pagamento ao produtor depois da recolha.
+- Implicação: só 16 % preferem pagar na app. **Decisão do grupo (05/11):** o comprador paga o produto na app ou ao produtor na recolha, à escolha. A taxa (0,50 € + 5 % do valor reservado) é cobrada sempre na app, no momento da reserva. Assim a receita não depende de pagar o produto na app, e a aceitação da taxa não depende da forma de pagamento preferida (QI8). Riscos a gerir: reservas não recolhidas e combinar fora da app (30 %), por isso as avaliações e o reembolso continuam a ser necessários.
 
 ## 9. Produtos da época (OE8)
 
@@ -329,7 +337,7 @@ A satisfação com as compras atuais (P7) **não** está relacionada com o inter
 
 ## 11. Inferência estatística
 
-Os valores das secções anteriores descrevem a amostra. Esta secção estima o que se passa na população: primeiro com intervalos de confiança (11.1), depois com testes de hipóteses (11.2). Todos os números são calculados por `GrowNear_Analise_Estatistica.js` a partir do CSV (`node GrowNear_Analise_Estatistica.js`).
+Os valores das secções anteriores descrevem a amostra. Esta secção estima o que se passa na população: primeiro com intervalos de confiança (11.1), depois com testes de hipóteses (11.2). A amostra é por conveniência; assume-se que se aproxima de uma amostra aleatória, por isso os resultados valem sobretudo para pessoas com o perfil da amostra e leem-se como indicativos (§14). Todos os números são calculados por `GrowNear_Analise_Estatistica.js` a partir do CSV (`node GrowNear_Analise_Estatistica.js`).
 
 ### 11.1 Intervalos de confiança
 
@@ -389,7 +397,17 @@ Os valores das secções anteriores descrevem a amostra. Esta secção estima o 
 | P3 Gasto semanal do agregado (n = 105, sem "Não sei") | 28,43 € | [25,25 € ; 31,61 €] |
 | P9 Tempo máximo de deslocação | 9,4 min | [8,3 min ; 10,5 min] |
 
-Pontos médios usados nas classes abertas, um pressuposto que afeta a média: "30 € ou mais" = 35 €, "50 € ou mais" = 60 €, "Não me deslocaria" = 0 min, "Mais de 30 minutos" = 35 min (ninguém escolheu esta opção).
+Pontos médios usados nas classes abertas, um pressuposto que afeta a média: "30 € ou mais" = 35 €, "50 € ou mais" = 60 €, "Não me deslocaria" = 0 min, "Mais de 30 minutos" = 35 min (ninguém escolheu esta opção). São os valores mais prudentes e foram mantidos por decisão do grupo (05/11).
+
+Teste de sensibilidade (valores alternativos nas classes abertas):
+
+| Variável | Valores usados | Alternativa | Média com a alternativa |
+|---|---|---|---|
+| P12 Gasto por encomenda | "30 € ou mais" = 35 € → 19,40 € | 40 € | 20,20 € (receita de 1,51 € por encomenda, em vez de 1,47 €) |
+| P3 Gasto semanal | "50 € ou mais" = 60 € → 28,43 € | 75 € | 30,29 € |
+| P9 Tempo de deslocação | "Não me deslocaria" = 0 min → 9,4 min | Excluir (n = 107) | 9,9 min |
+
+Nenhuma conclusão muda.
 
 **Diferenças entre grupos no interesse (P19)**
 
@@ -412,7 +430,7 @@ Pontos médios usados nas classes abertas, um pressuposto que afeta a média: "3
 Com n = 113, a margem é de ±9,2 p.p. para uma proporção e de ±0,21 para a média do interesse. Dentro de um segmento de cerca de 50 pessoas, a margem sobe para cerca de ±14 p.p. Fórmulas: n = z² · p(1 − p)/E², com p = 0,5 (pior caso), e n = (z · s/E)².
 
 **Leitura**
-- **Interesse:** o IC da média, [3,24 ; 3,66], está todo acima de 3, o ponto neutro. Na população, entre 44 % e 62 % estarão interessados. A estimativa prudente para metas, a dos entusiastas, fica entre 9 % e 23 %.
+- **Interesse:** o IC da média, [3,24 ; 3,66], está todo acima de 3, o ponto neutro. Em pessoas com o perfil da amostra, entre 44 % e 62 % estarão interessados. Este valor está provavelmente sobrestimado, porque quem aceita responder a um inquérito sobre o tema tende a ter mais interesse (§14). A estimativa prudente para metas, a dos entusiastas, fica entre 9 % e 23 %.
 - **Frescura:** é o único fator cujo IC, [4,10 ; 4,40], não se sobrepõe a nenhum outro. É o primeiro com segurança. Os restantes fatores têm IC sobrepostos, por isso a ordem entre eles não é conclusiva (é testada na QI2, §11.2). "Saber quem produziu" não se distingue do preço.
 - **Preço e origem:** a satisfação atual tem IC abaixo de 3, ou no limite. É uma insatisfação real, não um acaso da amostra.
 - **Confiança:** a segurança em pagar antecipadamente tem IC entre 2,23 e 2,71, todo abaixo de 3. A desconfiança é generalizada, não só de alguns.
@@ -444,7 +462,7 @@ Os testes paramétricos (t, ANOVA) exigem dados intervalares, distribuição nor
 | H1 | Mediana do interesse = 3 | Mediana > 3 | Wilcoxon a uma amostra (unilateral) | z = 3,75 (W+ = 2481; n = 82 sem as 31 respostas iguais a 3) | z > 1,645 | < 0,001 | **Rejeita-se H0: hipótese confirmada.** Confirmação: z a uma média = 4,20; p < 0,001 |
 | H2 | Interesse igual entre urbana e rural | Diferente | Mann-Whitney (bilateral) | z = 0,45 (U = 595) | \|z\| > 1,96 | 0,655 | **Não se rejeita H0.** Welch: p = 0,81 |
 | H3 | Interesse igual entre quem comprou e quem não comprou a um produtor | Quem comprou tem mais | Mann-Whitney (unilateral) | z = −1,03 (U = 1419,5) | z > 1,645 | 0,849 | **Não se rejeita H0.** A diferença vai no sentido contrário ao previsto |
-| H4 | Interesse igual com e sem acesso a horta | Quem tem horta tem menos | Mann-Whitney (unilateral) | z = −1,69 (U = 1306,5) | z < −1,645 | **0,046** | **Rejeita-se H0: hipótese confirmada, no limite.** Welch: p = 0,052 |
+| H4 | Interesse igual com e sem acesso a horta | Quem tem horta tem menos | Mann-Whitney (unilateral) | z = −1,69 (U = 1306,5) | z < −1,645 | **0,046** | **Rejeita-se H0 por pouco: lê-se como indício, não como confirmação** (decisão do grupo). Welch: p = 0,052; cerca de 25 testes feitos |
 | H5 | Proporção que aceita mais de 10 minutos = 0,5 (ou mais) | Menos de 0,5 | Teste z a uma proporção (unilateral) | z = −3,67 (p̂ = 32,7 %) | z < −1,645 | < 0,001 | **Rejeita-se H0: a hipótese do grupo ("pelo menos metade") é rejeitada** |
 | H6 | Proporção que aceita a taxa = 0,5 | Mais de 0,5 | Teste z a uma proporção (unilateral) | z = 2,92 (p̂ = 63,7 %) | z > 1,645 | 0,002 | **Rejeita-se H0: hipótese confirmada** |
 
@@ -496,7 +514,7 @@ Com cerca de 55 pessoas por grupo, só diferenças de 0,6 pontos ou mais seriam 
 | QI18 Interesse × forma de pagamento | Kruskal-Wallis (3 grupos); Mann-Whitney (app ou indiferente vs recolha) | 3 grupos: H(2) = 5,80; p = 0,055. 2 grupos: z = 2,17; p = 0,030; r = 0,20 | Significativo com 2 grupos; no limite com 3 | Médias: 3,94 (na app), 3,61 (indiferente), 3,20 (na recolha). É coerente com a QI9 e a QI12: **a confiança separa mais do que o perfil sociodemográfico** |
 
 **O que mudou face à análise de 14/10** (testes t como principais):
-- **H4 passa a confirmada a 5 %**, embora no limite: o Mann-Whitney dá p = 0,046, o Welch dava 0,052.
+- **H4 passa a p = 0,046** com o Mann-Whitney (o Welch dava 0,052). Está abaixo de α, mas no limite: lê-se como indício.
 - A diferença de interesse por forma de pagamento mantém-se, mas mais fraca: p = 0,030 em vez de 0,014.
 - A lacuna da origem (P8 − P7 = 0,22) **não é significativa**.
 - Das 6 correlações com o interesse, só 3 resistem à correção de Bonferroni.
@@ -531,7 +549,7 @@ A coluna p compara P19 entre os grupos: Mann-Whitney com 2 grupos, Kruskal-Walli
 
 Leitura:
 - **Nenhuma variável sociodemográfica separa o interesse de forma significativa.** Com cerca de 50 respostas por grupo, só diferenças de 0,6 pontos ou mais seriam detetáveis (§11.2.2); as encontradas são de 0,3 a 0,4. Não se conclui que os grupos sejam iguais: conclui-se que a amostra não chega para os distinguir.
-- As duas diferenças significativas são de **acesso** e de **atitude**, não de perfil: quem não tem horta tem mais interesse (H4, p = 0,046), e quem aceita pagar na app, ou é indiferente, também (p = 0,030). A confiança no pagamento segmenta mais do que a idade ou a região.
+- As diferenças encontradas são de **atitude** e de **acesso**, não de perfil: quem aceita pagar na app, ou é indiferente, tem mais interesse (p = 0,030); há indício de que quem não tem horta também tem (H4, p = 0,046, no limite), apoiado pela QI1 e pela diferença em % de interessados (IC de 0,1 a 36,4 p.p.). A confiança no pagamento segmenta mais do que a idade ou a região.
 - O grupo "35–54" é quase todo de 45–54 anos (38 de 45): os 35–44 estão quase ausentes da amostra (n = 7).
 - Perfil do núcleo de potenciais utilizadores (n = 51): 71 % mulheres, 43 % com 45–54 anos, 67 % em zona urbana, 59 % principais responsáveis pelas compras, 63 % sem horta, 73 % aceitam a taxa.
 
@@ -543,18 +561,18 @@ Leitura:
 |---|---|---|---|
 | **OE1** Perfil | Amostra de 113 pessoas, sobretudo de 45–64 anos (69 %), mulheres (65 %), do Norte e AM Porto (55 %) e urbanas (65 %). 92 % fazem ou partilham as compras de alimentos | Descritiva (§4) | Define o alcance das conclusões: valem para adultos de meia-idade que fazem compras, não para jovens nem para a população em geral |
 | **OE2** Hábitos | O supermercado domina (62 %), mas 69 % já usam algum canal alternativo. Os concorrentes digitais (cabazes, grupos online, apps anti-desperdício) quase não são usados (2–11 %). Ter horta e comprar a produtores andam juntos | QI1: χ²(1) = 6,34; p = 0,012 | Concorrente real: supermercado e mercado/feira, não outras apps. O espaço digital está livre, mas não há hábito de comprar frescos por app |
-| **OE3** Interesse | Há interesse acima do neutro, mas moderado. Entre 44 % e 62 % da população estarão interessados; de forma prudente, entre 9 % e 23 % são entusiastas. Os não interessados rejeitam por hábito; os interessados apontam barreiras que a app pode resolver | H1: z = 3,75; p < 0,001. IC da §11.1. QI13: χ²(2) = 28,28; p < 0,001 | Metas: cenário prudente de 16 % e otimista de 45 % da população-alvo da zona de lançamento. Não gastar esforço a converter quem rejeita por hábito |
+| **OE3** Interesse | Há interesse acima do neutro, mas moderado. Entre 44 % e 62 % estarão interessados, em pessoas com o perfil da amostra e provavelmente com sobrestimação; de forma prudente, entre 9 % e 23 % são entusiastas. Os não interessados rejeitam por hábito; os interessados apontam barreiras que a app pode resolver | H1: z = 3,75; p < 0,001. IC da §11.1. QI13: χ²(2) = 28,28; p < 0,001 | Metas: cenário prudente de 16 % e otimista de 45 % da população-alvo da zona de lançamento. Não gastar esforço a converter quem rejeita por hábito |
 | **OE4** Deslocação | O raio aceitável é curto: o tempo médio aceite é de 9,4 minutos (IC: 8,3 a 10,5) e só 33 % aceitam mais de 10 minutos. O ponto de recolha é preferido em todas as zonas | H5: z = −3,67; p < 0,001. QI6: p = 0,179. QI5: p = 0,052 (indício: a pé, menor raio) | Raio de 10 minutos por omissão. Pontos de recolha (cafés, mercearias) como canal principal |
 | **OE5** Critérios | A frescura é, com segurança, o fator mais importante, e é também a maior necessidade por satisfazer. "Saber quem produziu" e o preço são os menos importantes. O preço gera insatisfação, mas pesa pouco na decisão | QI2: Friedman Q(7) = 124,04; p < 0,001. QI3: frescura z = 6,59; p < 0,001 | Proposta de valor e comunicação centradas na frescura ("colhido hoje, perto de si"). Não posicionar como alternativa mais barata nem centrar na rastreabilidade |
-| **OE6** Pagamento e taxa | A taxa é aceite por uma maioria (64 %; IC: 55 % a 73 %), qualquer que seja a forma de pagamento preferida. O problema é pagar antecipadamente a um desconhecido: 54 % não se sentem seguros, e é essa desconfiança que explica a preferência por pagar na recolha. O gasto médio previsto é de 19,40 € por encomenda | H6: z = 2,92; p = 0,002. QI8: p = 0,585. QI9: H(2) = 17,98; p < 0,001. IC P15 de 2,23 a 2,71 | Manter a taxa (0,50 € + 5 %; 1,47 € por encomenda média). Investir na confiança (reembolso garantido, avaliações, pagamento libertado só após a recolha). Valor mínimo de 5 € |
-| **OE7** Segmentos | Nenhum perfil sociodemográfico se distingue com significância. Distinguem-se o acesso (sem horta: mais interesse) e a atitude (confiança no pagamento digital) | H4: z = −1,69; p = 0,046. QI18: p = 0,030. QI17: todos p > 0,12 | Segmentar por necessidade e atitude (sem acesso a produtos locais, aberto ao pagamento digital), não só por idade ou região |
+| **OE6** Pagamento e taxa | A taxa é aceite por uma maioria (64 %; IC: 55 % a 73 %), qualquer que seja a forma de pagamento preferida. O problema é pagar antecipadamente a um desconhecido: 54 % não se sentem seguros, e é essa desconfiança que explica a preferência por pagar na recolha. O gasto médio previsto é de 19,40 € por encomenda | H6: z = 2,92; p = 0,002. QI8: p = 0,585. QI9: H(2) = 17,98; p < 0,001. IC P15 de 2,23 a 2,71 | Manter a taxa (0,50 € + 5 %; 1,47 € por encomenda média), cobrada na app no momento da reserva. O produto paga-se na app ou ao produtor na recolha, à escolha do comprador. Investir na confiança (reembolso garantido, avaliações). Valor mínimo de 5 € |
+| **OE7** Segmentos | Nenhum perfil sociodemográfico se distingue com significância. Distingue-se a atitude (confiança no pagamento digital) e há indício de que o acesso também conta (sem horta: mais interesse) | H4 (indício): z = −1,69; p = 0,046. QI18: p = 0,030. QI17: todos p > 0,12 | Segmentar por necessidade e atitude (sem acesso a produtos locais, aberto ao pagamento digital), não só por idade ou região |
 | **OE8** Sazonalidade | A oferta limitada à época é aceite (69 %), mas a falta de produto leva a compra para outro lado (60 %). Aceitar comprar "o que houver" é o fator mais associado ao interesse | IC P17 de 3,70 a 4,10. QI10: ρ = 0,43; p < 0,001 (resiste a Bonferroni) | A app é um complemento ao supermercado, não um substituto. Mostrar alternativas disponíveis quando falta um produto; o alerta "avisem-me" é secundário (12 %) |
 
 ## 14. Limitações
 
 | Limitação | Efeito nesta amostra |
 |---|---|
-| Amostra por conveniência | Concentrada em 45–64 anos (69 %), mulheres (65 %) e trabalhadores por conta de outrem (75 %). Os 35–44 (n = 7) e os 65+ (n = 5) estão quase ausentes. Não é representativa da população portuguesa: os IC e os testes pressupõem amostragem aleatória, por isso devem ler-se como indicativos |
+| Amostra por conveniência | Concentrada em 45–64 anos (69 %), mulheres (65 %) e trabalhadores por conta de outrem (75 %). Os 35–44 (n = 7) e os 65+ (n = 5) estão quase ausentes. Os respondentes são conhecidos do grupo e dos seus contactos. Não é representativa da população portuguesa: os IC e os testes pressupõem amostragem aleatória. O grupo assume que a amostra se aproxima de uma aleatória e declara a limitação, por isso os resultados leem-se como indicativos. **Autosseleção:** quem aceita responder a um inquérito sobre produtos locais tende a interessar-se mais pelo tema, por isso o interesse (53 %) está provavelmente sobrestimado. **Atenuante:** o interesse não difere de forma significativa por idade, género, região nem zona (QI17), por isso o desequilíbrio do perfil distorce menos as conclusões, embora os testes tenham pouca potência para detetar diferenças pequenas |
 | Dimensão da amostra | n = 113 dá uma margem de ±9,2 p.p. no total e de cerca de ±14 p.p. num segmento de 50 pessoas. Para ±5 p.p. seriam precisas 385 respostas (§11.1) |
 | Potência dos testes | Nas comparações entre segmentos, só diferenças de 0,6 pontos ou mais são detetáveis com 80 % de potência. A ausência de diferenças significativas não prova que os segmentos são iguais (§11.2.2) |
 | Recolha concentrada num dia | 91 % das respostas a 09/10: provavelmente uma ou duas redes de contactos. Pode reforçar a homogeneidade |
@@ -585,8 +603,8 @@ Os dados não chegam para escolher um segmento pela idade ou pela região. Chega
 | Recolha | Prioridade a **pontos de recolha** (cafés, mercearias); a casa do produtor é secundária | §7, QI6 | Parceiros-chave |
 | Taxa | Manter 0,50 € + 5 % (aceite por 64 %; só 5 % a veem como barreira). Receita média de 1,47 € por encomenda | §8, H6, QI8, §11.1 | Fontes de receita |
 | Valor mínimo | **5 €** (aceite por 86 %); 10 € só é aceite por 63 % | §8 | Fontes de receita |
-| Pagamento | Resolver o conflito entre a preferência por pagar na recolha (52 %) e o modelo de receita: a preferência vem da desconfiança (QI9), por isso a resposta é reembolso garantido, avaliações visíveis e pagamento libertado ao produtor só após a recolha | §8, QI9, QI18 | W3, T6 |
+| Pagamento | O produto paga-se na app ou ao produtor na recolha, à escolha (52 % preferem a recolha). A taxa é cobrada sempre na app, no momento da reserva, por isso a receita não depende da forma de pagamento. A preferência pela recolha vem da desconfiança (QI9): reembolso garantido e avaliações visíveis para ganhar confiança no pagamento na app | §8, QI8, QI9, QI18 | W3, T6 |
 | Fuga à plataforma | 30 % admitem combinar fora da app: dar razões para ficar (reembolso, avaliações, histórico, alertas) | §8 | W3, T6 |
 | Sazonalidade | Mostrar alternativas disponíveis quando falta um produto; o alerta "avisem-me" é secundário | §9, QI10 | T4 |
-| Metas | Planear com 16 % (entusiastas; IC de 9 % a 23 %) como cenário prudente e 45 % (núcleo; IC de 36 % a 54 %) como cenário otimista, aplicados à população-alvo da zona de lançamento | §10, §11.1 | — |
+| Metas | Planear com 16 % (entusiastas; IC de 9 % a 23 %) como cenário prudente e **de referência**, porque o interesse está provavelmente sobrestimado pela amostra por conveniência (§14), e 45 % (núcleo; IC de 36 % a 54 %) como cenário otimista, aplicados à população-alvo da zona de lançamento | §10, §11.1 | — |
 | Próximo estudo | Inquirir produtores (oferta e variedade) e alargar a amostra aos 25–44 anos antes do lançamento | §14 | W2 |
