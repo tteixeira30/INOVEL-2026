@@ -19,6 +19,7 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
+| `GrowNear_Decisoes_Plano_Organizacional.html` | Página de apoio à reunião de 12/11 (não entregável): decisões D1–D16 para o Plano Organizacional (semana 9), com contexto, opções e recomendação; gera um resumo para colar no Claude |
 | `GrowNear — Momento 1.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC (front stage, depois back stage), SWOT, objetivos do estudo, inquérito. Resultados, hipóteses e implicações não entram no Momento 1. O guião está nas notas do orador |
 
 ### Ficheiros em `Files/GrowNear_Inquerito/` (estudo de mercado)

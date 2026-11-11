@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decisões do Plano Organizacional</title>
+<style>
+:root{
+  --bg:#f7f6f2; --card:#ffffff; --ink:#1d2321; --muted:#5d6763; --line:#dfe3df;
+  --accent:#2f7d4f; --accent-soft:#e3f1e8; --warn:#9a5b00; --warn-soft:#fbf0dc; --rec:#2f7d4f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141816; --card:#1c211f; --ink:#e7ebe8; --muted:#9aa5a0; --line:#2e3532;
+    --accent:#6cc28f; --accent-soft:#1f3328; --warn:#e3a94b; --warn-soft:#33291a; --rec:#6cc28f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141816; --card:#1c211f; --ink:#e7ebe8; --muted:#9aa5a0; --line:#2e3532;
+  --accent:#6cc28f; --accent-soft:#1f3328; --warn:#e3a94b; --warn-soft:#33291a; --rec:#6cc28f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 4px}
+h2{font-size:1.3rem;margin:44px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:1.08rem;margin:0 0 6px}
+p{margin:0 0 10px}
+.sub{color:var(--muted);margin-bottom:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;margin:14px 0}
+.ctx{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-right:6px;vertical-align:middle}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;cursor:pointer}
+.opt:hover{border-color:var(--accent)}
+.opt input{margin-top:5px;accent-color:var(--accent);flex:none}
+.opt b{display:block}
+.opt span{color:var(--muted);font-size:.93rem}
+.opt.rec b::after{content:" · Recomendado";color:var(--rec);font-weight:600;font-size:.85rem}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+textarea{width:100%;min-height:54px;margin-top:6px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:.93rem}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+select{font:inherit;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);max-width:100%}
+ul{margin:4px 0 10px;padding-left:20px}
+li{margin:3px 0}
+.affects{font-size:.85rem;color:var(--muted);margin-top:8px}
+.btn{font:inherit;font-weight:600;background:var(--accent);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+#summary{width:100%;min-height:260px;font-family:ui-monospace,Consolas,monospace;font-size:.85rem}
+.wrap{overflow-x:auto}
+@media print{.btn,#summary,textarea:placeholder-shown{display:none}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>GrowNear: decisões para o Plano Organizacional</h1>
+<p class="sub">Reunião de grupo · 12/11/2026 · Semana 9 (Estratégia organizacional e RH)</p>
+
+<div class="card">
+  <h3>Como usar esta página</h3>
+  <p class="ctx">Cada decisão tem o contexto, as opções explicadas e uma recomendação, que é só um ponto de partida. Marquem a opção escolhida e anotem as razões. As escolhas ficam guardadas neste browser. No fim, o botão <b>Copiar resumo</b> gera o texto das decisões para colar no Claude e redigir o plano.</p>
+</div>
+
+<h2>1. Contexto</h2>
+
+<div class="card">
+  <h3>Porque é que temos de decidir isto agora</h3>
+  <table>
+    <tr><th>Semana</th><th>Aula</th><th>O que nos pede</th></tr>
+    <tr><td>9 (esta)</td><td>Estratégia organizacional e RH</td><td>Base do Plano Organizacional</td></tr>
+    <tr><td>10–11</td><td>Plano financeiro (Excel)</td><td>Precisa dos <b>salários, contratações e custos de estrutura</b> que decidirmos aqui</td></tr>
+    <tr><td>12</td><td>Plano organizacional</td><td>Trabalho supervisionado: levar o plano já redigido</td></tr>
+    <tr><td>13–14</td><td>Plano de negócio</td><td>Consolidação e apresentação final (19/12 no calendário de 2025-26; confirmar)</td></tr>
+  </table>
+  <p class="affects">O plano de negócio final (R2) vale 50 % da nota, com mínimo de 8/20.</p>
+</div>
+
+<div class="card">
+  <h3>O que o Plano Organizacional tem de ter (slides "As pessoas no contexto das organizações")</h3>
+  <ul>
+    <li><b>Estrutura organizacional e organograma:</b> como coordenamos as atividades → decisões D4 e D5</li>
+    <li><b>Distribuição e gestão dos recursos humanos</b> → D3, D6, D7, D8, D10</li>
+    <li><b>Descrição de funções</b> → D5</li>
+    <li><b>Canais formais de comunicação e decisão</b> → D9</li>
+    <li><b>Atração, retenção e desenvolvimento de talento</b> → D11, D12, D13</li>
+    <li><b>Processo de recrutamento e seleção</b> (necessidade → perfil → interno/externo → pré-seleção → entrevista → decisão → acolhimento) → D12</li>
+  </ul>
+  <p class="ctx">Fatores que, segundo os slides, influenciam o desenho: <b>objetivos, estratégia, tecnologia, dimensão e ambiente</b>. Convém citá-los para justificar cada escolha.</p>
+  <p class="ctx"><span class="tag warn">Atenção</span>O slide "O plano organizacional" (p. 11) é uma imagem; confirmem se pede mais algum ponto. Há também uma diferença de numeração: estes slides chamam-lhe secção <b>IV</b>, o enquadramento da UC chama-lhe <b>V</b> (depois do Estudo de Mercado). Convém confirmar com o professor qual é a estrutura do relatório final.</p>
+</div>
+
+<div class="card">
+  <h3>O que já está decidido no BMC</h3>
+  <ul>
+    <li><b>Atividades-chave:</b> desenvolver e manter a app; captar produtores zona a zona ("oferta primeiro"); moderação, conflitos e reembolsos; marketing local e parcerias; conformidade fiscal.</li>
+    <li><b>Recursos humanos:</b> equipa de desenvolvimento, marketing e apoio.</li>
+    <li><b>Relações com clientes:</b> autosserviço, com acompanhamento presencial aos primeiros produtores.</li>
+    <li><b>Custos:</b> salários e app são custos fixos; o modelo é "orientado para o custo, com uma operação leve e automatizada".</li>
+  </ul>
+  <p class="ctx">Conclusão: a estrutura tem de ser <b>pequena</b>. A maior parte do trabalho é tecnologia e comunidade (produtores e parceiros locais).</p>
+</div>
+
+<div id="questions"></div>
+
+<h2>Resumo das decisões</h2>
+<div class="card">
+  <p class="ctx">Gerado a partir do que foi marcado acima. Copiem e colem no Claude para redigir o Plano Organizacional e preparar os pressupostos do plano financeiro.</p>
+  <p><button class="btn" id="copy">Copiar resumo</button> <span id="copied" class="ctx"></span></p>
+  <textarea id="summary" readonly></textarea>
+</div>
+</main>
+
+<script>
+const MEMBERS = ["Bruno Lopes","Tiago Teixeira","Francisco Peixoto","António Guerra","Luis Santos"];
+
+const BLOCKS = [
+{title:"2. A empresa", qs:[
+ {id:"D1", title:"Forma jurídica",
+  ctx:"Define quem são os sócios, o capital social e os custos de constituição, que entram no investimento inicial do plano financeiro.",
+  opts:[
+   {l:"Sociedade por quotas (Lda.) com os 5 sócios", rec:1, d:"A forma habitual das startups em Portugal. Capital livre, com mínimo de 1 € por quota (ex.: 5 × 1 000 € = 5 000 €). A responsabilidade fica limitada ao capital. Constitui-se online (Empresa Online, cerca de 360 €). Para entrarem investidores, cedem-se ou criam-se quotas."},
+   {l:"Sociedade Anónima (SA)", d:"Capital mínimo de 50 000 € e pelo menos 5 acionistas, que temos. Passa mais credibilidade a investidores, mas obriga a mais órgãos (administração, fiscal único/ROC) e a mais custos. Excessivo para o arranque."},
+   {l:"Lda. só com parte do grupo", d:"Só os que se dedicam mais ficam sócios. Os outros entram como colaboradores ou ficam com a opção de entrar mais tarde. Mais realista se nem todos quiserem seguir com o projeto."}],
+  affects:"Plano financeiro (capital social, custos de constituição) · Apresentação do negócio"},
+ {id:"D2", title:"Divisão das quotas entre sócios",
+  ctx:"Num plano de negócio mostra-se quem detém a empresa. Divisões desiguais devem ter justificação (dedicação, capital investido).",
+  opts:[
+   {l:"Partes iguais (20 % cada)", rec:1, d:"Simples e justo se todos contribuírem de forma parecida. Risco: se alguém sair cedo, fica com 20 %."},
+   {l:"Partes iguais com vesting (acordo parassocial)", d:"Cada sócio 'ganha' a quota ao longo do tempo (prática comum: 4 anos, com o primeiro ano mínimo). Quem sai cedo perde parte. Protege a empresa, mas complica um pouco a explicação."},
+   {l:"Proporcional à dedicação ou ao capital", d:"Quem fica a tempo inteiro ou investe mais dinheiro tem mais. Coerente com a opção 'núcleo a tempo inteiro' da D3."}],
+  affects:"Apresentação do negócio · Plano organizacional (órgãos sociais)"},
+ {id:"D3", title:"Dedicação dos 5 fundadores no 1.º ano",
+  ctx:"É a decisão que mais pesa no plano financeiro: os salários são o maior custo fixo do BMC. Referência: 1 300 € brutos × 14 meses + 23,75 % de TSU ≈ 22 500 €/ano por pessoa (valor indicativo).",
+  opts:[
+   {l:"Núcleo a tempo inteiro", rec:1, d:"2 ou 3 fundadores a tempo inteiro, com salário (ex.: CEO, tecnologia, crescimento). Os outros ficam a tempo parcial, sem salário, só com a quota. Com 3 salários: ≈ 67 500 €/ano. É o equilíbrio mais realista entre credibilidade e custo."},
+   {l:"Todos a tempo inteiro", d:"5 salários desde o início: ≈ 112 500 €/ano. Mais capacidade de execução, mas obriga a ter investimento ou financiamento logo no arranque."},
+   {l:"Todos sem salário no ano 1 (bootstrapping)", d:"Trabalham pelas quotas, a tempo parcial, e só recebem quando houver receita ou investimento. Custo quase zero, mas crescimento lento; um júri pode achar pouco credível que os 5 trabalhem um ano sem salário."}],
+  affects:"Plano financeiro (custos com pessoal, necessidade de financiamento)"}
+]},
+{title:"3. Estrutura e funções", qs:[
+ {id:"D4", title:"Tipo de estrutura (organograma)",
+  ctx:"Os slides referem que o desenho depende da dimensão, da estratégia e do ambiente. Somos 5, começamos numa zona e crescemos zona a zona.",
+  opts:[
+   {l:"Funcional simples", rec:1, d:"Gerência/CEO no topo e 4 áreas abaixo: Tecnologia, Marketing e Crescimento, Operações e Comunidade, Finanças e Administração. A linha de decisão é clara, é fácil de desenhar e de justificar, e cresce acrescentando pessoas a cada área."},
+   {l:"Plana / por equipas", d:"Sem hierarquia formal: os sócios decidem em conjunto e trabalham em equipas por projeto. Ágil, mas é mais difícil mostrar os 'canais formais de decisão' que os slides pedem."},
+   {l:"Funcional, evoluindo para gestores de zona", d:"Igual à funcional no arranque. Nos anos 2 e 3 junta-se em Operações uma camada de gestores de zona, à medida que se abrem regiões. Liga-se ao 'oferta primeiro, zona a zona' do BMC e mostra a evolução da estrutura (bom para o plano a 3 anos)."}],
+  affects:"Organograma · Plano financeiro (contratações por zona)"},
+ {id:"D5", title:"Quem fica com cada função", roles:true,
+  ctx:"Proposta de 5 funções para 5 pessoas, que serve também de base à 'descrição de funções'. Escolham um nome por função; a descrição pode ser ajustada nas notas.",
+  affects:"Organograma · Descrição de funções · Apresentação (quem apresenta o quê)"}
+]},
+{title:"4. O que fazemos dentro e o que contratamos fora", qs:[
+ {id:"D6", title:"Desenvolvimento e manutenção da app",
+  ctx:"É a atividade-chave principal e o maior custo do BMC. Somos um grupo de engenharia, o que pesa nesta decisão.",
+  opts:[
+   {l:"Equipa interna (os fundadores)", rec:1, d:"Os fundadores desenvolvem o MVP e a V1.0. É o maior corte de custos e dá um argumento forte: a competência-chave está dentro da empresa. Só se contrata mais um programador quando a app crescer."},
+   {l:"Software house externa", d:"Subcontratar o desenvolvimento (ordem de grandeza: 30 000–60 000 € para um marketplace com mapa e pagamentos; valor indicativo). Os fundadores concentram-se no negócio, mas criam dependência de um fornecedor. Estranho numa equipa de engenharia."},
+   {l:"Misto", d:"O núcleo (backend, pagamentos, mapa) é feito internamente; o design UX/UI e tarefas pontuais vão para freelancers. Equilibra competências e prazos, com um custo externo moderado."}],
+  affects:"Plano financeiro (investimento na app) · Plano operacional"},
+ {id:"D7", title:"Captação de produtores no terreno",
+  ctx:"O BMC promete 'oferta primeiro, zona a zona' e acompanhamento presencial aos primeiros produtores. Isto exige pessoas no terreno; a questão é quem.",
+  opts:[
+   {l:"Por fases: fundadores, depois embaixadores locais", rec:1, d:"Na 1.ª zona, os fundadores fazem as sessões com o apoio de juntas e cooperativas (parceiros do BMC). Ao abrir novas zonas, recrutam-se embaixadores locais (ex.: um produtor ativo), pagos por comissão (ex.: x € por produtor que faça as primeiras vendas). O custo acompanha o crescimento."},
+   {l:"Só fundadores e parceiros institucionais", d:"Custo zero: as juntas e cooperativas divulgam e os fundadores vão às sessões. Não escala para várias zonas."},
+   {l:"Gestores de zona contratados", d:"Um colaborador por zona, com salário. Mais controlo e qualidade, mas é um custo fixo alto antes de haver receita na zona."}],
+  affects:"Plano financeiro (comissões ou salários) · Plano de marketing (canais)"},
+ {id:"D8", title:"Apoio ao cliente e moderação",
+  ctx:"O BMC prevê moderar anúncios, resolver conflitos e gerir reembolsos. A análise do inquérito mostra desconfiança no pagamento antecipado e 30 % que combinariam fora da app, por isso a confiança é crítica.",
+  opts:[
+   {l:"Fundadores em rotação no ano 1, contratação depois", rec:1, d:"Turnos semanais entre sócios, com FAQ e respostas automáticas na app. Contrata-se um assistente (ou estagiário) quando o volume o justificar (ex.: ano 2)."},
+   {l:"Contratar já um assistente de apoio", d:"Mais qualidade de resposta desde o início, mas é mais um salário antes de haver receita."},
+   {l:"Outsourcing (empresa de apoio ao cliente)", d:"Custo variável, mas um serviço externo conhece mal uma comunidade local, e a confiança é exatamente o nosso ponto fraco (W3)."}],
+  affects:"Plano financeiro · Plano operacional"}
+]},
+{title:"5. Decisão e comunicação", qs:[
+ {id:"D9", title:"Quem decide o quê (canais formais)",
+  ctx:"Os slides pedem canais formais de comunicação e decisão. Numa Lda., a gerência representa a empresa e os sócios aprovam as grandes decisões; as alterações ao contrato de sociedade exigem 3/4 dos votos.",
+  opts:[
+   {l:"Gerente CEO + decisões estratégicas por maioria dos sócios", rec:1, d:"Cada responsável de área decide o operacional da sua área. O CEO coordena e representa a empresa. Orçamento, contratações e novas zonas votam-se em reunião de sócios (maioria). Reunião semanal de equipa e mensal de sócios. Rápido e claro."},
+   {l:"Gerência partilhada (2 gerentes, assinatura conjunta)", d:"CEO + responsável financeiro obrigam a empresa em conjunto. Mais controlo financeiro, mas cada contrato e pagamento precisa de duas assinaturas."},
+   {l:"Unanimidade nas decisões estratégicas", d:"Todos têm de concordar. Protege cada sócio, mas torna as decisões lentas e cria risco de bloqueio entre 5 pessoas."}],
+  affects:"Plano organizacional (canais de decisão)"}
+]},
+{title:"6. Gestão de pessoas", qs:[
+ {id:"D10", title:"Plano de contratações (anos 1–3)",
+  ctx:"Define a evolução do organograma e os custos com pessoal no plano financeiro. Valores indicativos: júnior ≈ 1 200–1 500 € brutos/mês; estágio profissional com apoio do IEFP reduz o custo (confirmar condições).",
+  opts:[
+   {l:"Moderado", rec:1, d:"Ano 1: fundadores + 1 estagiário (marketing/design). Ano 2: +1 programador, +1 apoio/comunidade. Ano 3: +1 gestor de zona por região nova (ou embaixadores, conforme a D7). Cresce com as zonas."},
+   {l:"Conservador", d:"Ano 1 só fundadores. Ano 2: +1 apoio/comunidade. Ano 3: +1 programador. Custo mínimo, crescimento lento."},
+   {l:"Acelerado (com investimento)", d:"Pressupõe uma ronda de investimento no fim do ano 1. Ano 2: +4 pessoas; ano 3: equipa de cerca de 12. Só faz sentido se o plano financeiro incluir esse investimento."}],
+  affects:"Organograma · Plano financeiro (custos com pessoal)"},
+ {id:"D11", title:"Modelo de gestão de pessoas",
+  ctx:"Os slides contrapõem o modelo Hard (pessoas como fator de produção; foco em custos, métricas e controlo) ao modelo Soft (pessoas como ativo; foco em compromisso, motivação e desenvolvimento). Citam Drucker: 'As pessoas são a única vantagem competitiva sustentável'.",
+  opts:[
+   {l:"Soft (com objetivos claros)", rec:1, d:"Uma startup com poucos recursos não compete em salários. Retém pessoas pela autonomia, pela missão e pela participação. Usam-se objetivos e métricas por área, mas a ênfase está no desenvolvimento. É o modelo para que os slides apontam."},
+   {l:"Misto: Soft para a equipa, Hard para o terreno", d:"Soft para fundadores e equipa core; para embaixadores e apoio, métricas e comissões por resultado (produtores captados, tempo de resposta). Coerente com a D7 por fases."},
+   {l:"Hard", d:"Foco em eficiência e custos, funções muito definidas. Coerente com o 'orientado para o custo' do BMC, mas é difícil de defender numa equipa pequena e criativa."}],
+  affects:"Plano organizacional (gestão de pessoas, cultura)"},
+ {id:"D12", title:"Recrutamento e seleção", multi:true,
+  ctx:"Os slides mostram o processo: vaga → decidir se se preenche (ou reorganizar tarefas) → perfil da função → recrutamento interno ou externo → pré-seleção → entrevista e outras provas → decisão → acolhimento e integração. Escolham os canais e as práticas que vamos usar (podem ser vários).",
+  opts:[
+   {l:"Interno primeiro (promover ou redistribuir antes de contratar)", rec:1, d:"Encaixa no 'decidir se se preenche' do slide: numa equipa pequena, muitas vagas resolvem-se reorganizando tarefas."},
+   {l:"ISEP / P.Porto (estágios, feiras de emprego)", rec:1, d:"Acesso direto a engenheiros júnior e estagiários; conhecemos o meio."},
+   {l:"LinkedIn e portais de emprego tech (ITJobs, Landing.jobs)", d:"Para perfis mais experientes (ano 2+)."},
+   {l:"IEFP (estágios profissionais apoiados)", d:"Reduz o custo do primeiro colaborador; confirmar as condições em vigor."},
+   {l:"Rede local (juntas, cooperativas, produtores ativos)", rec:1, d:"Para embaixadores e gestores de zona: quem conhece a zona e os produtores."},
+   {l:"Seleção: entrevista + prova prática + período experimental", rec:1, d:"Prova técnica para programadores; caso prático de comunidade para operações. Acolhimento com um 'padrinho' na primeira semana."}],
+  affects:"Plano organizacional (recrutamento e seleção)"},
+ {id:"D13", title:"Retenção e desenvolvimento de talento", multi:true,
+  ctx:"Como atraímos e mantemos pessoas sem conseguir pagar como uma grande empresa. Escolham as medidas (podem ser várias).",
+  opts:[
+   {l:"Participação na empresa para os primeiros colaboradores", rec:1, d:"Quotas ou prémio ligado aos resultados. Alinha os interesses, o argumento clássico das startups."},
+   {l:"Horário flexível e trabalho remoto", rec:1, d:"Custo zero e muito valorizado."},
+   {l:"Formação e conferências (orçamento anual por pessoa)", rec:1, d:"Ex.: 500 €/pessoa/ano. As 40 horas anuais de formação já são obrigatórias por lei."},
+   {l:"Avaliação de desempenho semestral, com plano de carreira", d:"Conversa de objetivos a cada 6 meses; dá caminho de progressão (júnior → responsável de área/zona)."},
+   {l:"Benefícios (seguro de saúde, cartão refeição)", d:"Custo extra no plano financeiro; talvez só a partir do ano 2."},
+   {l:"Cultura e missão (comunidade, desperdício zero)", rec:1, d:"Envolver a equipa nas sessões com produtores; a missão 'do quintal para a mesa do vizinho' é um fator de retenção."}],
+  affects:"Plano organizacional (retenção) · Plano financeiro (benefícios, formação)"}
+]},
+{title:"7. Logística e horizonte", qs:[
+ {id:"D14", title:"Local de trabalho",
+  ctx:"Entra nos custos fixos. Valores indicativos para o Porto; confirmar.",
+  opts:[
+   {l:"Remoto + coworking quando for preciso", rec:1, d:"Cerca de 100–200 € por posto/mês, só para os dias presenciais. Coerente com a 'operação leve' do BMC."},
+   {l:"Incubadora (ex.: UPTEC ou outra da região)", d:"Espaço a custo reduzido, mentores e rede de investidores; exige candidatura. Dá credibilidade ao plano."},
+   {l:"Escritório próprio", d:"Cerca de 800–1 500 €/mês de renda, mais despesas. Não se justifica no arranque."}],
+  affects:"Plano financeiro (custos fixos) · Plano operacional"},
+ {id:"D15", title:"Horizonte do plano",
+  ctx:"Define até onde vão o plano de contratações e o plano financeiro.",
+  opts:[
+   {l:"3 anos", rec:1, d:"Habitual em planos académicos; dá para mostrar o arranque (ano 1), a expansão por zonas (ano 2) e o GrowNear Pro (fase 2 do BMC, ano 3)."},
+   {l:"5 anos", d:"Mostra a maturidade do negócio, mas os números dos anos 4 e 5 são pouco fiáveis e dão mais trabalho no Excel."}],
+  affects:"Todos os planos"}
+]},
+{title:"8. Também por decidir (plano de marketing)", qs:[
+ {id:"D16", title:"Valores da taxa de serviço",
+  ctx:"O BMC e o relatório deixam o valor para o plano de marketing, e o plano financeiro precisa dele nas próximas semanas. Dados do inquérito: 64 % aceitam 1,00 € numa encomenda de 10 € (IC 55–73 %); só 5 % apontam a taxa como motivo para não usar a app; o gasto médio é de 19,40 € por encomenda. Valor mínimo de encomenda: 5 € aceite por 86 %, 10 € por 63 %.",
+  opts:[
+   {l:"Manter 0,50 € + 5 % (a proposta testada)", rec:1, d:"É a única validada no inquérito. Gera ≈ 1,47 € por encomenda média (IC 1,38–1,56 €). Basta justificar com os dados."},
+   {l:"Só percentagem (ex.: 8 %)", d:"Mais simples de explicar, mas rende pouco em encomendas pequenas (0,80 € em 10 €) e não foi testada no inquérito."},
+   {l:"Taxa fixa (ex.: 1,00 €)", d:"Fácil de comunicar e foi o valor perguntado no inquérito, mas não acompanha encomendas maiores (1,00 € em 19,40 € fica abaixo da proposta atual)."}],
+  affects:"Plano de marketing (preço) · Plano financeiro (receita)"}
+]}
+];
+
+const ROLES = [
+ ["CEO / Gerente","Estratégia, coordenação, representação legal, parcerias institucionais (juntas, câmaras), investidores."],
+ ["CTO / Tecnologia","Arquitetura e desenvolvimento da app, infraestrutura (cloud, mapas), segurança e pagamentos (Stripe/MB Way)."],
+ ["Marketing e Crescimento","Marca, redes sociais, aquisição de compradores, programa 'convida um vizinho', análise de dados de procura."],
+ ["Operações e Comunidade","Captação de produtores zona a zona, sessões presenciais, pontos de recolha, apoio, moderação e reembolsos."],
+ ["Finanças e Administração","Orçamento, faturação, relação com o contabilista, conformidade fiscal e legal (RGPD, termos de uso)."]
+];
+
+let state = {};
+try { state = JSON.parse(localStorage.getItem("grownear-org") || "{}"); } catch(e) {}
+const save = () => { try { localStorage.setItem("grownear-org", JSON.stringify(state)); } catch(e) {} };
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+
+const root = document.getElementById("questions");
+let html = "";
+for (const b of BLOCKS) {
+  html += `<h2>${b.title}</h2>`;
+  for (const q of b.qs) {
+    html += `<div class="card"><h3><span class="tag">${q.id}</span>${q.title}${q.multi ? ' <span class="tag warn">várias opções</span>' : ''}</h3><p class="ctx">${q.ctx}</p>`;
+    if (q.roles) {
+      html += `<div class="wrap"><table><tr><th>Função</th><th>Responsabilidades</th><th>Quem</th></tr>`;
+      ROLES.forEach(([r,d],i) => {
+        html += `<tr><td><b>${r}</b></td><td>${d}</td><td><select data-role="${i}"><option value="">—</option>${MEMBERS.map(m=>`<option>${m}</option>`).join("")}</select></td></tr>`;
+      });
+      html += `</table></div>`;
+    } else {
+      q.opts.forEach((o,i) => {
+        html += `<label class="opt${o.rec?' rec':''}"><input type="${q.multi?'checkbox':'radio'}" name="${q.id}" value="${i}"><div><b>${o.l}</b><span>${o.d}</span></div></label>`;
+      });
+    }
+    html += `<textarea data-note="${q.id}" placeholder="Notas / razões da decisão / outra opção"></textarea><div class="affects">Afeta: ${q.affects}</div></div>`;
+  }
+}
+root.innerHTML = html;
+
+// restore
+document.querySelectorAll("input[name]").forEach(el => {
+  const v = state[el.name];
+  if (Array.isArray(v) ? v.includes(el.value) : v === el.value) el.checked = true;
+});
+document.querySelectorAll("[data-note]").forEach(el => el.value = state["note_"+el.dataset.note] || "");
+document.querySelectorAll("[data-role]").forEach(el => el.value = state["role_"+el.dataset.role] || "");
+
+function summary() {
+  const out = ["GrowNear: decisões para o Plano Organizacional (reunião de " + new Date().toLocaleDateString("pt-PT") + ")", ""];
+  for (const b of BLOCKS) for (const q of b.qs) {
+    let ans;
+    if (q.roles) {
+      ans = ROLES.map(([r],i) => `\n   - ${r}: ${state["role_"+i] || "por decidir"}`).join("");
+    } else {
+      const v = state[q.id];
+      const picked = (Array.isArray(v) ? v : (v ? [v] : [])).map(i => q.opts[i].l);
+      ans = picked.length ? picked.join("; ") : "por decidir";
+    }
+    out.push(`${q.id} ${q.title}: ${ans}`);
+    const n = state["note_"+q.id];
+    if (n) out.push(`   Notas: ${n}`);
+  }
+  document.getElementById("summary").value = out.join("\n");
+}
+
+root.addEventListener("input", e => {
+  const el = e.target;
+  if (el.name && el.type === "radio") state[el.name] = el.value;
+  else if (el.name && el.type === "checkbox")
+    state[el.name] = [...document.querySelectorAll(`input[name="${el.name}"]:checked`)].map(x => x.value);
+  else if (el.dataset.note) state["note_"+el.dataset.note] = el.value;
+  else if (el.dataset.role) state["role_"+el.dataset.role] = el.value;
+  save(); summary();
+});
+
+document.getElementById("copy").onclick = async () => {
+  const t = document.getElementById("summary");
+  try { await navigator.clipboard.writeText(t.value); }
+  catch(e) { t.select(); document.execCommand("copy"); }
+  document.getElementById("copied").textContent = "Copiado.";
+};
+summary();
+</script>
+</body>
+</html>
