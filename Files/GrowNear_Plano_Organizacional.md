@@ -17,7 +17,7 @@
 | D7 | Captação de produtores | Por fases: fundadores, depois embaixadores locais |
 | D8 | Apoio ao cliente e moderação | Fundadores no ano 1, com FAQ e *chatbot* de respostas; contratação só quando o volume o justificar |
 | D9 | Decisão | Gerente (CEO) + decisões estratégicas por maioria dos sócios |
-| D10 | Contratações (anos 1–3) | Anos 1–2: só os fundadores. Ano 3: + técnico administrativo e financeiro. Programador júnior, marketing júnior e apoio e comunidade só se o volume o justificar (não orçamentados) |
+| D10 | Contratações (anos 1–3) | Anos 1–2: só os fundadores. Ano 3: + técnico administrativo e financeiro. Programador júnior, marketing júnior e apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa |
 | D11 | Gestão de pessoas | Modelo Soft, com objetivos claros |
 | D12 | Recrutamento e seleção | Interno primeiro; ISEP / P.Porto; IEFP; rede local; entrevista + prova prática + período experimental |
 | D13 | Retenção | Prémio ligado aos resultados (sem cedência de quotas); horário flexível e remoto; formação; benefícios; cultura e missão |
@@ -57,12 +57,12 @@ Os slides indicam cinco fatores: objetivos, estratégia, tecnologia, dimensão e
 ## 3. Forma jurídica e órgãos sociais
 
 - **Sociedade por quotas (Lda.)** com 5 sócios, cada um com 20 %. A responsabilidade fica limitada ao capital. Constitui-se online (Empresa Online, cerca de 360 €). O capital social é definido no plano financeiro (mínimo de 1 € por quota).
-- **Assembleia geral de sócios:** aprova orçamento, contas, contratações e abertura de novas zonas por **maioria** (3 dos 5 sócios). As alterações ao contrato de sociedade exigem 3/4 dos votos, por lei.
+- **Assembleia geral de sócios:** aprova o orçamento (incluindo o de cada contratação), as contas e a abertura de novas zonas por **maioria** (3 dos 5 sócios). As alterações ao contrato de sociedade exigem 3/4 dos votos, por lei.
 - **Gerência:** um gerente, que é o CEO. Representa a empresa e coordena as áreas. O gerente é o fundador com o salário mais alto e tem uma parte variável ligada aos resultados (§5.4). O contrato de sociedade tem de nomear o gerente.
 
 ## 4. Estrutura e organograma
 
-Estrutura **funcional simples**: o CEO no topo e quatro equipas abaixo. Cada equipa lista os seus perfis. Contam só as pessoas orçamentadas; os perfis marcados com \* entram só se o volume de trabalho o justificar e não estão orçamentados. A assembleia geral de sócios não entra no organograma: é um órgão social (§3).
+Estrutura **funcional simples**: o CEO no topo e quatro equipas abaixo. Cada equipa lista os seus perfis. Contam só as pessoas orçamentadas; os perfis marcados com \* entram só a partir do ano 2, se o volume de trabalho o justificar, e não estão orçamentados. A assembleia geral de sócios não entra no organograma: é um órgão social (§3).
 
 ```
                                  CEO / Gerente
@@ -78,7 +78,7 @@ Estrutura **funcional simples**: o CEO no topo e quatro equipas abaixo. Cada equ
                                                 (externos, comissão)   · Contabilista (externo)
 ```
 
-\* Só se o volume justificar; não orçamentado.
+\* Só a partir do ano 2, se o volume justificar; não orçamentado.
 
 | Equipa | Perfis | Pessoas orçamentadas |
 |---|---|---|
@@ -122,7 +122,9 @@ As funções são conceptuais (D5). No ano 1, cada fundador assume uma.
 | 2 | 5 fundadores + embaixadores por comissão | — | Operações e Comunidade (externos) |
 | 3 | 5 fundadores + 1 colaborador + embaixadores | Técnico administrativo e financeiro (ISCAP / IEFP) | Finanças e Administração |
 
-**Só se o volume justificar (não orçamentados):** programador júnior (Tecnologia), marketing júnior (Marketing e Crescimento) e assistente de apoio e comunidade (Operações e Comunidade). Antes de abrir uma destas vagas, a equipa tenta reorganizar as tarefas (§8). A contratação exige aprovação dos sócios e um orçamento revisto.
+**Só se o volume justificar, a partir do ano 2 (não orçamentados):** programador júnior (Tecnologia), marketing júnior (Marketing e Crescimento) e assistente de apoio e comunidade (Operações e Comunidade). Antes de abrir uma destas vagas, a equipa tenta reorganizar as tarefas (§8).
+
+**Quem decide uma contratação:** os sócios aprovam o orçamento da vaga (por maioria); a pessoa é escolhida pelo CEO e pelo líder da equipa.
 
 ### 5.4 Salários e remuneração
 
@@ -136,9 +138,9 @@ Os salários base são os valores de entrada do mercado para cada perfil, no Por
 | Responsável de operações e comunidade (fundador) | 1 200 € | ≈ 20 800 € | Sem referência direta: fica entre o apoio ao cliente (≈ 1 000 €) e o marketing júnior | Sim |
 | Responsável financeiro (fundador) | 1 250 € | ≈ 21 650 € | Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 € | Sim |
 | Técnico administrativo e financeiro | 1 150 € | ≈ 19 900 € | Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 € | Sim, a partir do ano 3 |
-| Programador júnior | 1 500 € | ≈ 26 000 € | Ofertas júnior no Porto: 1 500–1 600 € | Não (se o volume justificar) |
-| Marketing júnior | 1 200 € | ≈ 20 800 € | Marketing júnior: 1 100–1 600 € | Não (se o volume justificar) |
-| Assistente de apoio e comunidade | 1 000 € | ≈ 17 300 € | Apoio ao cliente no Porto: ≈ 900–1 100 € | Não (se o volume justificar) |
+| Programador júnior | 1 200 € | ≈ 20 800 € | Ofertas júnior no Porto: 1 500–1 600 €. O grupo fixou 1 200 € (primeiro emprego ou estágio) | Não (se o volume justificar, a partir do ano 2) |
+| Marketing júnior | 1 200 € | ≈ 20 800 € | Marketing júnior: 1 100–1 600 € | Não (se o volume justificar, a partir do ano 2) |
+| Assistente de apoio e comunidade | 1 000 € | ≈ 17 300 € | Apoio ao cliente no Porto: ≈ 900–1 100 € | Não (se o volume justificar, a partir do ano 2) |
 
 **Custo dos fundadores:** 7 050 €/mês × 14 + TSU ≈ **122 100 € por ano**. No ano 3, com o técnico administrativo, ≈ **142 000 €**.
 
@@ -162,7 +164,8 @@ Fontes (pesquisa de 12/11/2026). São valores de agregadores e de ofertas de emp
 |---|---|
 | Operação diária de cada área | Responsável da área |
 | Prioridades entre áreas; questões do dia a dia que envolvem várias áreas | CEO |
-| Orçamento anual, contratações, abertura de novas zonas, valores da taxa | Sócios, por maioria (3 de 5) |
+| Orçamento anual (incluindo o de cada contratação), abertura de novas zonas, valores da taxa, dividendos | Sócios, por maioria (3 de 5) |
+| Escolha da pessoa a contratar | CEO + líder da equipa |
 | Alterações ao contrato de sociedade, entrada de sócios ou investidores | Sócios, por 3/4 dos votos |
 
 | Canal | Frequência | Quem | Para quê |
@@ -199,7 +202,7 @@ Obrigações legais desde o ano 1, porque os fundadores têm salário. Ficam a c
 
 O processo segue os slides (Cardoso, 2001):
 
-1. **Vaga e decisão de preenchimento.** Primeiro tenta-se redistribuir tarefas ou reorganizar (recrutamento interno). Só se a carga não couber na equipa se abre a vaga, com aprovação dos sócios (§6).
+1. **Vaga e decisão de preenchimento.** Primeiro tenta-se redistribuir tarefas ou reorganizar (recrutamento interno). Só se a carga não couber na equipa se abre a vaga, e só se os sócios aprovarem o orçamento (§6).
 2. **Perfil da função.** É feito a partir da descrição de funções (§5.1).
 3. **Recrutamento.**
 
@@ -211,8 +214,8 @@ O processo segue os slides (Cardoso, 2001):
    | Embaixadores locais | Rede local: juntas, cooperativas, produtores ativos na app |
 
 4. **Pré-seleção** pelo currículo e pelo perfil.
-5. **Seleção:** entrevista com o responsável da área e o CEO, mais uma prova prática (exercício técnico para programadores; caso prático de apoio ou de comunidade para operações).
-6. **Decisão final.** É tomada pelo responsável da área e pelo CEO.
+5. **Seleção:** entrevista com o líder da equipa e o CEO, mais uma prova prática (exercício técnico para programadores; caso prático de apoio ou de comunidade para operações).
+6. **Decisão final.** A pessoa é escolhida pelo CEO e pelo líder da equipa.
 7. **Acolhimento e integração.** Na primeira semana há um "padrinho" (um fundador), apresentação da missão e acompanhamento a uma sessão com produtores. Segue-se um período experimental, com uma conversa de avaliação no fim.
 
 ## 9. Retenção e desenvolvimento de talento
