@@ -49,21 +49,18 @@ td.wrap{white-space:normal}
 .num{font-variant-numeric:tabular-nums}
 
 /* organograma */
-.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:4px 0 8px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.seg button{font:inherit;font-size:.9rem;background:var(--surface);color:var(--ink);border:0;padding:6px 14px;cursor:pointer}
-.seg button+button{border-left:1px solid var(--line)}
-.seg button[aria-pressed="true"]{background:var(--leaf);color:var(--bg);font-weight:600}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;margin:4px 0 8px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.sw{width:14px;height:14px;border-radius:3px;border:2px solid var(--leaf);background:var(--leaf-soft)}
-.sw.col{border-color:var(--soil);background:var(--soil-soft)}
-.sw.ext{border:2px dashed var(--ext);background:transparent}
-.sw.gov{border-color:var(--ink);background:var(--surface)}
-.tree-wrap{overflow-x:auto;padding:8px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-top:6px}
+.dot{display:inline-block;flex:none;width:10px;height:10px;border-radius:50%}
+.dot.f{background:var(--leaf)}
+.dot.c{background:var(--soil)}
+.dot.v{border:2px dashed var(--soil)}
+.dot.e{border:2px dashed var(--ext)}
+.tree-wrap{overflow-x:auto;padding:16px 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-top:6px}
 .tree{width:max-content;margin:0 auto;padding:0 12px}
 .tree ul{position:relative;display:flex;justify-content:center;padding:22px 0 0;margin:0}
-.tree li{list-style:none;position:relative;padding:22px 6px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
+.tree li{list-style:none;position:relative;padding:22px 6px 0;display:flex;flex-direction:column;align-items:center}
 .tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;width:50%;height:22px;border-top:2px solid var(--line)}
 .tree li::after{right:auto;left:50%;border-left:2px solid var(--line)}
 .tree li.only{padding-top:0}
@@ -73,16 +70,20 @@ td.wrap{white-space:normal}
 .tree li.first::after{border-radius:6px 0 0 0}
 .tree ul ul::before{content:"";position:absolute;top:0;left:50%;height:22px;border-left:2px solid var(--line)}
 .tree > ul{padding-top:0}
-.node{display:block;width:158px;padding:9px 10px;border-radius:9px;border:2px solid var(--leaf);background:var(--leaf-soft);color:var(--ink);text-decoration:none;font-size:.88rem;line-height:1.3}
-a.node:hover{box-shadow:0 0 0 3px var(--leaf-soft),0 0 0 4px var(--leaf)}
-.node b{display:block;font-family:var(--display);font-size:.98rem}
-.node small{display:block;color:var(--muted);font-size:.76rem;margin-top:2px}
-.node.gov{border-color:var(--ink);background:var(--surface);width:200px}
-.node.col{border-color:var(--soil);background:var(--soil-soft)}
-.node.ext{border:2px dashed var(--ext);background:transparent}
-.hc{display:inline-block;margin-top:6px;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--leaf);color:var(--bg);font-variant-numeric:tabular-nums}
+.node{width:212px;padding:10px 12px;border-radius:10px;border:2px solid var(--leaf);background:var(--leaf-soft);color:var(--ink);font-size:.88rem;line-height:1.3}
+.node.top{border-color:var(--ink);background:var(--surface)}
+.node > a{display:block;color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:700;font-size:1rem}
+.node > a:hover{text-decoration:underline}
+.prof{display:grid;gap:4px;margin-top:8px}
+.prof span{display:flex;gap:7px;align-items:baseline;font-size:.82rem}
+.prof .dot{transform:translateY(1px)}
+.prof .v,.prof small{color:var(--muted)}
+.hc{display:inline-block;margin-top:8px;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--leaf);color:var(--bg);font-variant-numeric:tabular-nums}
 .total{font-family:var(--display);font-weight:700;font-size:1.05rem}
-.yr{display:inline-block;margin-top:5px;font-size:.7rem;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:99px;background:var(--surface);color:var(--soil);border:1px solid var(--soil)}
+details{margin:10px 0;font-size:.88rem}
+summary{cursor:pointer;color:var(--muted)}
+details ul{margin:8px 0;padding-left:20px}
+details a{color:var(--leaf);overflow-wrap:anywhere}
 
 /* funções */
 .roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:8px}
@@ -120,61 +121,44 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <h1>Plano Organizacional</h1>
   <p class="lede">Como a GrowNear se organiza: estrutura, funções, decisão e gestão de pessoas, a partir das decisões do grupo de 12/11/2026 e dos slides "As pessoas no contexto das organizações".</p>
   <nav aria-label="Secções">
-    <a href="#organograma">Organograma</a><a href="#funcoes">Funções</a><a href="#estrategia">Da missão às iniciativas</a><a href="#fatores">Fatores do desenho</a><a href="#juridica">Forma jurídica</a><a href="#dentro-fora">Dentro e fora</a><a href="#contratacoes">Contratações</a><a href="#decisao">Decisão</a><a href="#pessoas">Gestão de pessoas</a><a href="#recrutamento">Recrutamento</a><a href="#retencao">Retenção</a><a href="#financeiro">Pressupostos financeiros</a>
+    <a href="#organograma">Organograma</a><a href="#funcoes">Funções</a><a href="#estrategia">Da missão às iniciativas</a><a href="#fatores">Fatores do desenho</a><a href="#juridica">Forma jurídica</a><a href="#dentro-fora">Dentro e fora</a><a href="#contratacoes">Contratações</a><a href="#salarios">Salários</a><a href="#decisao">Decisão</a><a href="#pessoas">Gestão de pessoas</a><a href="#recrutamento">Recrutamento</a><a href="#retencao">Retenção</a><a href="#financeiro">Pressupostos financeiros</a>
   </nav>
 
   <h2 id="organograma">Estrutura e organograma</h2>
-  <p>Estrutura <b>funcional simples</b>: o CEO no topo e quatro áreas abaixo, uma por fundador. A linha de decisão é clara e a estrutura cresce acrescentando pessoas a cada área. Clique numa área para ver a descrição da função.</p>
+  <p>Estrutura <b>funcional simples</b>: o CEO no topo e quatro equipas abaixo, cada uma liderada por um fundador. Cada caixa lista os perfis da equipa; só contam as pessoas orçamentadas. Clique no nome de uma equipa para ver a descrição da função.</p>
   <div class="toolbar">
-    <div class="seg" role="group" aria-label="Ano do organograma">
-      <button type="button" id="y1" data-y="1" aria-pressed="false">Ano 1</button>
-      <button type="button" id="y2" data-y="2" aria-pressed="false">Ano 2</button>
-      <button type="button" id="y3" data-y="3" aria-pressed="true">Ano 3</button>
-    </div>
     <div class="legend">
-      <span><i class="sw gov"></i>Órgãos sociais</span>
-      <span><i class="sw"></i>Fundador</span>
-      <span><i class="sw col"></i>Colaborador</span>
-      <span><i class="sw ext"></i>Externo</span>
+      <span><i class="dot f"></i>Fundador</span>
+      <span><i class="dot c"></i>Colaborador orçamentado</span>
+      <span><i class="dot v"></i>Só se o volume justificar (não orçamentado)</span>
+      <span><i class="dot e"></i>Externo</span>
     </div>
-    <div class="total" id="total" aria-live="polite"></div>
+    <div class="total">5 pessoas nos anos 1 e 2 · 6 no ano 3</div>
   </div>
   <div class="tree-wrap">
     <div class="tree">
       <ul>
-        <li>
-          <div class="node gov"><b>Assembleia geral de sócios</b><small>5 sócios · 20 % cada</small></div>
+        <li class="only">
+          <div class="node top"><a href="#f-ceo">CEO / Gerente</a><div class="prof"><span><i class="dot f"></i>CEO</span></div><span class="hc">1 pessoa</span></div>
           <ul>
+            <li class="first">
+              <div class="node"><a href="#f-cto">Tecnologia</a><div class="prof"><span><i class="dot f"></i>CTO</span><span class="v"><i class="dot v"></i>Programador júnior</span></div><span class="hc">1 pessoa</span></div>
+            </li>
             <li>
-              <a class="node" href="#f-ceo"><b>CEO / Gerente</b><small>Coordena e representa</small><span class="hc" data-n="1,1,1"></span></a>
-              <ul>
-                <li>
-                  <a class="node" href="#f-cto"><b>Tecnologia</b><small>CTO</small><span class="hc" data-n="1,1,2"></span></a>
-                  <ul><li data-from="3"><div class="node col"><b>Programador júnior</b><small>ISEP / IEFP</small><span class="yr">Ano 3</span></div></li></ul>
-                </li>
-                <li>
-                  <a class="node" href="#f-mkt"><b>Marketing e Crescimento</b><small>Compradores e marca</small><span class="hc" data-n="1,1,2"></span></a>
-                  <ul><li data-from="3"><div class="node col"><b>Marketing júnior</b><small>ISEP / P.Porto / IEFP</small><span class="yr">Ano 3</span></div></li></ul>
-                </li>
-                <li>
-                  <a class="node" href="#f-ops"><b>Operações e Comunidade</b><small>Produtores e confiança</small><span class="hc" data-n="1,2,2"></span></a>
-                  <ul>
-                    <li data-from="2"><div class="node col"><b>Apoio e comunidade</b><small>Quando o volume o justificar</small><span class="yr">Ano 2</span></div></li>
-                    <li data-from="2"><div class="node ext"><b>Embaixadores locais</b><small>Por comissão, nas novas zonas</small><span class="yr">Ano 2+</span></div></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="node" href="#f-fin"><b>Finanças e Administração</b><small>Orçamento e legal</small><span class="hc" data-n="1,1,2"></span></a>
-                  <ul><li data-from="3"><div class="node col"><b>Técnico administrativo e financeiro</b><small>ISCAP / IEFP</small><span class="yr">Ano 3</span></div></li><li><div class="node ext"><b>Contabilista certificado</b><small>Serviço externo</small></div></li></ul>
-                </li>
-              </ul>
+              <div class="node"><a href="#f-mkt">Marketing e Crescimento</a><div class="prof"><span><i class="dot f"></i>Responsável de marketing</span><span class="v"><i class="dot v"></i>Marketing júnior</span></div><span class="hc">1 pessoa</span></div>
+            </li>
+            <li>
+              <div class="node"><a href="#f-ops">Operações e Comunidade</a><div class="prof"><span><i class="dot f"></i>Responsável de operações e comunidade</span><span class="v"><i class="dot v"></i>Assistente de apoio e comunidade</span><span><i class="dot e"></i>Embaixadores locais <small>(comissão, ano 2+)</small></span></div><span class="hc">1 pessoa</span></div>
+            </li>
+            <li class="last">
+              <div class="node"><a href="#f-fin">Finanças e Administração</a><div class="prof"><span><i class="dot f"></i>Responsável financeiro</span><span><i class="dot c"></i>Técnico administrativo e financeiro <small>(ano 3)</small></span><span><i class="dot e"></i>Contabilista certificado</span></div><span class="hc">1 pessoa · 2 no ano 3</span></div>
             </li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
-  <p class="small muted" id="tree-caption">Ano 3: 5 fundadores e 4 colaboradores (um em Tecnologia, Marketing, Operações e Finanças), mais os embaixadores (comissão) e o contabilista (externos).</p>
+  <p class="small muted">A assembleia geral de sócios não entra no organograma: é um órgão social (ver Forma jurídica). Os embaixadores e o contabilista não são trabalhadores da empresa.</p>
 
   <h2 id="funcoes">Descrição de funções</h2>
   <p>As funções são conceptuais: o plano não atribui nomes. No ano 1, cada um dos 5 fundadores assume uma.</p>
@@ -186,6 +170,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div><dt>Responsabilidades</dt><dd><ul><li>Estratégia e prioridades</li><li>Coordenação das quatro áreas</li><li>Representação legal da empresa</li><li>Parcerias institucionais: juntas, câmaras, cooperativas</li><li>Relação com o banco (empréstimo) e com investidores</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Liderança, negociação, visão de negócio</dd></div>
         <div><dt>Indicadores</dt><dd>Cumprimento das metas; parcerias ativas; novas zonas abertas</dd></div>
+        <div><dt>Salário base</dt><dd>1 700 € bruto/mês × 14, o mais alto da empresa, mais uma parte variável ligada aos resultados</dd></div>
       </dl>
     </article>
     <article class="role" id="f-cto">
@@ -195,6 +180,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div><dt>Responsabilidades</dt><dd><ul><li>Arquitetura e desenvolvimento: mapa, reservas, pagamentos, avaliações</li><li>Infraestrutura na nuvem</li><li>Segurança e RGPD técnico</li><li>Integração Stripe / MB Way</li><li>FAQ e <i>chatbot</i> de apoio</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Desenvolvimento <i>mobile</i> e <i>backend</i>, segurança, pagamentos</dd></div>
         <div><dt>Indicadores</dt><dd>Disponibilidade da app; funcionalidades entregues; erros críticos</dd></div>
+        <div><dt>Salário base</dt><dd>1 600 € bruto/mês × 14</dd></div>
       </dl>
     </article>
     <article class="role" id="f-mkt">
@@ -204,6 +190,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div><dt>Responsabilidades</dt><dd><ul><li>Marca e redes sociais</li><li>Aquisição de compradores</li><li>Programa "convida um vizinho"</li><li>Comunicação centrada na frescura e na confiança</li><li>Análise de dados da procura</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Marketing digital, análise de dados, comunicação</dd></div>
         <div><dt>Indicadores</dt><dd>Novos compradores por mês; custo por aquisição; compradores recorrentes</dd></div>
+        <div><dt>Salário base</dt><dd>1 300 € bruto/mês × 14</dd></div>
       </dl>
     </article>
     <article class="role" id="f-ops">
@@ -213,6 +200,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div><dt>Responsabilidades</dt><dd><ul><li>Captação de produtores zona a zona</li><li>Sessões presenciais com produtores</li><li>Pontos de recolha (cafés, mercearias)</li><li>Apoio a utilizadores, moderação, conflitos e reembolsos</li><li>Coordenação dos embaixadores (ano 2+)</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Comunicação, organização, resolução de conflitos, trabalho de terreno</dd></div>
         <div><dt>Indicadores</dt><dd>Produtores ativos; pontos de recolha; tempo de resposta; reembolsos por 100 reservas</dd></div>
+        <div><dt>Salário base</dt><dd>1 200 € bruto/mês × 14</dd></div>
       </dl>
     </article>
     <article class="role" id="f-fin">
@@ -222,6 +210,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
         <div><dt>Responsabilidades</dt><dd><ul><li>Orçamento e tesouraria, incluindo o empréstimo</li><li>Faturação e relação com o contabilista</li><li>Obrigações fiscais e de Segurança Social</li><li>RGPD e termos de uso</li><li>Processos de pessoal: contratos, seguros, HSST</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Gestão financeira, conhecimento legal e fiscal</dd></div>
         <div><dt>Indicadores</dt><dd>Desvios ao orçamento; obrigações cumpridas nos prazos</dd></div>
+        <div><dt>Salário base</dt><dd>1 250 € bruto/mês × 14</dd></div>
       </dl>
     </article>
   </div>
@@ -251,7 +240,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <thead><tr><th>Fator</th><th>GrowNear</th><th>Consequência no desenho</th></tr></thead>
     <tbody>
       <tr><td>Objetivos</td><td>Validar o modelo numa zona antes de crescer</td><td>Estrutura mínima no ano 1</td></tr>
-      <tr><td>Estratégia</td><td>Liderança pelo custo, operação leve; crescimento zona a zona</td><td>Salário mínimo para os fundadores; apoio automatizado (FAQ e <i>chatbot</i>); contratações só com volume; embaixadores por comissão</td></tr>
+      <tr><td>Estratégia</td><td>Liderança pelo custo, operação leve; crescimento zona a zona</td><td>Salários de entrada de mercado; apoio automatizado (FAQ e <i>chatbot</i>); contratações só com volume; embaixadores por comissão</td></tr>
       <tr><td>Tecnologia</td><td>O produto é uma app; a equipa é de engenharia</td><td>Desenvolvimento interno; Tecnologia é uma área central</td></tr>
       <tr><td>Dimensão</td><td>5 fundadores</td><td>Estrutura funcional simples, uma área por fundador</td></tr>
       <tr><td>Ambiente</td><td>Mercado local; o supermercado é o concorrente real; desconfiança no pagamento antecipado</td><td>Área dedicada à comunidade e à confiança; presença no terreno</td></tr>
@@ -263,7 +252,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td>Forma</td><td>Sociedade por quotas (Lda.) com 5 sócios, cada um com 20 %. Responsabilidade limitada ao capital. Constituição online (Empresa Online, cerca de 360 €)</td></tr>
       <tr><td>Assembleia geral</td><td>Aprova orçamento, contas, contratações e novas zonas por <b>maioria</b> (3 de 5). Alterações ao contrato de sociedade: 3/4 dos votos, por lei</td></tr>
-      <tr><td>Gerência</td><td>Um gerente, o CEO. Representa a empresa e coordena as áreas. É remunerado como os outros fundadores (salário mínimo)</td></tr>
+      <tr><td>Gerência</td><td>Um gerente, o CEO. Representa a empresa e coordena as áreas. É o fundador com o salário mais alto e tem uma parte variável ligada aos resultados</td></tr>
     </tbody>
   </table></div>
 
@@ -273,19 +262,59 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td>Desenvolver a app</td><td>Fundadores (Tecnologia)</td><td>É a competência crítica e o maior corte de custos</td></tr>
       <tr><td>Captar produtores</td><td>Fundadores na 1.ª zona, com juntas e cooperativas; embaixadores locais por comissão nas zonas novas</td><td>O custo acompanha o crescimento</td></tr>
-      <tr><td>Apoio e moderação</td><td>Fundadores no ano 1. Primeira linha automática: FAQ e <i>chatbot</i>. Contrata-se alguém só quando o volume o justificar</td><td>A confiança é o ponto fraco (W3); um serviço externo não conhece a comunidade</td></tr>
+      <tr><td>Apoio e moderação</td><td>Fundadores no ano 1. Primeira linha automática: FAQ e <i>chatbot</i>. Contrata-se alguém só quando o volume o justificar (não orçamentado)</td><td>A confiança é o ponto fraco (W3); um serviço externo não conhece a comunidade</td></tr>
       <tr><td>Contabilidade</td><td>Contabilista certificado externo</td><td>Obrigatório; custo fixo do BMC</td></tr>
     </tbody>
   </table></div>
 
   <h2 id="contratacoes">Plano de contratações (3 anos)</h2>
-  <p>Plano conservador. Antes de abrir uma vaga, a equipa tenta reorganizar as tarefas; só se contrata quando o volume o justifica e os sócios aprovam o orçamento.</p>
+  <p>Nos anos 1 e 2 a equipa são os 5 fundadores; no ano 3 entra o técnico administrativo e financeiro. Antes de abrir uma vaga, a equipa tenta reorganizar as tarefas.</p>
   <div class="years">
-    <div class="year"><div class="eyebrow">Ano 1</div><div class="big num">5 pessoas</div><p class="small">5 fundadores a tempo inteiro, com o salário mínimo. Sem colaboradores.</p></div>
-    <div class="year"><div class="eyebrow" style="color:var(--soil)">Ano 2</div><div class="big num">6 pessoas</div><p class="small">+1 assistente de apoio e comunidade (júnior ou estágio IEFP), quando o volume de pedidos o justificar. Embaixadores locais por comissão.</p></div>
-    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">9 pessoas</div><p class="small">+1 programador júnior na Tecnologia, +1 júnior em Marketing e Crescimento e +1 técnico administrativo e financeiro. Embaixadores nas zonas novas.</p></div>
+    <div class="year"><div class="eyebrow">Ano 1</div><div class="big num">5 pessoas</div><p class="small">Os 5 fundadores, a tempo inteiro.</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--soil)">Ano 2</div><div class="big num">5 pessoas</div><p class="small">Os 5 fundadores. Entram os embaixadores locais nas zonas novas (externos, por comissão).</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">6 pessoas</div><p class="small">+1 técnico administrativo e financeiro (ISCAP / IEFP) em Finanças e Administração.</p></div>
   </div>
-  <div class="note"><b>Política salarial.</b> Todos os fundadores recebem o salário mínimo desde o ano 1, financiado por um empréstimo. Os salários sobem quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios.</div>
+  <div class="note"><b>Só se o volume justificar (não orçamentados).</b> Programador júnior (Tecnologia), marketing júnior (Marketing e Crescimento) e assistente de apoio e comunidade (Operações e Comunidade). Abrem-se com aprovação dos sócios e um orçamento revisto.</div>
+
+  <h2 id="salarios">Salários e remuneração</h2>
+  <p>Cada perfil recebe o salário base de entrada do mercado no Porto: bruto por mês, pago 14 vezes por ano. O custo anual inclui a TSU da empresa (23,75 %).</p>
+  <div class="tw"><table class="num">
+    <thead><tr><th>Perfil</th><th>Bruto/mês</th><th>Custo anual</th><th>Referência de mercado (entrada)</th><th>Orçamento</th></tr></thead>
+    <tbody>
+      <tr><td>CEO / Gerente</td><td>1 700 € + variável</td><td>≈ 29 450 €</td><td>Licenciado em gestão: ≈ 1 215–1 600 €. Fica acima por ser a função com mais responsabilidade</td><td>Fundador</td></tr>
+      <tr><td>CTO / Tecnologia</td><td>1 600 €</td><td>≈ 27 700 €</td><td>Programador júnior: 1 500–1 600 € no Porto; ≈ 1 820 € de média nacional júnior em TI</td><td>Fundador</td></tr>
+      <tr><td>Responsável de marketing</td><td>1 300 €</td><td>≈ 22 500 €</td><td>Marketing júnior: 1 100–1 600 €; ofertas no Porto entre 1 200 e 1 500 €</td><td>Fundador</td></tr>
+      <tr><td>Responsável de operações</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Sem referência direta: entre o apoio ao cliente (≈ 1 000 €) e o marketing júnior</td><td>Fundador</td></tr>
+      <tr><td>Responsável financeiro</td><td>1 250 €</td><td>≈ 21 650 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>Fundador</td></tr>
+      <tr><td>Técnico adm. e financeiro</td><td>1 150 €</td><td>≈ 19 900 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>A partir do ano 3</td></tr>
+      <tr><td>Programador júnior</td><td>1 500 €</td><td>≈ 26 000 €</td><td>Ofertas júnior no Porto: 1 500–1 600 €</td><td class="muted">Se o volume justificar</td></tr>
+      <tr><td>Marketing júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Marketing júnior: 1 100–1 600 €</td><td class="muted">Se o volume justificar</td></tr>
+      <tr><td>Apoio e comunidade</td><td>1 000 €</td><td>≈ 17 300 €</td><td>Apoio ao cliente no Porto: ≈ 900–1 100 €</td><td class="muted">Se o volume justificar</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>Custo dos fundadores:</b> 7 050 €/mês × 14 + TSU ≈ <b>122 100 € por ano</b>, financiado no ano 1 por um <b>empréstimo de ≈ 125 000 €</b>. No ano 3, com o técnico administrativo, ≈ 142 000 €.</div>
+  <ul>
+    <li><b>CEO:</b> salário base mais alto e uma parte variável ligada aos resultados. Proposta a confirmar: prémio anual de até 2 salários base (até 3 400 €), pago só se as metas anuais forem cumpridas.</li>
+    <li><b>Aumentos:</b> quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios.</li>
+    <li><b>Dividendos:</b> como sócios, os 5 fundadores recebem dividendos na proporção das quotas (20 % cada) quando houver lucros, depois de constituída a reserva legal.</li>
+  </ul>
+  <details>
+    <summary>Fontes da pesquisa salarial (12/11/2026; agregadores e ofertas de emprego, valores indicativos)</summary>
+    <ul>
+      <li><a href="https://pt.teamlyzer.com/users/salary-calculator" target="_blank" rel="noopener">Teamlyzer, salários TI em Portugal</a></li>
+      <li><a href="https://pt.teamlyzer.com/users/salary-spreadsheets" target="_blank" rel="noopener">Teamlyzer, folhas de salários por empresa</a></li>
+      <li><a href="https://www.randstad.pt/candidatos/carreiras/software-engineer/" target="_blank" rel="noopener">Randstad, software engineer</a></li>
+      <li><a href="https://www.randstad.pt/candidatos/carreiras/manager/" target="_blank" rel="noopener">Randstad, manager</a></li>
+      <li><a href="https://tesify.pt/estatisticas-emprego-licenciados-portugal-2026/" target="_blank" rel="noopener">Tesify, emprego de licenciados 2026</a></li>
+      <li><a href="https://eco.sapo.pt/2025/03/10/salario-de-entrada-dos-licenciados-das-financas-sobe-mais-de-105-euros/" target="_blank" rel="noopener">ECO, salário de entrada dos técnicos superiores das Finanças</a></li>
+      <li><a href="https://marketingportugaldigital.pt/quanrto-marketing-digital-ganha" target="_blank" rel="noopener">Marketing digital: quanto ganha um júnior</a></li>
+      <li><a href="https://pt.indeed.com/q-marketing-digital-e-comunica%C3%A7%C3%A3o-l-porto-ofertas.html" target="_blank" rel="noopener">Indeed, ofertas de marketing digital no Porto</a></li>
+      <li><a href="https://www.glassdoor.com.br/Sal%C3%A1rios/porto-customer-service-sal%C3%A1rio-SRCH_IL.0,5_IC3183562_KO6,22.htm" target="_blank" rel="noopener">Glassdoor, apoio ao cliente no Porto</a></li>
+      <li><a href="https://emprego.com/jobs/assistente-de-apoio-ao-cliente-setor-de-viagens-porto-6ad8f0a1-a1c0-4865-b22b-7948d9ee3a7d" target="_blank" rel="noopener">emprego.com, oferta de apoio ao cliente no Porto</a></li>
+      <li><a href="https://nettocalc.com/pt/salario/contabilista/porto" target="_blank" rel="noopener">Nettocalc, contabilista no Porto</a></li>
+      <li><a href="https://pt.indeed.com/career/t%C3%A9cnico-cont%C3%A1bil/salaries/Porto" target="_blank" rel="noopener">Indeed, técnico contábil no Porto</a></li>
+    </ul>
+  </details>
 
   <h2 id="decisao">Canais formais de comunicação e decisão</h2>
   <div class="tw"><table>
@@ -293,7 +322,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td class="wrap">Operação diária de cada área</td><td>Responsável da área</td></tr>
       <tr><td class="wrap">Prioridades e questões entre áreas</td><td>CEO</td></tr>
-      <tr><td class="wrap">Orçamento, contratações, novas zonas, valores da taxa</td><td>Sócios, por maioria (3 de 5)</td></tr>
+      <tr><td class="wrap">Orçamento, contratações, novas zonas, valores da taxa, dividendos</td><td>Sócios, por maioria (3 de 5)</td></tr>
       <tr><td class="wrap">Contrato de sociedade, entrada de sócios ou investidores</td><td>Sócios, por 3/4 dos votos</td></tr>
     </tbody>
   </table></div>
@@ -309,14 +338,14 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <p class="small muted">Numa equipa remota, a comunicação interna é o que mantém todos integrados (Cezanne, 2017, citado nos slides).</p>
 
   <h2 id="pessoas">Gestão de pessoas: modelo Soft</h2>
-  <p>Os slides contrapõem o <b>modelo Hard</b> (pessoas como fator de produção; foco no custo e no controlo) e o <b>modelo Soft</b> (pessoas como ativo; foco no compromisso e no desenvolvimento). Escolhemos o Soft, com objetivos claros por área: uma startup que paga o salário mínimo não compete em remuneração e retém as pessoas pela missão e pela autonomia.</p>
+  <p>Os slides contrapõem o <b>modelo Hard</b> (pessoas como fator de produção; foco no custo e no controlo) e o <b>modelo Soft</b> (pessoas como ativo; foco no compromisso e no desenvolvimento). Escolhemos o Soft, com objetivos claros por área: uma startup que paga salários de entrada não compete em remuneração com empresas maiores e retém as pessoas pela missão e pela autonomia.</p>
   <div class="tw"><table>
     <thead><tr><th>Processo</th><th>O que fazemos</th></tr></thead>
     <tbody>
       <tr><td>Agregar</td><td>Recrutamento interno primeiro; ISEP, IEFP e rede local; entrevista, prova prática e período experimental</td></tr>
       <tr><td>Orientar</td><td>Descrição de funções e indicadores por área; acolhimento com um "padrinho"</td></tr>
       <tr><td>Desenvolver</td><td>Orçamento de formação por pessoa; 40 horas anuais de formação, obrigatórias por lei</td></tr>
-      <tr><td>Recompensar</td><td>Salário mínimo no arranque; aumentos quando a receita cobrir os custos fixos durante um trimestre; prémio ligado aos resultados para os colaboradores</td></tr>
+      <tr><td>Recompensar</td><td>Salário base de entrada por perfil; parte variável do CEO; aumentos quando a receita cobrir os custos fixos durante um trimestre; prémio ligado aos resultados para os colaboradores; dividendos para os sócios</td></tr>
       <tr><td>Reter</td><td>Horário flexível e trabalho remoto; missão e cultura; progressão para responsável de área ou de zona</td></tr>
       <tr><td>Acompanhar</td><td>Indicadores na reunião semanal; conversa de objetivos no fim do período experimental e depois anual</td></tr>
     </tbody>
@@ -339,10 +368,10 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <div class="tw"><table>
     <thead><tr><th>Medida</th><th>Quando</th><th>Notas</th></tr></thead>
     <tbody>
-      <tr><td>Prémio ligado aos resultados</td><td>Colaboradores, anos 2–3</td><td>Sem cedência de quotas: cada sócio mantém os 20 %</td></tr>
+      <tr><td>Prémio ligado aos resultados</td><td>Colaboradores</td><td>Sem cedência de quotas: cada sócio mantém os 20 %</td></tr>
       <tr><td>Horário flexível e remoto</td><td>Desde o início</td><td>Custo zero</td></tr>
       <tr><td>Formação e conferências</td><td>A partir do ano 2</td><td>Referência: 500 € por pessoa por ano</td></tr>
-      <tr><td>Benefícios</td><td>A partir do ano 2</td><td>Seguro de saúde e cartão refeição, com o primeiro colaborador</td></tr>
+      <tr><td>Benefícios</td><td>A partir do ano 3</td><td>Seguro de saúde e cartão refeição, com o primeiro colaborador</td></tr>
       <tr><td>Cultura e missão</td><td>Desde o início</td><td>Toda a equipa participa nas sessões com produtores</td></tr>
     </tbody>
   </table></div>
@@ -350,58 +379,25 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
 
   <h2 id="financeiro">Pressupostos para o plano financeiro</h2>
   <div class="tw"><table class="num">
-    <thead><tr><th>Rubrica</th><th>Ano 1</th><th>Anos 2–3</th></tr></thead>
+    <thead><tr><th>Rubrica</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th></tr></thead>
     <tbody>
-      <tr><td>Salários dos fundadores</td><td>5 × 920 € × 14 + 23,75 % TSU ≈ <b>79 700 €</b></td><td>Salário mínimo em vigor; aumentos quando a receita cobrir os custos fixos durante um trimestre</td></tr>
-      <tr><td>Empréstimo</td><td>≈ <b>80 000 €</b> para os salários do ano 1</td><td>Reembolso + juros (taxa e prazo a fixar)</td></tr>
-      <tr><td>Colaboradores</td><td>—</td><td>Ano 2: 1; ano 3: 4. Referência: ≈ 22 500 € por ano cada (menos com estágio IEFP)</td></tr>
-      <tr><td>Embaixadores</td><td>—</td><td>Comissão por produtor que faça as primeiras vendas</td></tr>
-      <tr><td>Formação e benefícios</td><td>—</td><td>≈ 500 € por pessoa de formação; benefícios a fixar</td></tr>
-      <tr><td><i>Coworking</i></td><td colspan="2">100–200 € por posto por mês, nos dias presenciais</td></tr>
-      <tr><td>Constituição</td><td>≈ 360 € + capital social</td><td>—</td></tr>
-      <tr><td>Taxa de serviço</td><td colspan="2">0,50 € + 5 % por reserva (≈ 1,47 € numa encomenda média de 19,40 €)</td></tr>
+      <tr><td>Salários dos fundadores</td><td>≈ <b>122 100 €</b></td><td colspan="2">Os mesmos; aumentos quando a receita cobrir os custos fixos durante um trimestre</td></tr>
+      <tr><td>Variável do CEO</td><td colspan="3">Até ≈ 4 200 € por ano com TSU, só se as metas forem cumpridas</td></tr>
+      <tr><td>Empréstimo</td><td>≈ <b>125 000 €</b></td><td colspan="2">Reembolso + juros (taxa e prazo a fixar)</td></tr>
+      <tr><td>Colaboradores orçamentados</td><td>—</td><td>—</td><td>Técnico adm. e financeiro: ≈ 19 900 €</td></tr>
+      <tr><td>Se o volume justificar</td><td colspan="3">Não orçamentados (valores de referência na secção Salários)</td></tr>
+      <tr><td>Embaixadores</td><td>—</td><td colspan="2">Comissão por produtor que faça as primeiras vendas</td></tr>
+      <tr><td>Formação</td><td>—</td><td colspan="2">≈ 500 € por pessoa</td></tr>
+      <tr><td>Benefícios</td><td>—</td><td>—</td><td>Seguro de saúde, cartão refeição (a fixar)</td></tr>
+      <tr><td><i>Coworking</i></td><td colspan="3">100–200 € por posto por mês, nos dias presenciais</td></tr>
+      <tr><td>Constituição</td><td>≈ 360 € + capital social</td><td colspan="2">—</td></tr>
+      <tr><td>Taxa de serviço</td><td colspan="3">0,50 € + 5 % por reserva (≈ 1,47 € numa encomenda média de 19,40 €)</td></tr>
     </tbody>
   </table></div>
-  <p class="small muted">Valores de referência. O salário mínimo usado é o de 2026 (920 €); atualizar se o plano arrancar noutro ano.</p>
+  <p class="small muted">Valores de referência. Os salários são de entrada no mercado do Porto (pesquisa de 12/11/2026).</p>
 
   <footer>GrowNear · "Do quintal para a mesa do vizinho" · Plano Organizacional com base nas decisões do grupo de 12/11/2026</footer>
 </main>
 
-<script>
-(function(){
-  var caps = {
-    1: "Ano 1: 5 fundadores, uma área cada, e o contabilista externo.",
-    2: "Ano 2: entra o assistente de apoio e comunidade, quando o volume o justificar, e os embaixadores locais (comissão) nas zonas novas.",
-    3: "Ano 3: 5 fundadores e 4 colaboradores (um em Tecnologia, Marketing, Operações e Finanças), mais os embaixadores (comissão) e o contabilista (externos)."
-  };
-  var btns = document.querySelectorAll(".seg button");
-  function show(y){
-    document.querySelectorAll(".tree li[data-from]").forEach(function(li){ li.hidden = +li.dataset.from > y; });
-    document.querySelectorAll(".tree ul ul").forEach(function(ul){
-      var vis = Array.prototype.filter.call(ul.children, function(li){ return !li.hidden; });
-      ul.hidden = vis.length === 0;
-    });
-    document.querySelectorAll(".tree ul").forEach(function(ul){
-      var vis = Array.prototype.filter.call(ul.children, function(li){ return !li.hidden; });
-      vis.forEach(function(li, i){
-        li.classList.toggle("only", vis.length === 1);
-        li.classList.toggle("first", i === 0);
-        li.classList.toggle("last", i === vis.length - 1);
-      });
-    });
-    var total = 0;
-    document.querySelectorAll(".tree .hc").forEach(function(el){
-      var n = +el.dataset.n.split(",")[y - 1];
-      total += n;
-      el.textContent = n + (n === 1 ? " pessoa" : " pessoas");
-    });
-    document.getElementById("total").textContent = "Ano " + y + ": " + total + " trabalhadores";
-    btns.forEach(function(b){ b.setAttribute("aria-pressed", +b.dataset.y === y ? "true" : "false"); });
-    document.getElementById("tree-caption").textContent = caps[y];
-  }
-  btns.forEach(function(b){ b.addEventListener("click", function(){ show(+b.dataset.y); }); });
-  show(3);
-})();
-</script>
 </body>
 </html>

@@ -20,8 +20,8 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
 | `GrowNear_Decisoes_Plano_Organizacional.html` | Página de apoio à reunião de 12/11 (não entregável): decisões D1–D16 para o Plano Organizacional (semana 9), com contexto, opções e recomendação; gera um resumo para colar no Claude |
-| `GrowNear_Plano_Organizacional.md` | Plano Organizacional redigido a partir das decisões de 12/11: estrutura, organograma, funções, decisão, gestão de pessoas, recrutamento, pressupostos para o plano financeiro (salários do ano 1 financiados por empréstimo de ≈ 80 000 €) |
-| `GrowNear_Plano_Organizacional.html` | Mesmo conteúdo em página: organograma por ano (1–3), cartões das funções e restantes secções. Abre-se no browser; ao mudar o `.md`, atualizar também o `.html` |
+| `GrowNear_Plano_Organizacional.md` | Plano Organizacional redigido a partir das decisões de 12/11: estrutura, organograma, funções, decisão, gestão de pessoas, recrutamento, pressupostos para o plano financeiro (salários de entrada de mercado por perfil; salários do ano 1 financiados por empréstimo de ≈ 125 000 €) |
+| `GrowNear_Plano_Organizacional.html` | Mesmo conteúdo em página: organograma com os perfis de cada equipa, cartões das funções e restantes secções. Abre-se no browser; ao mudar o `.md`, atualizar também o `.html` |
 | `GrowNear — Momento 1.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC (front stage, depois back stage), SWOT, objetivos do estudo, inquérito. Resultados, hipóteses e implicações não entram no Momento 1. O guião está nas notas do orador |
 
 ### Ficheiros em `Files/GrowNear_Inquerito/` (estudo de mercado)
