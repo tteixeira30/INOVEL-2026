@@ -1,0 +1,377 @@
+<title>Plano Organizacional GrowNear</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: coluna de leitura de 960px; organograma em árvore com seletor de ano; secções em tabelas e cartões só onde há objetos distintos (funções) */
+:root{
+  --bg:#f6f7f3; --surface:#ffffff; --ink:#1b2420; --muted:#5a6660; --line:#d5dcd6;
+  --leaf:#2e7a4a; --leaf-soft:#e2f0e6; --soil:#8a5a2b; --soil-soft:#f4eadf; --ext:#6b7480;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1a201d; --ink:#e6ebe7; --muted:#9aa69f; --line:#2f3833;
+  --leaf:#6cc48d; --leaf-soft:#1d3326; --soil:#d9a46d; --soil-soft:#33281d; --ext:#9aa3ad; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1a201d; --ink:#e6ebe7; --muted:#9aa69f; --line:#2f3833;
+  --leaf:#6cc48d; --leaf-soft:#1d3326; --soil:#d9a46d; --soil-soft:#33281d; --ext:#9aa3ad; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+main{max-width:960px;margin:0 auto;padding-block:36px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:700}
+h2{font-size:1.45rem;font-weight:700;margin:56px 0 14px;padding-top:14px;border-top:2px solid var(--ink)}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0 0 12px;max-width:68ch}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--leaf);font-weight:600;margin-bottom:8px}
+.lede{color:var(--muted);font-size:1.05rem;margin-top:10px}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin:22px 0 0;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+nav a:hover,nav a:focus-visible{color:var(--leaf);border-color:var(--leaf)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--leaf);outline-offset:2px}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+
+/* tabelas */
+.tw{overflow-x:auto;margin:6px 0 10px}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:9px 10px 9px 0;border-bottom:1px solid var(--line)}
+th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td:first-child{font-weight:600;white-space:nowrap}
+td.wrap{white-space:normal}
+.num{font-variant-numeric:tabular-nums}
+
+/* organograma */
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:4px 0 8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:.9rem;background:var(--surface);color:var(--ink);border:0;padding:6px 14px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--leaf);color:var(--bg);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:3px;border:2px solid var(--leaf);background:var(--leaf-soft)}
+.sw.col{border-color:var(--soil);background:var(--soil-soft)}
+.sw.ext{border:2px dashed var(--ext);background:transparent}
+.sw.gov{border-color:var(--ink);background:var(--surface)}
+.tree-wrap{overflow-x:auto;padding:8px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-top:6px}
+.tree{width:max-content;margin:0 auto;padding:0 12px}
+.tree ul{position:relative;display:flex;justify-content:center;padding:22px 0 0;margin:0}
+.tree li{list-style:none;position:relative;padding:22px 6px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
+.tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;width:50%;height:22px;border-top:2px solid var(--line)}
+.tree li::after{right:auto;left:50%;border-left:2px solid var(--line)}
+.tree li:only-child{padding-top:0}
+.tree li:only-child::before,.tree li:only-child::after{display:none}
+.tree li:first-child::before,.tree li:last-child::after{border:0}
+.tree li:last-child::before{border-right:2px solid var(--line);border-radius:0 6px 0 0}
+.tree li:first-child::after{border-radius:6px 0 0 0}
+.tree ul ul::before{content:"";position:absolute;top:0;left:50%;height:22px;border-left:2px solid var(--line)}
+.tree > ul{padding-top:0}
+.node{display:block;width:158px;padding:9px 10px;border-radius:9px;border:2px solid var(--leaf);background:var(--leaf-soft);color:var(--ink);text-decoration:none;font-size:.88rem;line-height:1.3}
+a.node:hover{box-shadow:0 0 0 3px var(--leaf-soft),0 0 0 4px var(--leaf)}
+.node b{display:block;font-family:var(--display);font-size:.98rem}
+.node small{display:block;color:var(--muted);font-size:.76rem;margin-top:2px}
+.node.gov{border-color:var(--ink);background:var(--surface);width:200px}
+.node.col{border-color:var(--soil);background:var(--soil-soft)}
+.node.ext{border:2px dashed var(--ext);background:transparent}
+.yr{display:inline-block;margin-top:5px;font-size:.7rem;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:99px;background:var(--surface);color:var(--soil);border:1px solid var(--soil)}
+
+/* funções */
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:8px}
+.role{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;min-width:0;scroll-margin-top:16px}
+.role:target{border-color:var(--leaf);box-shadow:0 0 0 2px var(--leaf)}
+.role .mis{color:var(--leaf);font-weight:600;margin:4px 0 10px;font-size:.95rem}
+.role dl{margin:0;display:grid;gap:8px}
+.role dt{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.role dd{margin:0;font-size:.92rem}
+.role ul{margin:2px 0 0;padding-left:18px}
+.role li{margin:1px 0}
+
+/* processo de recrutamento */
+.steps{counter-reset:s;list-style:none;padding:0;margin:8px 0;display:grid;gap:10px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--leaf);color:var(--bg);font-size:.95rem}
+.steps li > div{min-width:0}
+
+.years{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.year{border-top:4px solid var(--leaf);background:var(--surface);padding:12px 14px;border-radius:0 0 10px 10px;min-width:0}
+.year:nth-child(2){border-color:var(--soil)}
+.year:nth-child(3){border-color:var(--ink)}
+.year .big{font-family:var(--display);font-size:1.6rem;font-weight:700}
+.note{background:var(--leaf-soft);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:.93rem}
+.values{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0}
+.values span{border:1px solid var(--leaf);color:var(--leaf);border-radius:99px;padding:3px 12px;font-weight:600;font-size:.88rem}
+footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<main>
+  <div class="eyebrow">GrowNear · INOVEL 2026/2027 · Plano de negócio</div>
+  <h1>Plano Organizacional</h1>
+  <p class="lede">Como a GrowNear se organiza: estrutura, funções, decisão e gestão de pessoas, a partir das decisões do grupo de 12/11/2026 e dos slides "As pessoas no contexto das organizações".</p>
+  <nav aria-label="Secções">
+    <a href="#organograma">Organograma</a><a href="#funcoes">Funções</a><a href="#estrategia">Da missão às iniciativas</a><a href="#fatores">Fatores do desenho</a><a href="#juridica">Forma jurídica</a><a href="#dentro-fora">Dentro e fora</a><a href="#contratacoes">Contratações</a><a href="#decisao">Decisão</a><a href="#pessoas">Gestão de pessoas</a><a href="#recrutamento">Recrutamento</a><a href="#retencao">Retenção</a><a href="#financeiro">Pressupostos financeiros</a>
+  </nav>
+
+  <h2 id="organograma">Estrutura e organograma</h2>
+  <p>Estrutura <b>funcional simples</b>: o CEO no topo e quatro áreas abaixo, uma por fundador. A linha de decisão é clara e a estrutura cresce acrescentando pessoas a cada área. Clique numa área para ver a descrição da função.</p>
+  <div class="toolbar">
+    <div class="seg" role="group" aria-label="Ano do organograma">
+      <button type="button" id="y1" data-y="1" aria-pressed="false">Ano 1</button>
+      <button type="button" id="y2" data-y="2" aria-pressed="false">Ano 2</button>
+      <button type="button" id="y3" data-y="3" aria-pressed="true">Ano 3</button>
+    </div>
+    <div class="legend">
+      <span><i class="sw gov"></i>Órgãos sociais</span>
+      <span><i class="sw"></i>Fundador</span>
+      <span><i class="sw col"></i>Colaborador</span>
+      <span><i class="sw ext"></i>Externo</span>
+    </div>
+  </div>
+  <div class="tree-wrap">
+    <div class="tree">
+      <ul>
+        <li>
+          <div class="node gov"><b>Assembleia geral de sócios</b><small>5 sócios · 20 % cada</small></div>
+          <ul>
+            <li>
+              <a class="node" href="#f-ceo"><b>CEO / Gerente</b><small>Coordena e representa</small></a>
+              <ul>
+                <li>
+                  <a class="node" href="#f-cto"><b>Tecnologia</b><small>CTO</small></a>
+                  <ul><li data-from="3"><div class="node col"><b>Programador júnior</b><small>ISEP / IEFP</small><span class="yr">Ano 3</span></div></li></ul>
+                </li>
+                <li>
+                  <a class="node" href="#f-mkt"><b>Marketing e Crescimento</b><small>Compradores e marca</small></a>
+                </li>
+                <li>
+                  <a class="node" href="#f-ops"><b>Operações e Comunidade</b><small>Produtores e confiança</small></a>
+                  <ul>
+                    <li data-from="2"><div class="node col"><b>Apoio e comunidade</b><small>Quando o volume o justificar</small><span class="yr">Ano 2</span></div></li>
+                    <li data-from="2"><div class="node ext"><b>Embaixadores locais</b><small>Por comissão, nas novas zonas</small><span class="yr">Ano 2+</span></div></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="node" href="#f-fin"><b>Finanças e Administração</b><small>Orçamento e legal</small></a>
+                  <ul><li><div class="node ext"><b>Contabilista certificado</b><small>Serviço externo</small></div></li></ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="small muted" id="tree-caption">Ano 3: 5 fundadores e 2 colaboradores, mais os embaixadores (comissão) e o contabilista (externos).</p>
+
+  <h2 id="funcoes">Descrição de funções</h2>
+  <p>As funções são conceptuais: o plano não atribui nomes. No ano 1, cada um dos 5 fundadores assume uma.</p>
+  <div class="roles">
+    <article class="role" id="f-ceo">
+      <h3>CEO / Gerente</h3>
+      <div class="mis">Coordenar a empresa e representá-la</div>
+      <dl>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Estratégia e prioridades</li><li>Coordenação das quatro áreas</li><li>Representação legal da empresa</li><li>Parcerias institucionais: juntas, câmaras, cooperativas</li><li>Relação com o banco (empréstimo) e com investidores</li></ul></dd></div>
+        <div><dt>Competências</dt><dd>Liderança, negociação, visão de negócio</dd></div>
+        <div><dt>Indicadores</dt><dd>Cumprimento das metas; parcerias ativas; novas zonas abertas</dd></div>
+      </dl>
+    </article>
+    <article class="role" id="f-cto">
+      <h3>CTO / Tecnologia</h3>
+      <div class="mis">Garantir que a app funciona, é segura e evolui</div>
+      <dl>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Arquitetura e desenvolvimento: mapa, reservas, pagamentos, avaliações</li><li>Infraestrutura na nuvem</li><li>Segurança e RGPD técnico</li><li>Integração Stripe / MB Way</li><li>FAQ e <i>chatbot</i> de apoio</li></ul></dd></div>
+        <div><dt>Competências</dt><dd>Desenvolvimento <i>mobile</i> e <i>backend</i>, segurança, pagamentos</dd></div>
+        <div><dt>Indicadores</dt><dd>Disponibilidade da app; funcionalidades entregues; erros críticos</dd></div>
+      </dl>
+    </article>
+    <article class="role" id="f-mkt">
+      <h3>Marketing e Crescimento</h3>
+      <div class="mis">Trazer e manter compradores</div>
+      <dl>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Marca e redes sociais</li><li>Aquisição de compradores</li><li>Programa "convida um vizinho"</li><li>Comunicação centrada na frescura e na confiança</li><li>Análise de dados da procura</li></ul></dd></div>
+        <div><dt>Competências</dt><dd>Marketing digital, análise de dados, comunicação</dd></div>
+        <div><dt>Indicadores</dt><dd>Novos compradores por mês; custo por aquisição; compradores recorrentes</dd></div>
+      </dl>
+    </article>
+    <article class="role" id="f-ops">
+      <h3>Operações e Comunidade</h3>
+      <div class="mis">Garantir a oferta e a confiança</div>
+      <dl>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Captação de produtores zona a zona</li><li>Sessões presenciais com produtores</li><li>Pontos de recolha (cafés, mercearias)</li><li>Apoio a utilizadores, moderação, conflitos e reembolsos</li><li>Coordenação dos embaixadores (ano 2+)</li></ul></dd></div>
+        <div><dt>Competências</dt><dd>Comunicação, organização, resolução de conflitos, trabalho de terreno</dd></div>
+        <div><dt>Indicadores</dt><dd>Produtores ativos; pontos de recolha; tempo de resposta; reembolsos por 100 reservas</dd></div>
+      </dl>
+    </article>
+    <article class="role" id="f-fin">
+      <h3>Finanças e Administração</h3>
+      <div class="mis">Garantir a saúde financeira e o cumprimento legal</div>
+      <dl>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Orçamento e tesouraria, incluindo o empréstimo</li><li>Faturação e relação com o contabilista</li><li>Obrigações fiscais e de Segurança Social</li><li>RGPD e termos de uso</li><li>Processos de pessoal: contratos, seguros, HSST</li></ul></dd></div>
+        <div><dt>Competências</dt><dd>Gestão financeira, conhecimento legal e fiscal</dd></div>
+        <div><dt>Indicadores</dt><dd>Desvios ao orçamento; obrigações cumpridas nos prazos</dd></div>
+      </dl>
+    </article>
+  </div>
+
+  <h2 id="estrategia">Da missão às iniciativas</h2>
+  <p>O slide "Plano organizacional" liga a estratégia à organização, da missão até à avaliação.</p>
+  <div class="values" aria-label="Valores"><span>Proximidade</span><span>Confiança</span><span>Desperdício zero</span><span>Simplicidade</span></div>
+  <div class="tw"><table>
+    <thead><tr><th>Nível</th><th>Pergunta</th><th>GrowNear</th></tr></thead>
+    <tbody>
+      <tr><td>Missão</td><td class="wrap muted">Porque existimos?</td><td>Ligamos vizinhos à volta do que a terra dá: ajudamos quem produz a dar destino ao que colhe e quem procura produtos naturais a encontrá-los perto de casa, sem desperdício</td></tr>
+      <tr><td>Visão</td><td class="wrap muted">O que queremos ser?</td><td>Vizinhos mais perto, desperdício a zero</td></tr>
+      <tr><td>Valores</td><td class="wrap muted">Que conduta nos guia?</td><td><b>Proximidade</b> (a comunidade antes da escala); <b>Confiança</b> (pagamento seguro, avaliações reais, reembolso garantido); <b>Desperdício zero</b>; <b>Simplicidade</b> (vender é grátis e rápido)</td></tr>
+      <tr><td>Competências críticas</td><td class="wrap muted">O que nos dá vantagem?</td><td>Tecnologia feita dentro de casa; construção de comunidade local; gestão da confiança</td></tr>
+      <tr><td>Diretrizes</td><td class="wrap muted">Que temas nos guiam?</td><td>"Oferta primeiro, zona a zona"; operação leve e automatizada; confiança como prioridade</td></tr>
+      <tr><td>Objetivos</td><td class="wrap muted">Em que se concretizam?</td><td>Ano 1: lançar a app e validar o modelo numa zona. Ano 2: abrir novas zonas. Ano 3: lançar o GrowNear Pro</td></tr>
+      <tr><td>Indicadores</td><td class="wrap muted">Como medimos?</td><td>Produtores ativos por zona; reservas por mês; % de reservas pagas na app; nota média das avaliações; tempo de resposta; reembolsos por 100 reservas</td></tr>
+      <tr><td>Metas</td><td class="wrap muted">Que valores, quando?</td><td>Fixadas no plano financeiro. Referência do inquérito: cenário prudente de 16 % da população-alvo da zona</td></tr>
+      <tr><td>Iniciativas</td><td class="wrap muted">Que ações?</td><td>Sessões com produtores e juntas; "convida um vizinho"; reembolso garantido; pontos de recolha</td></tr>
+      <tr><td>Avaliação</td><td class="wrap muted">Como acompanhamos?</td><td>Reunião semanal de equipa e reunião mensal de sócios, sobre os indicadores</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="fatores">Fatores que influenciam o desenho</h2>
+  <p>Os slides indicam cinco fatores. Cada escolha da estrutura responde a um deles.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Fator</th><th>GrowNear</th><th>Consequência no desenho</th></tr></thead>
+    <tbody>
+      <tr><td>Objetivos</td><td>Validar o modelo numa zona antes de crescer</td><td>Estrutura mínima no ano 1</td></tr>
+      <tr><td>Estratégia</td><td>Liderança pelo custo, operação leve; crescimento zona a zona</td><td>Salário mínimo para os fundadores; apoio automatizado (FAQ e <i>chatbot</i>); contratações só com volume; embaixadores por comissão</td></tr>
+      <tr><td>Tecnologia</td><td>O produto é uma app; a equipa é de engenharia</td><td>Desenvolvimento interno; Tecnologia é uma área central</td></tr>
+      <tr><td>Dimensão</td><td>5 fundadores</td><td>Estrutura funcional simples, uma área por fundador</td></tr>
+      <tr><td>Ambiente</td><td>Mercado local; o supermercado é o concorrente real; desconfiança no pagamento antecipado</td><td>Área dedicada à comunidade e à confiança; presença no terreno</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="juridica">Forma jurídica e órgãos sociais</h2>
+  <div class="tw"><table>
+    <tbody>
+      <tr><td>Forma</td><td>Sociedade por quotas (Lda.) com 5 sócios, cada um com 20 %. Responsabilidade limitada ao capital. Constituição online (Empresa Online, cerca de 360 €)</td></tr>
+      <tr><td>Assembleia geral</td><td>Aprova orçamento, contas, contratações e novas zonas por <b>maioria</b> (3 de 5). Alterações ao contrato de sociedade: 3/4 dos votos, por lei</td></tr>
+      <tr><td>Gerência</td><td>Um gerente, o CEO. Representa a empresa e coordena as áreas. É remunerado como os outros fundadores (salário mínimo)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="dentro-fora">O que fazemos dentro e o que fica fora</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Atividade-chave (BMC)</th><th>Quem faz</th><th>Porquê</th></tr></thead>
+    <tbody>
+      <tr><td>Desenvolver a app</td><td>Fundadores (Tecnologia)</td><td>É a competência crítica e o maior corte de custos</td></tr>
+      <tr><td>Captar produtores</td><td>Fundadores na 1.ª zona, com juntas e cooperativas; embaixadores locais por comissão nas zonas novas</td><td>O custo acompanha o crescimento</td></tr>
+      <tr><td>Apoio e moderação</td><td>Fundadores no ano 1. Primeira linha automática: FAQ e <i>chatbot</i>. Contrata-se alguém só quando o volume o justificar</td><td>A confiança é o ponto fraco (W3); um serviço externo não conhece a comunidade</td></tr>
+      <tr><td>Contabilidade</td><td>Contabilista certificado externo</td><td>Obrigatório; custo fixo do BMC</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="contratacoes">Plano de contratações (3 anos)</h2>
+  <p>Plano conservador. Antes de abrir uma vaga, a equipa tenta reorganizar as tarefas; só se contrata quando o volume o justifica e os sócios aprovam o orçamento.</p>
+  <div class="years">
+    <div class="year"><div class="eyebrow">Ano 1</div><div class="big num">5 pessoas</div><p class="small">5 fundadores a tempo inteiro, com o salário mínimo. Sem colaboradores.</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--soil)">Ano 2</div><div class="big num">6 pessoas</div><p class="small">+1 assistente de apoio e comunidade (júnior ou estágio IEFP), quando o volume de pedidos o justificar. Embaixadores locais por comissão.</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">7 pessoas</div><p class="small">+1 programador júnior (ISEP / IEFP) na Tecnologia. Embaixadores nas zonas novas.</p></div>
+  </div>
+  <div class="note"><b>Política salarial.</b> Todos os fundadores recebem o salário mínimo desde o ano 1, financiado por um empréstimo. Os salários sobem quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios.</div>
+
+  <h2 id="decisao">Canais formais de comunicação e decisão</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Decisão</th><th>Quem decide</th></tr></thead>
+    <tbody>
+      <tr><td class="wrap">Operação diária de cada área</td><td>Responsável da área</td></tr>
+      <tr><td class="wrap">Prioridades e questões entre áreas</td><td>CEO</td></tr>
+      <tr><td class="wrap">Orçamento, contratações, novas zonas, valores da taxa</td><td>Sócios, por maioria (3 de 5)</td></tr>
+      <tr><td class="wrap">Contrato de sociedade, entrada de sócios ou investidores</td><td>Sócios, por 3/4 dos votos</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tw"><table>
+    <thead><tr><th>Canal</th><th>Frequência</th><th>Para quê</th></tr></thead>
+    <tbody>
+      <tr><td>Reunião de equipa</td><td>Semanal</td><td>Indicadores da semana, prioridades, bloqueios</td></tr>
+      <tr><td>Reunião de sócios</td><td>Mensal</td><td>Indicadores do mês, orçamento, decisões estratégicas</td></tr>
+      <tr><td>Assembleia geral</td><td>Anual</td><td>Contas e orçamento do ano seguinte</td></tr>
+      <tr><td>Ferramenta partilhada</td><td>Contínua</td><td>Mensagens, tarefas e registo das decisões</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Numa equipa remota, a comunicação interna é o que mantém todos integrados (Cezanne, 2017, citado nos slides).</p>
+
+  <h2 id="pessoas">Gestão de pessoas: modelo Soft</h2>
+  <p>Os slides contrapõem o <b>modelo Hard</b> (pessoas como fator de produção; foco no custo e no controlo) e o <b>modelo Soft</b> (pessoas como ativo; foco no compromisso e no desenvolvimento). Escolhemos o Soft, com objetivos claros por área: uma startup que paga o salário mínimo não compete em remuneração e retém as pessoas pela missão e pela autonomia.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Processo</th><th>O que fazemos</th></tr></thead>
+    <tbody>
+      <tr><td>Agregar</td><td>Recrutamento interno primeiro; ISEP, IEFP e rede local; entrevista, prova prática e período experimental</td></tr>
+      <tr><td>Orientar</td><td>Descrição de funções e indicadores por área; acolhimento com um "padrinho"</td></tr>
+      <tr><td>Desenvolver</td><td>Orçamento de formação por pessoa; 40 horas anuais de formação, obrigatórias por lei</td></tr>
+      <tr><td>Recompensar</td><td>Salário mínimo no arranque; aumentos quando a receita cobrir os custos fixos durante um trimestre; prémio ligado aos resultados para os colaboradores</td></tr>
+      <tr><td>Reter</td><td>Horário flexível e trabalho remoto; missão e cultura; progressão para responsável de área ou de zona</td></tr>
+      <tr><td>Acompanhar</td><td>Indicadores na reunião semanal; conversa de objetivos no fim do período experimental e depois anual</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Obrigações legais desde o ano 1, a cargo de Finanças e Administração: o gerente é remunerado como membro de órgão estatutário e os outros quatro fundadores têm contrato de trabalho; inscrição na Segurança Social; seguro de acidentes de trabalho; serviços de saúde e segurança no trabalho (HSST).</p>
+
+  <h2 id="recrutamento">Recrutamento e seleção</h2>
+  <p>O processo segue os slides (Cardoso, 2001).</p>
+  <ol class="steps">
+    <li><div><b>Vaga e decisão de preenchimento.</b> Primeiro tenta-se redistribuir tarefas. Só se abre a vaga se a carga não couber na equipa, com aprovação dos sócios.</div></li>
+    <li><div><b>Perfil da função.</b> Parte da descrição de funções.</div></li>
+    <li><div><b>Recrutamento.</b> Programador e estagiários: ISEP / P.Porto e IEFP. Apoio e comunidade: IEFP e rede local. Embaixadores: juntas, cooperativas e produtores ativos na app.</div></li>
+    <li><div><b>Pré-seleção</b> pelo currículo e pelo perfil.</div></li>
+    <li><div><b>Seleção.</b> Entrevista com o responsável da área e o CEO, mais uma prova prática (exercício técnico ou caso de comunidade).</div></li>
+    <li><div><b>Decisão final</b> pelo responsável da área e pelo CEO.</div></li>
+    <li><div><b>Acolhimento e integração.</b> Um "padrinho" na primeira semana, apresentação da missão e acompanhamento a uma sessão com produtores. Período experimental com conversa de avaliação no fim.</div></li>
+  </ol>
+
+  <h2 id="retencao">Retenção e desenvolvimento de talento</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Medida</th><th>Quando</th><th>Notas</th></tr></thead>
+    <tbody>
+      <tr><td>Prémio ligado aos resultados</td><td>Colaboradores, anos 2–3</td><td>Sem cedência de quotas: cada sócio mantém os 20 %</td></tr>
+      <tr><td>Horário flexível e remoto</td><td>Desde o início</td><td>Custo zero</td></tr>
+      <tr><td>Formação e conferências</td><td>A partir do ano 2</td><td>Referência: 500 € por pessoa por ano</td></tr>
+      <tr><td>Benefícios</td><td>A partir do ano 2</td><td>Seguro de saúde e cartão refeição, com o primeiro colaborador</td></tr>
+      <tr><td>Cultura e missão</td><td>Desde o início</td><td>Toda a equipa participa nas sessões com produtores</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Local de trabalho: remoto, com <i>coworking</i> nos dias presenciais (100–200 € por posto por mês). As sessões com produtores fazem-se em espaços de juntas e cooperativas.</p>
+
+  <h2 id="financeiro">Pressupostos para o plano financeiro</h2>
+  <div class="tw"><table class="num">
+    <thead><tr><th>Rubrica</th><th>Ano 1</th><th>Anos 2–3</th></tr></thead>
+    <tbody>
+      <tr><td>Salários dos fundadores</td><td>5 × 920 € × 14 + 23,75 % TSU ≈ <b>79 700 €</b></td><td>Salário mínimo em vigor; aumentos quando a receita cobrir os custos fixos durante um trimestre</td></tr>
+      <tr><td>Empréstimo</td><td>≈ <b>80 000 €</b> para os salários do ano 1</td><td>Reembolso + juros (taxa e prazo a fixar)</td></tr>
+      <tr><td>Colaboradores</td><td>—</td><td>Ano 2: 1; ano 3: 2. Referência: ≈ 22 500 € por ano cada (menos com estágio IEFP)</td></tr>
+      <tr><td>Embaixadores</td><td>—</td><td>Comissão por produtor que faça as primeiras vendas</td></tr>
+      <tr><td>Formação e benefícios</td><td>—</td><td>≈ 500 € por pessoa de formação; benefícios a fixar</td></tr>
+      <tr><td><i>Coworking</i></td><td colspan="2">100–200 € por posto por mês, nos dias presenciais</td></tr>
+      <tr><td>Constituição</td><td>≈ 360 € + capital social</td><td>—</td></tr>
+      <tr><td>Taxa de serviço</td><td colspan="2">0,50 € + 5 % por reserva (≈ 1,47 € numa encomenda média de 19,40 €)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Valores de referência. O salário mínimo usado é o de 2026 (920 €); atualizar se o plano arrancar noutro ano.</p>
+
+  <footer>GrowNear · "Do quintal para a mesa do vizinho" · Plano Organizacional com base nas decisões do grupo de 12/11/2026</footer>
+</main>
+
+<script>
+(function(){
+  var caps = {
+    1: "Ano 1: 5 fundadores, uma área cada, e o contabilista externo.",
+    2: "Ano 2: entra o assistente de apoio e comunidade, quando o volume o justificar, e os embaixadores locais (comissão) nas zonas novas.",
+    3: "Ano 3: 5 fundadores e 2 colaboradores, mais os embaixadores (comissão) e o contabilista (externos)."
+  };
+  var btns = document.querySelectorAll(".seg button");
+  function show(y){
+    document.querySelectorAll(".tree li[data-from]").forEach(function(li){ li.hidden = +li.dataset.from > y; });
+    document.querySelectorAll(".tree ul ul").forEach(function(ul){
+      ul.hidden = !Array.prototype.some.call(ul.children, function(li){ return !li.hidden; });
+    });
+    btns.forEach(function(b){ b.setAttribute("aria-pressed", +b.dataset.y === y ? "true" : "false"); });
+    document.getElementById("tree-caption").textContent = caps[y];
+  }
+  btns.forEach(function(b){ b.addEventListener("click", function(){ show(+b.dataset.y); }); });
+  show(3);
+})();
+</script>

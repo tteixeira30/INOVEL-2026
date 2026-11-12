@@ -20,6 +20,8 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
 | `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
 | `GrowNear_Decisoes_Plano_Organizacional.html` | Página de apoio à reunião de 12/11 (não entregável): decisões D1–D16 para o Plano Organizacional (semana 9), com contexto, opções e recomendação; gera um resumo para colar no Claude |
+| `GrowNear_Plano_Organizacional.md` | Plano Organizacional redigido a partir das decisões de 12/11: estrutura, organograma, funções, decisão, gestão de pessoas, recrutamento, pressupostos para o plano financeiro (salários do ano 1 financiados por empréstimo de ≈ 80 000 €) |
+| `GrowNear_Plano_Organizacional.html` | Mesmo conteúdo em página: organograma por ano (1–3), cartões das funções e restantes secções. Abre-se no browser; ao mudar o `.md`, atualizar também o `.html` |
 | `GrowNear — Momento 1.pptx` | Apresentação do Momento 1 (5 min): ideia, proposta de valor, BMC (front stage, depois back stage), SWOT, objetivos do estudo, inquérito. Resultados, hipóteses e implicações não entram no Momento 1. O guião está nas notas do orador |
 
 ### Ficheiros em `Files/GrowNear_Inquerito/` (estudo de mercado)
@@ -41,7 +43,7 @@ Página com os gráficos da análise (privada; partilhar no menu Share): https:/
 - **Nomes de ficheiros em `Files/`:** `GrowNear_<Tema>.<ext>` — prefixo `GrowNear_`, palavras com inicial maiúscula separadas por `_`, sem acentos, sem espaços, sem números de ordem. Versões do mesmo documento noutro formato partilham o nome base (`GrowNear_SWOT.pdf` + `GrowNear_SWOT.png`).
 - Ao renomear, atualizar as referências cruzadas: os `.md` referem-se entre si e o `.gs` refere o `.md` do inquérito.
 - O inquérito tem **29 perguntas (P1–P29)**: a antiga P9 ("fator mais importante") foi retirada a 08/10 e as seguintes renumeradas. O `.gs` reflete o formulário real; o `.md` do inquérito e o dos objetivos usam a mesma numeração. Qualquer alteração ao inquérito tem de ser feita nos dois (numeração, textos, valor da taxa em `TAXA_P14`).
-- **Taxa de serviço (decisão do grupo):** paga pelo comprador na app, no momento da reserva. O produto paga-se na app ou ao produtor na recolha, à escolha do comprador (decisão de 05/11). Vender é grátis. **Valores a definir** no plano de marketing (preço): o BMC e o relatório não indicam valores. O inquérito e a análise usam a proposta provisória de 0,50 € + 5 % do valor reservado (1,00 € numa encomenda de 10 €).
+- **Taxa de serviço (decisão do grupo):** paga pelo comprador na app, no momento da reserva. O produto paga-se na app ou ao produtor na recolha, à escolha do comprador (decisão de 05/11). Vender é grátis. **Valor decidido a 12/11 (D16): 0,50 € + 5 % do valor reservado** (1,00 € numa encomenda de 10 €), a proposta testada no inquérito. O BMC e o relatório ainda não indicam valores; entram no plano de marketing (preço).
 - Regras do inquérito (ver `GrowNear_Inquerito_Estrutura_e_Perguntas.md` §1): só perguntas fechadas, resposta única, escalas 1–5, sem pergunta-filtro, todas obrigatórias.
 - `.docx`/`.pdf`/`.png` são editados fora daqui (Word/Canva). Para ler `.docx`: `unzip -p f.docx word/document.xml`; para `.pdf`: `pdftotext` (disponível no Git Bash).
 - Não há Python neste PC; para analisar o CSV das respostas usar Node (`node`).
