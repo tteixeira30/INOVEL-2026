@@ -1,5 +1,9 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plano Organizacional GrowNear</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;600&display=swap">
 <style>
@@ -16,8 +20,10 @@
 :root[data-theme="dark"]{
   --bg:#121614; --surface:#1a201d; --ink:#e6ebe7; --muted:#9aa69f; --line:#2f3833;
   --leaf:#6cc48d; --leaf-soft:#1d3326; --soil:#d9a46d; --soil-soft:#33281d; --ext:#9aa3ad; color-scheme:dark}
+:root{color-scheme:light}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 main{max-width:960px;margin:0 auto;padding-block:36px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
 h1{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:700}
@@ -60,11 +66,11 @@ td.wrap{white-space:normal}
 .tree li{list-style:none;position:relative;padding:22px 6px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
 .tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;width:50%;height:22px;border-top:2px solid var(--line)}
 .tree li::after{right:auto;left:50%;border-left:2px solid var(--line)}
-.tree li:only-child{padding-top:0}
-.tree li:only-child::before,.tree li:only-child::after{display:none}
-.tree li:first-child::before,.tree li:last-child::after{border:0}
-.tree li:last-child::before{border-right:2px solid var(--line);border-radius:0 6px 0 0}
-.tree li:first-child::after{border-radius:6px 0 0 0}
+.tree li.only{padding-top:0}
+.tree li.only::before,.tree li.only::after{display:none}
+.tree li.first::before,.tree li.last::after{border:0}
+.tree li.last::before{border-right:2px solid var(--line);border-radius:0 6px 0 0}
+.tree li.first::after{border-radius:6px 0 0 0}
 .tree ul ul::before{content:"";position:absolute;top:0;left:50%;height:22px;border-left:2px solid var(--line)}
 .tree > ul{padding-top:0}
 .node{display:block;width:158px;padding:9px 10px;border-radius:9px;border:2px solid var(--leaf);background:var(--leaf-soft);color:var(--ink);text-decoration:none;font-size:.88rem;line-height:1.3}
@@ -74,6 +80,8 @@ a.node:hover{box-shadow:0 0 0 3px var(--leaf-soft),0 0 0 4px var(--leaf)}
 .node.gov{border-color:var(--ink);background:var(--surface);width:200px}
 .node.col{border-color:var(--soil);background:var(--soil-soft)}
 .node.ext{border:2px dashed var(--ext);background:transparent}
+.hc{display:inline-block;margin-top:6px;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--leaf);color:var(--bg);font-variant-numeric:tabular-nums}
+.total{font-family:var(--display);font-weight:700;font-size:1.05rem}
 .yr{display:inline-block;margin-top:5px;font-size:.7rem;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:99px;background:var(--surface);color:var(--soil);border:1px solid var(--soil)}
 
 /* funções */
@@ -105,6 +113,8 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
 
+</head>
+<body>
 <main>
   <div class="eyebrow">GrowNear · INOVEL 2026/2027 · Plano de negócio</div>
   <h1>Plano Organizacional</h1>
@@ -127,6 +137,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       <span><i class="sw col"></i>Colaborador</span>
       <span><i class="sw ext"></i>Externo</span>
     </div>
+    <div class="total" id="total" aria-live="polite"></div>
   </div>
   <div class="tree-wrap">
     <div class="tree">
@@ -135,25 +146,26 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
           <div class="node gov"><b>Assembleia geral de sócios</b><small>5 sócios · 20 % cada</small></div>
           <ul>
             <li>
-              <a class="node" href="#f-ceo"><b>CEO / Gerente</b><small>Coordena e representa</small></a>
+              <a class="node" href="#f-ceo"><b>CEO / Gerente</b><small>Coordena e representa</small><span class="hc" data-n="1,1,1"></span></a>
               <ul>
                 <li>
-                  <a class="node" href="#f-cto"><b>Tecnologia</b><small>CTO</small></a>
+                  <a class="node" href="#f-cto"><b>Tecnologia</b><small>CTO</small><span class="hc" data-n="1,1,2"></span></a>
                   <ul><li data-from="3"><div class="node col"><b>Programador júnior</b><small>ISEP / IEFP</small><span class="yr">Ano 3</span></div></li></ul>
                 </li>
                 <li>
-                  <a class="node" href="#f-mkt"><b>Marketing e Crescimento</b><small>Compradores e marca</small></a>
+                  <a class="node" href="#f-mkt"><b>Marketing e Crescimento</b><small>Compradores e marca</small><span class="hc" data-n="1,1,2"></span></a>
+                  <ul><li data-from="3"><div class="node col"><b>Marketing júnior</b><small>ISEP / P.Porto / IEFP</small><span class="yr">Ano 3</span></div></li></ul>
                 </li>
                 <li>
-                  <a class="node" href="#f-ops"><b>Operações e Comunidade</b><small>Produtores e confiança</small></a>
+                  <a class="node" href="#f-ops"><b>Operações e Comunidade</b><small>Produtores e confiança</small><span class="hc" data-n="1,2,2"></span></a>
                   <ul>
                     <li data-from="2"><div class="node col"><b>Apoio e comunidade</b><small>Quando o volume o justificar</small><span class="yr">Ano 2</span></div></li>
                     <li data-from="2"><div class="node ext"><b>Embaixadores locais</b><small>Por comissão, nas novas zonas</small><span class="yr">Ano 2+</span></div></li>
                   </ul>
                 </li>
                 <li>
-                  <a class="node" href="#f-fin"><b>Finanças e Administração</b><small>Orçamento e legal</small></a>
-                  <ul><li><div class="node ext"><b>Contabilista certificado</b><small>Serviço externo</small></div></li></ul>
+                  <a class="node" href="#f-fin"><b>Finanças e Administração</b><small>Orçamento e legal</small><span class="hc" data-n="1,1,2"></span></a>
+                  <ul><li data-from="3"><div class="node col"><b>Técnico administrativo e financeiro</b><small>ISCAP / IEFP</small><span class="yr">Ano 3</span></div></li><li><div class="node ext"><b>Contabilista certificado</b><small>Serviço externo</small></div></li></ul>
                 </li>
               </ul>
             </li>
@@ -162,7 +174,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       </ul>
     </div>
   </div>
-  <p class="small muted" id="tree-caption">Ano 3: 5 fundadores e 2 colaboradores, mais os embaixadores (comissão) e o contabilista (externos).</p>
+  <p class="small muted" id="tree-caption">Ano 3: 5 fundadores e 4 colaboradores (um em Tecnologia, Marketing, Operações e Finanças), mais os embaixadores (comissão) e o contabilista (externos).</p>
 
   <h2 id="funcoes">Descrição de funções</h2>
   <p>As funções são conceptuais: o plano não atribui nomes. No ano 1, cada um dos 5 fundadores assume uma.</p>
@@ -271,7 +283,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <div class="years">
     <div class="year"><div class="eyebrow">Ano 1</div><div class="big num">5 pessoas</div><p class="small">5 fundadores a tempo inteiro, com o salário mínimo. Sem colaboradores.</p></div>
     <div class="year"><div class="eyebrow" style="color:var(--soil)">Ano 2</div><div class="big num">6 pessoas</div><p class="small">+1 assistente de apoio e comunidade (júnior ou estágio IEFP), quando o volume de pedidos o justificar. Embaixadores locais por comissão.</p></div>
-    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">7 pessoas</div><p class="small">+1 programador júnior (ISEP / IEFP) na Tecnologia. Embaixadores nas zonas novas.</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">9 pessoas</div><p class="small">+1 programador júnior na Tecnologia, +1 júnior em Marketing e Crescimento e +1 técnico administrativo e financeiro. Embaixadores nas zonas novas.</p></div>
   </div>
   <div class="note"><b>Política salarial.</b> Todos os fundadores recebem o salário mínimo desde o ano 1, financiado por um empréstimo. Os salários sobem quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios.</div>
 
@@ -316,7 +328,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <ol class="steps">
     <li><div><b>Vaga e decisão de preenchimento.</b> Primeiro tenta-se redistribuir tarefas. Só se abre a vaga se a carga não couber na equipa, com aprovação dos sócios.</div></li>
     <li><div><b>Perfil da função.</b> Parte da descrição de funções.</div></li>
-    <li><div><b>Recrutamento.</b> Programador e estagiários: ISEP / P.Porto e IEFP. Apoio e comunidade: IEFP e rede local. Embaixadores: juntas, cooperativas e produtores ativos na app.</div></li>
+    <li><div><b>Recrutamento.</b> Programador e estagiários: ISEP / P.Porto e IEFP. Marketing e finanças: P.Porto (ISCAP) e IEFP. Apoio e comunidade: IEFP e rede local. Embaixadores: juntas, cooperativas e produtores ativos na app.</div></li>
     <li><div><b>Pré-seleção</b> pelo currículo e pelo perfil.</div></li>
     <li><div><b>Seleção.</b> Entrevista com o responsável da área e o CEO, mais uma prova prática (exercício técnico ou caso de comunidade).</div></li>
     <li><div><b>Decisão final</b> pelo responsável da área e pelo CEO.</div></li>
@@ -342,7 +354,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td>Salários dos fundadores</td><td>5 × 920 € × 14 + 23,75 % TSU ≈ <b>79 700 €</b></td><td>Salário mínimo em vigor; aumentos quando a receita cobrir os custos fixos durante um trimestre</td></tr>
       <tr><td>Empréstimo</td><td>≈ <b>80 000 €</b> para os salários do ano 1</td><td>Reembolso + juros (taxa e prazo a fixar)</td></tr>
-      <tr><td>Colaboradores</td><td>—</td><td>Ano 2: 1; ano 3: 2. Referência: ≈ 22 500 € por ano cada (menos com estágio IEFP)</td></tr>
+      <tr><td>Colaboradores</td><td>—</td><td>Ano 2: 1; ano 3: 4. Referência: ≈ 22 500 € por ano cada (menos com estágio IEFP)</td></tr>
       <tr><td>Embaixadores</td><td>—</td><td>Comissão por produtor que faça as primeiras vendas</td></tr>
       <tr><td>Formação e benefícios</td><td>—</td><td>≈ 500 € por pessoa de formação; benefícios a fixar</td></tr>
       <tr><td><i>Coworking</i></td><td colspan="2">100–200 € por posto por mês, nos dias presenciais</td></tr>
@@ -360,14 +372,30 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   var caps = {
     1: "Ano 1: 5 fundadores, uma área cada, e o contabilista externo.",
     2: "Ano 2: entra o assistente de apoio e comunidade, quando o volume o justificar, e os embaixadores locais (comissão) nas zonas novas.",
-    3: "Ano 3: 5 fundadores e 2 colaboradores, mais os embaixadores (comissão) e o contabilista (externos)."
+    3: "Ano 3: 5 fundadores e 4 colaboradores (um em Tecnologia, Marketing, Operações e Finanças), mais os embaixadores (comissão) e o contabilista (externos)."
   };
   var btns = document.querySelectorAll(".seg button");
   function show(y){
     document.querySelectorAll(".tree li[data-from]").forEach(function(li){ li.hidden = +li.dataset.from > y; });
     document.querySelectorAll(".tree ul ul").forEach(function(ul){
-      ul.hidden = !Array.prototype.some.call(ul.children, function(li){ return !li.hidden; });
+      var vis = Array.prototype.filter.call(ul.children, function(li){ return !li.hidden; });
+      ul.hidden = vis.length === 0;
     });
+    document.querySelectorAll(".tree ul").forEach(function(ul){
+      var vis = Array.prototype.filter.call(ul.children, function(li){ return !li.hidden; });
+      vis.forEach(function(li, i){
+        li.classList.toggle("only", vis.length === 1);
+        li.classList.toggle("first", i === 0);
+        li.classList.toggle("last", i === vis.length - 1);
+      });
+    });
+    var total = 0;
+    document.querySelectorAll(".tree .hc").forEach(function(el){
+      var n = +el.dataset.n.split(",")[y - 1];
+      total += n;
+      el.textContent = n + (n === 1 ? " pessoa" : " pessoas");
+    });
+    document.getElementById("total").textContent = "Ano " + y + ": " + total + " trabalhadores";
     btns.forEach(function(b){ b.setAttribute("aria-pressed", +b.dataset.y === y ? "true" : "false"); });
     document.getElementById("tree-caption").textContent = caps[y];
   }
@@ -375,3 +403,5 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   show(3);
 })();
 </script>
+</body>
+</html>

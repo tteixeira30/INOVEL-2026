@@ -17,7 +17,7 @@
 | D7 | Captação de produtores | Por fases: fundadores, depois embaixadores locais |
 | D8 | Apoio ao cliente e moderação | Fundadores no ano 1, com FAQ e *chatbot* de respostas; contratação só quando o volume o justificar |
 | D9 | Decisão | Gerente (CEO) + decisões estratégicas por maioria dos sócios |
-| D10 | Contratações (anos 1–3) | Conservador |
+| D10 | Contratações (anos 1–3) | Conservador nos anos 1–2; no ano 3 reforço de Tecnologia, Marketing e Finanças (+1 pessoa cada) |
 | D11 | Gestão de pessoas | Modelo Soft, com objetivos claros |
 | D12 | Recrutamento e seleção | Interno primeiro; ISEP / P.Porto; IEFP; rede local; entrevista + prova prática + período experimental |
 | D13 | Retenção | Prémio ligado aos resultados (sem cedência de quotas); horário flexível e remoto; formação; benefícios; cultura e missão |
@@ -79,19 +79,22 @@ Estrutura **funcional simples**: o CEO no topo e quatro áreas abaixo. A linha d
 **Ano 3** (com as contratações da §5):
 
 ```
-                     Assembleia geral de sócios
-                                 │
-                          CEO / Gerente
-                                 │
-     ┌───────────────┬───────────┴───────────┬────────────────┐
- Tecnologia      Marketing e            Operações e       Finanças e
-   (CTO)         Crescimento            Comunidade        Administração
-     │                                       │                │
- Programador                     ┌───────────┴─────────┐   Contabilista
- (ano 3)                    Apoio e comunidade   Embaixadores   (externo)
-                            (ano 2)              locais (ano 2+,
-                                                 por comissão)
+                          Assembleia geral de sócios
+                                      │
+                               CEO / Gerente
+                                      │
+      ┌────────────────┬──────────────┴───────┬──────────────────────┐
+  Tecnologia      Marketing e            Operações e             Finanças e
+    (CTO)         Crescimento            Comunidade              Administração
+      │                │                      │                      │
+ Programador      Marketing          ┌────────┴───────┐        ┌─────┴──────┐
+ júnior           júnior          Apoio e      Embaixadores  Técnico adm.  Contabilista
+ (ano 3)          (ano 3)         comunidade   locais        e financeiro  (externo)
+                                  (ano 2)      (ano 2+,      (ano 3)
+                                               comissão)
 ```
+
+Pessoas por área: CEO 1 · Tecnologia 2 · Marketing 2 · Operações 2 · Finanças 2 = **9 trabalhadores** no ano 3 (5 no ano 1, 6 no ano 2).
 
 Os embaixadores locais e o contabilista certificado não são trabalhadores da empresa: os embaixadores são pagos por comissão e o contabilista é um serviço externo (custo fixo do BMC).
 
@@ -118,13 +121,13 @@ As funções são conceptuais (D5). No ano 1, cada fundador assume uma.
 | Apoio, moderação e reembolsos | Fundadores no ano 1 (Operações e Comunidade, com o apoio dos outros quando houver picos). A primeira linha é automática: FAQ e *chatbot* com respostas às perguntas mais comuns. Contrata-se um colaborador de apoio só quando o volume o justificar | D8. Fica dentro: a confiança é o ponto fraco (W3) e um serviço externo não conhece a comunidade |
 | Contabilidade | Contabilista certificado externo | Obrigatório; custo fixo do BMC |
 
-### 5.3 Plano de contratações (conservador, D10)
+### 5.3 Plano de contratações (D10)
 
 | Ano | Equipa | Nova contratação | Área |
 |---|---|---|---|
 | 1 | 5 fundadores, a tempo inteiro, com o salário mínimo | — | — |
 | 2 | 5 fundadores + 1 colaborador + embaixadores por comissão | Assistente de apoio e comunidade (júnior ou estágio IEFP), quando o volume de pedidos o justificar (previsto para o ano 2) | Operações e Comunidade |
-| 3 | 5 fundadores + 2 colaboradores + embaixadores | Programador júnior (ISEP / IEFP) | Tecnologia |
+| 3 | 5 fundadores + 4 colaboradores + embaixadores | Programador júnior (ISEP / IEFP); júnior de marketing (P.Porto / IEFP); técnico administrativo e financeiro (ISCAP / IEFP) | Tecnologia; Marketing e Crescimento; Finanças e Administração |
 
 Regra de contratação: antes de abrir uma vaga, a equipa tenta reorganizar as tarefas (§8). Só se contrata quando o volume de trabalho o justifica e o orçamento aprovado pelos sócios o permite.
 
@@ -180,6 +183,7 @@ O processo segue os slides (Cardoso, 2001):
    | Perfil | Canal |
    |---|---|
    | Programador júnior; estagiários | ISEP / P.Porto (estágios, feiras de emprego); IEFP (estágios profissionais apoiados) |
+   | Júnior de marketing; técnico administrativo e financeiro | P.Porto (ISCAP); IEFP |
    | Apoio e comunidade | IEFP; rede local |
    | Embaixadores locais | Rede local: juntas, cooperativas, produtores ativos na app |
 
@@ -208,7 +212,7 @@ O trabalho é **remoto**. Usa-se um ***coworking*** nos dias presenciais (refer�
 |---|---|---|---|
 | Salários dos fundadores | 5 × salário mínimo: 920 € × 14 + 23,75 % TSU ≈ 15 900 € por pessoa, **≈ 79 700 €/ano** (SMN de 2026; atualizar se o plano arrancar noutro ano) | Salário mínimo em vigor; aumentos quando a receita cobrir os custos fixos durante um trimestre | idem |
 | Empréstimo para os salários do ano 1 | ≈ 80 000 € (montante, taxa de juro e prazo a fixar no plano financeiro) | Reembolso + juros | Reembolso + juros |
-| Colaboradores | — | 1 (apoio e comunidade) | 2 (+ programador) |
+| Colaboradores | — | 1 (apoio e comunidade) | 4 (+ programador, + marketing, + administrativo e financeiro) |
 | Custo de um júnior (referência) | — | ≈ 22 500 €/ano (1 300 € brutos × 14 + 23,75 % TSU) | idem, por colaborador |
 | Estágio IEFP | — | Reduz o custo (confirmar as condições em vigor) | |
 | Embaixadores | — | Comissão por produtor que faça as primeiras vendas (valor a fixar) | |
