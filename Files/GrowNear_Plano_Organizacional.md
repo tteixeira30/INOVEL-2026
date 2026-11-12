@@ -17,7 +17,7 @@
 | D7 | Captação de produtores | Por fases: fundadores, depois embaixadores locais |
 | D8 | Apoio ao cliente e moderação | Fundadores no ano 1, com FAQ e *chatbot* de respostas; contratação só quando o volume o justificar |
 | D9 | Decisão | Gerente (CEO) + decisões estratégicas por maioria dos sócios |
-| D10 | Contratações (anos 1–3) | Anos 1–2: só os fundadores. Ano 3: + técnico administrativo e financeiro. Programador júnior, marketing júnior e apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa |
+| D10 | Contratações (anos 1–3) | Ano 1: só os fundadores. Ano 2: + programador júnior e + marketing júnior. Ano 3: + técnico administrativo e financeiro. Um 2.º programador júnior e um assistente de apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa |
 | D11 | Gestão de pessoas | Modelo Soft, com objetivos claros |
 | D12 | Recrutamento e seleção | Interno primeiro; ISEP / P.Porto; IEFP; rede local; entrevista + prova prática + período experimental |
 | D13 | Retenção | Prémio ligado aos resultados (sem cedência de quotas); horário flexível e remoto; formação; benefícios; cultura e missão |
@@ -73,9 +73,9 @@ Estrutura **funcional simples**: o CEO no topo e quatro equipas abaixo. Cada equ
                       Crescimento             Comunidade               Administração
   · CTO (fundador)    · Responsável de        · Responsável de         · Responsável
   · Programador         marketing (fundador)    operações (fundador)     financeiro (fundador)
-    júnior*           · Marketing júnior*     · Apoio e comunidade*    · Técnico adm. e
-                                              · Embaixadores locais      financeiro (ano 3)
-                                                (externos, comissão)   · Contabilista (externo)
+    júnior (ano 2)    · Marketing júnior      · Apoio e comunidade*    · Técnico adm. e
+  · 2.º programador     (ano 2)               · Embaixadores locais      financeiro (ano 3)
+    júnior*                                     (externos, comissão)   · Contabilista (externo)
 ```
 
 \* Só a partir do ano 2, se o volume justificar; não orçamentado.
@@ -83,11 +83,11 @@ Estrutura **funcional simples**: o CEO no topo e quatro equipas abaixo. Cada equ
 | Equipa | Perfis | Pessoas orçamentadas |
 |---|---|---|
 | CEO / Gerente | CEO (fundador) | 1 |
-| Tecnologia | CTO (fundador); programador júnior\* | 1 |
-| Marketing e Crescimento | Responsável de marketing (fundador); marketing júnior\* | 1 |
+| Tecnologia | CTO (fundador); programador júnior (ano 2); 2.º programador júnior\* | 1 (2 a partir do ano 2) |
+| Marketing e Crescimento | Responsável de marketing (fundador); marketing júnior (ano 2) | 1 (2 a partir do ano 2) |
 | Operações e Comunidade | Responsável de operações e comunidade (fundador); apoio e comunidade\*; embaixadores locais (externos, por comissão, a partir do ano 2) | 1 |
 | Finanças e Administração | Responsável financeiro (fundador); técnico administrativo e financeiro (ano 3); contabilista certificado (externo) | 1 (2 no ano 3) |
-| **Total** | | **5 nos anos 1 e 2; 6 no ano 3** |
+| **Total** | | **5 no ano 1; 7 no ano 2; 8 no ano 3** |
 
 Os embaixadores locais e o contabilista certificado não são trabalhadores da empresa: os embaixadores são pagos por comissão e o contabilista é um serviço externo (custo fixo do BMC).
 
@@ -119,10 +119,10 @@ As funções são conceptuais (D5). No ano 1, cada fundador assume uma.
 | Ano | Equipa orçamentada | Nova contratação | Área |
 |---|---|---|---|
 | 1 | 5 fundadores, a tempo inteiro | — | — |
-| 2 | 5 fundadores + embaixadores por comissão | — | Operações e Comunidade (externos) |
-| 3 | 5 fundadores + 1 colaborador + embaixadores | Técnico administrativo e financeiro (ISCAP / IEFP) | Finanças e Administração |
+| 2 | 5 fundadores + 2 colaboradores + embaixadores por comissão | Programador júnior (ISEP / IEFP); marketing júnior (P.Porto / IEFP) | Tecnologia; Marketing e Crescimento |
+| 3 | 5 fundadores + 3 colaboradores + embaixadores | Técnico administrativo e financeiro (ISCAP / IEFP) | Finanças e Administração |
 
-**Só se o volume justificar, a partir do ano 2 (não orçamentados):** programador júnior (Tecnologia), marketing júnior (Marketing e Crescimento) e assistente de apoio e comunidade (Operações e Comunidade). Antes de abrir uma destas vagas, a equipa tenta reorganizar as tarefas (§8).
+**Só se o volume justificar, a partir do ano 2 (não orçamentados):** 2.º programador júnior (Tecnologia) e assistente de apoio e comunidade (Operações e Comunidade). Antes de abrir uma destas vagas, a equipa tenta reorganizar as tarefas (§8).
 
 **Quem decide uma contratação:** os sócios aprovam o orçamento da vaga (por maioria); a pessoa é escolhida pelo CEO e pelo líder da equipa.
 
@@ -138,11 +138,12 @@ Os salários base são os valores de entrada do mercado para cada perfil, no Por
 | Responsável de operações e comunidade (fundador) | 1 200 € | ≈ 20 800 € | Sem referência direta: fica entre o apoio ao cliente (≈ 1 000 €) e o marketing júnior | Sim |
 | Responsável financeiro (fundador) | 1 250 € | ≈ 21 650 € | Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 € | Sim |
 | Técnico administrativo e financeiro | 1 150 € | ≈ 19 900 € | Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 € | Sim, a partir do ano 3 |
-| Programador júnior | 1 200 € | ≈ 20 800 € | Ofertas júnior no Porto: 1 500–1 600 €. O grupo fixou 1 200 € (primeiro emprego ou estágio) | Não (se o volume justificar, a partir do ano 2) |
-| Marketing júnior | 1 200 € | ≈ 20 800 € | Marketing júnior: 1 100–1 600 € | Não (se o volume justificar, a partir do ano 2) |
+| Programador júnior | 1 200 € | ≈ 20 800 € | Ofertas júnior no Porto: 1 500–1 600 €. O grupo fixou 1 200 € (primeiro emprego ou estágio) | Sim, a partir do ano 2 |
+| 2.º programador júnior | 1 200 € | ≈ 20 800 € | Igual ao programador júnior | Não (se o volume justificar, a partir do ano 2) |
+| Marketing júnior | 1 200 € | ≈ 20 800 € | Marketing júnior: 1 100–1 600 € | Sim, a partir do ano 2 |
 | Assistente de apoio e comunidade | 1 000 € | ≈ 17 300 € | Apoio ao cliente no Porto: ≈ 900–1 100 € | Não (se o volume justificar, a partir do ano 2) |
 
-**Custo dos fundadores:** 7 050 €/mês × 14 + TSU ≈ **122 100 € por ano**. No ano 3, com o técnico administrativo, ≈ **142 000 €**.
+**Custo com pessoal orçamentado:** ano 1, os 5 fundadores: 7 050 €/mês × 14 + TSU ≈ **122 100 €**. Ano 2, com o programador e o marketing júnior: ≈ **163 700 €**. Ano 3, com o técnico administrativo: ≈ **183 600 €**. Não inclui a parte variável do CEO.
 
 **Regras de remuneração:**
 - **O CEO tem o salário base mais alto** e uma **parte variável ligada aos resultados**. Proposta, a confirmar: um prémio anual de até 2 salários base (até 3 400 €), pago só se as metas anuais forem cumpridas. Não é financiado pelo empréstimo.
@@ -225,7 +226,7 @@ O processo segue os slides (Cardoso, 2001):
 | Prémio ligado aos resultados | Colaboradores | Valor a fixar no plano financeiro. Não há cedência de quotas: a divisão de 20 % por sócio mantém-se |
 | Horário flexível e trabalho remoto | Desde o início | Custo zero |
 | Formação e conferências | Desde o ano 2 (orçamento por pessoa) | Valor a fixar no plano financeiro (referência: 500 € por pessoa por ano) |
-| Benefícios (seguro de saúde, cartão refeição) | A partir do ano 3, com o primeiro colaborador | Nos anos 1 e 2 o custo com pessoal fica nos salários base |
+| Benefícios (seguro de saúde, cartão refeição) | A partir do ano 2, com os primeiros colaboradores | No ano 1 o custo com pessoal fica nos salários base |
 | Cultura e missão | Desde o início | Toda a equipa participa nas sessões com produtores; os valores da §1 guiam a conduta |
 
 ## 10. Local de trabalho
@@ -239,11 +240,11 @@ O trabalho é **remoto**. Usa-se um ***coworking*** nos dias presenciais (refer�
 | Salários dos fundadores | ≈ 122 100 € (7 050 €/mês × 14 + 23,75 % TSU; §5.4) | Os mesmos; aumentos quando a receita cobrir os custos fixos durante um trimestre | idem |
 | Parte variável do CEO | Até ≈ 4 200 € com TSU, só se as metas forem cumpridas | idem | idem |
 | Empréstimo para os salários do ano 1 | ≈ 125 000 € (taxa de juro e prazo a fixar no plano financeiro) | Reembolso + juros | Reembolso + juros |
-| Colaboradores orçamentados | — | — | Técnico administrativo e financeiro: ≈ 19 900 € |
+| Colaboradores orçamentados | — | Programador júnior + marketing júnior: ≈ 41 600 € | + técnico administrativo e financeiro: ≈ 61 500 € |
 | Contratações se o volume justificar | Não orçamentadas (referências na §5.4) | | |
 | Embaixadores | — | Comissão por produtor que faça as primeiras vendas (valor a fixar) | idem |
 | Formação | — | ≈ 500 € por pessoa (referência) | idem |
-| Benefícios | — | — | Seguro de saúde, cartão refeição (valor a fixar) |
+| Benefícios | — | Seguro de saúde, cartão refeição (valor a fixar) | idem |
 | *Coworking* | 100–200 € por posto por mês, nos dias presenciais | | |
 | Constituição da Lda. | ≈ 360 € + capital social | | |
 | Contabilista | Avença mensal (valor a fixar) | | |
