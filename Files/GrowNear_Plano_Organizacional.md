@@ -95,15 +95,15 @@ Os embaixadores locais e o contabilista certificado não são trabalhadores da e
 
 ### 5.1 Descrição de funções
 
-As funções são conceptuais (D5). No ano 1, cada fundador assume uma.
+As funções são conceptuais (D5). No ano 1, cada fundador assume uma. O salário base de cada função está na §5.4.
 
 | Função | Missão da função | Responsabilidades | Competências | Indicadores |
 |---|---|---|---|---|
-| **CEO / Gerente** | Coordenar a empresa e representá-la | Estratégia e prioridades; coordenação das áreas; representação legal; parcerias institucionais (juntas, câmaras, cooperativas); relação com investidores | Liderança, negociação, visão de negócio | Cumprimento das metas; parcerias ativas; novas zonas abertas |
-| **CTO / Tecnologia** | Garantir que a app funciona, é segura e evolui | Arquitetura e desenvolvimento (mapa, reservas, pagamentos, avaliações); infraestrutura na nuvem; segurança e RGPD técnico; integração Stripe / MB Way | Desenvolvimento *mobile* e *backend*, segurança, pagamentos | Disponibilidade da app; funcionalidades entregues; erros críticos |
+| **CEO / Gerente** | Coordenar a empresa e representá-la | Estratégia e prioridades; coordenação das áreas; representação legal; parcerias institucionais (juntas, câmaras, cooperativas); relação com o banco (empréstimo) e com investidores | Liderança, negociação, visão de negócio | Cumprimento das metas; parcerias ativas; novas zonas abertas |
+| **CTO / Tecnologia** | Garantir que a app funciona, é segura e evolui | Arquitetura e desenvolvimento (mapa, reservas, pagamentos, avaliações); infraestrutura na nuvem; segurança e RGPD técnico; integração Stripe / MB Way; FAQ e *chatbot* de apoio | Desenvolvimento *mobile* e *backend*, segurança, pagamentos | Disponibilidade da app; funcionalidades entregues; erros críticos |
 | **Marketing e Crescimento** | Trazer e manter compradores | Marca e redes sociais; aquisição de compradores; programa "convida um vizinho"; comunicação centrada na frescura e na confiança; análise de dados da procura | Marketing digital, análise de dados, comunicação | Novos compradores por mês; custo por aquisição; compradores recorrentes |
-| **Operações e Comunidade** | Garantir a oferta e a confiança | Captação de produtores zona a zona; sessões presenciais; pontos de recolha; apoio a utilizadores, moderação de anúncios, conflitos e reembolsos; coordenação dos embaixadores | Comunicação, organização, resolução de conflitos, trabalho de terreno | Produtores ativos; pontos de recolha; tempo de resposta; reembolsos por 100 reservas |
-| **Finanças e Administração** | Garantir a saúde financeira e o cumprimento legal | Orçamento e tesouraria; faturação; relação com o contabilista; obrigações fiscais e de Segurança Social; RGPD e termos de uso; processos de pessoal (contratos, seguros, medicina do trabalho) | Gestão financeira, conhecimento legal e fiscal | Desvios ao orçamento; obrigações cumpridas nos prazos |
+| **Operações e Comunidade** | Garantir a oferta e a confiança | Captação de produtores zona a zona; sessões presenciais; pontos de recolha; apoio a utilizadores, moderação de anúncios, conflitos e reembolsos; coordenação dos embaixadores (ano 2+) | Comunicação, organização, resolução de conflitos, trabalho de terreno | Produtores ativos; pontos de recolha; tempo de resposta; reembolsos por 100 reservas |
+| **Finanças e Administração** | Garantir a saúde financeira e o cumprimento legal | Orçamento e tesouraria, incluindo o empréstimo; faturação; relação com o contabilista; obrigações fiscais e de Segurança Social; RGPD e termos de uso; processos de pessoal (contratos, seguros, HSST) | Gestão financeira, conhecimento legal e fiscal | Desvios ao orçamento; obrigações cumpridas nos prazos |
 
 ### 5.2 O que fazemos dentro e o que fica fora
 
