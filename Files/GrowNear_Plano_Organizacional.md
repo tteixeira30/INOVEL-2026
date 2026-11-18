@@ -2,7 +2,8 @@
 
 > Base: decisões do grupo na reunião de 12/11/2026 (D1–D16, em `GrowNear_Decisoes_Plano_Organizacional.html`) e slides "As pessoas no contexto das organizações" (`Inovel.Context/Plano organizacional.pdf`).
 > Liga-se ao BMC (atividades, recursos e custos), à análise do inquérito (`GrowNear_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o plano financeiro (semanas 10–11).
-> Os slides chamam-lhe secção IV; o enquadramento da UC chama-lhe V. Confirmar com o professor.
+> Numeração: no plano de negócio é o capítulo V, pela numeração do Milestone 02 (Q21, decidida a 18/11).
+> **Propostas de 18/11 (§13):** o Plano Financeiro mostrou que a D3 e a D10, como decididas, não são financiáveis. Há propostas de alteração para os sócios aprovarem. Enquanto não forem aprovadas, as secções §4–§12 descrevem as decisões de 12/11.
 
 ## 0. Decisões de base
 
@@ -10,14 +11,14 @@
 |---|---|---|
 | D1 | Forma jurídica | Sociedade por quotas (Lda.) com os 5 sócios |
 | D2 | Quotas | Partes iguais (20 % cada) |
-| D3 | Dedicação e salário dos fundadores | Os 5 a tempo inteiro, com o salário base de entrada do mercado para o seu perfil (§5.4). O CEO tem o salário mais alto e uma parte variável ligada aos resultados. Aumentos quando a receita cobrir os custos fixos durante um trimestre. Salários do ano 1 financiados por empréstimo (≈ 125 000 €). Como sócios, recebem dividendos |
+| D3 | Dedicação e salário dos fundadores | Os 5 a tempo inteiro, com o salário base de entrada do mercado para o seu perfil (§5.4). O CEO tem o salário mais alto e uma parte variável ligada aos resultados. Aumentos quando a receita cobrir os custos fixos durante um trimestre. Salários do ano 1 financiados por empréstimo (≈ 125 000 €). Como sócios, recebem dividendos. **Proposta de alteração de 18/11: §13 (P1, P2, P5)** |
 | D4 | Estrutura | Funcional simples |
 | D5 | Funções | 5 funções conceptuais; o plano não atribui nomes |
 | D6 | Desenvolvimento da app | Equipa interna (fundadores) |
 | D7 | Captação de produtores | Por fases: fundadores, depois embaixadores locais |
 | D8 | Apoio ao cliente e moderação | Fundadores no ano 1, com FAQ e *chatbot* de respostas; contratação só quando o volume o justificar |
 | D9 | Decisão | Gerente (CEO) + decisões estratégicas por maioria dos sócios |
-| D10 | Contratações (anos 1–3) | Ano 1: só os fundadores. Ano 2: + programador júnior e + marketing júnior. Ano 3: + técnico administrativo e financeiro. Um 2.º programador júnior e um assistente de apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa |
+| D10 | Contratações (anos 1–3) | Ano 1: só os fundadores. Ano 2: + programador júnior e + marketing júnior. Ano 3: + técnico administrativo e financeiro. Um 2.º programador júnior e um assistente de apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa. **Proposta de alteração de 18/11: §13 (P3, P4)** |
 | D11 | Gestão de pessoas | Modelo Soft, com objetivos claros |
 | D12 | Recrutamento e seleção | Interno primeiro; ISEP / P.Porto; IEFP; rede local; entrevista + prova prática + período experimental |
 | D13 | Retenção | Prémio ligado aos resultados (sem cedência de quotas); horário flexível e remoto; formação; benefícios; cultura e missão |
@@ -126,6 +127,8 @@ As funções são conceptuais (D5). No ano 1, cada fundador assume uma. O salár
 
 **Quem decide uma contratação:** os sócios aprovam o orçamento da vaga (por maioria); a pessoa é escolhida pelo CEO e pelo líder da equipa.
 
+**Proposta de 18/11 (§13, P3–P4):** as contratações deixam de ter ano marcado e passam a depender da margem (fase 3). O assistente de apoio entra pelo volume.
+
 ### 5.4 Salários e remuneração
 
 Os salários base são os valores de entrada do mercado para cada perfil, no Porto, em bruto por mês e pagos 14 vezes por ano. O custo anual inclui a TSU da empresa (23,75 %).
@@ -144,6 +147,8 @@ Os salários base são os valores de entrada do mercado para cada perfil, no Por
 | Assistente de apoio e comunidade | 1 000 € | ≈ 17 300 € | Apoio ao cliente no Porto: ≈ 900–1 100 € | Não (se o volume justificar, a partir do ano 2) |
 
 **Custo com pessoal orçamentado:** ano 1, os 5 fundadores: 7 050 €/mês × 14 + TSU ≈ **122 100 €**. Ano 2, com o programador e o marketing júnior: ≈ **163 700 €**. Ano 3, com o técnico administrativo: ≈ **183 600 €**. Não inclui a parte variável do CEO.
+
+**Com as propostas de 18/11 (§13)**, o custo com pessoal no modelo financeiro é de **24 451 €** no ano 1 (CTO e Operações, de julho a dezembro), **52 782 €** no ano 2 e **68 953 €** no ano 3 (com o assistente desde o mês 27). Estes valores incluem subsídios, TSU, seguro de acidentes de trabalho, benefícios e formação.
 
 **Regras de remuneração:**
 - **O CEO tem o salário base mais alto** e uma **parte variável ligada aos resultados**. Proposta, a confirmar: um prémio anual de até 2 salários base (até 3 400 €), pago só se as metas anuais forem cumpridas. Não é financiado pelo empréstimo.
@@ -252,6 +257,43 @@ O trabalho é **remoto**. Usa-se um ***coworking*** nos dias presenciais (refer�
 
 ## 12. Financiamento dos salários e aumentos
 
+> Proposta de 18/11 (§13, P5): empréstimo de 75 000 € no arranque e 2.ª tranche de 310 000 € no mês 15, condicionada ao marco 2. O que segue descreve a decisão de 12/11.
+
+
 - Os salários do ano 1 (≈ 122 100 €) são financiados por um **empréstimo de ≈ 125 000 €**. A taxa de juro e o prazo ficam definidos no plano financeiro.
 - Os salários sobem quando a **receita cobrir os custos fixos durante um trimestre**. Os aumentos são aprovados pelos sócios (§6).
 - Os sócios recebem **dividendos** quando houver lucros (§5.4).
+
+## 13. Propostas de 18/11 (a aprovar pelos sócios)
+
+**Porquê.** O modelo financeiro (`GrowNear_Plano_Financeiro.xlsx`; `GrowNear_Plano_Financeiro.md`, §0 e §9) mostra o seguinte, no cenário de referência:
+- com a D3 e a D10 como decididas a 12/11, a GrowNear perde **≈ 965 000 €** em 5 anos e precisa de **≈ 940 000 €**;
+- cada reserva deixa ≈ 0,62 € de margem;
+- uma equipa de 9 pessoas precisa de ≈ 38 000 reservas por mês, quando a previsão do ano 5 é de 14 600;
+- o empréstimo de 125 000 € acaba no mês 14.
+
+Nenhuma alavanca de volume resolve isto: abrir mais zonas, ou usar a previsão sem descontos, deixa o défice quase igual. A estrutura de custos tem de acompanhar a receita.
+
+| # | Proposta | Altera | Efeito no modelo (cenário de referência) |
+|---|---|---|---|
+| P1 | **Equipa mínima até ao ponto crítico.** CTO e responsável de Operações com salário desde o lançamento: a app e a oferta são as competências críticas (§1). CEO, responsável de marketing e responsável financeiro mantêm as funções a tempo parcial, sem salário. Entram no salário quando a margem de contribuição dos últimos 12 meses cobrir os custos fixos anualizados mais o seu custo (≈ 73 600 €/ano com TSU) | D3 | Gastos com pessoal de 24 451 € (ano 1) a 72 187 € (ano 5), em vez de 61 564 € a 220 054 € |
+| P2 | **Salários só a partir do lançamento** (mês 7). Os meses 1–6 (MVP da app e captação dos primeiros produtores) fazem-se sem salário | D3 | ≈ 6 meses de salários a menos |
+| P3 | **Contratações por fases, não por ano.** Programador júnior, marketing júnior e técnico administrativo e financeiro entram quando, depois da fase 2, a margem cobrir também o seu custo (≈ 61 500 €/ano) | D10 | No cenário de referência não entram nos 5 anos |
+| P4 | **Assistente de apoio e comunidade pelo volume.** Entra quando houver mais de 20 contactos humanos por dia útil ou mais de 500 produtores captados (Q18) | D8, D10 | Entra no mês 27 |
+| P5 | **Financiamento por fases.** 5 000 € de capital social + empréstimo de 75 000 € (em vez de 125 000 €) no arranque. 2.ª tranche de 310 000 € no mês 15, só se o marco 2 for cumprido (compradores e produtores na zona 1 a ≥ 70 % do previsto). Fonte da 2.ª tranche por decidir: sócios, investidor (3/4 dos votos; §6) ou apoios | D3, §11, §12 | 390 000 € no total. Se o marco 2 falhar, a perda fica limitada à 1.ª tranche |
+
+**Resultado:** −310 834 € acumulados em 5 anos (contra −965 091 €); resultado de −31 723 € no ano 5, ainda negativo. É viável sob condições, com os marcos de validação do Plano Financeiro (§6).
+
+**Riscos que a proposta cria** (para o grupo pesar):
+- **Três fundadores sem salário durante todo o horizonte no cenário de referência.** Só é realista se tiverem outro rendimento, e isso limita a dedicação e aumenta o risco de saída (Plano Financeiro, Q24). Mitigação: escrever o que cada um faz a tempo parcial e rever no marco 3.
+- **Capacidade de Operações:** 2 pessoas pagas para ≈ 1 750 produtores no ano 5 (Plano de Produção §4.1).
+- **A 2.ª tranche** pode exigir um investidor, o que dilui os 20 % de cada sócio (D2) (Plano Financeiro, Q25).
+
+**O que muda neste plano se for aprovado:**
+- §4: organograma com 2 pessoas pagas no ano 1. As 5 funções mantêm-se, 3 delas a tempo parcial.
+- §5.3: contratações por fases.
+- §5.4: custo com pessoal do modelo.
+- §11–§12: financiamento.
+
+A regra dos aumentos da D3 mantém-se, aplicada depois de todos os fundadores terem salário. O `.html` deve ser atualizado com o `.md`.
+

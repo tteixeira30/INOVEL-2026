@@ -2,8 +2,8 @@
 
 > Base: slides "The Production Plan" (Capítulo V; `Inovel.Context/Production_Plan (1).pptx`) e "The Organisational Operating Model" (P7; `Inovel.Context/INOVEL_P7_Organizational_Operating_Model_EN.pptx`). As notas do orador das duas apresentações estão vazias.
 > Liga-se ao BMC (atividades, recursos, custos), ao Plano Organizacional (`GrowNear_Plano_Organizacional.md`: funções, decisões D1–D16), à análise do inquérito (`GrowNear_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o Plano Financeiro (`GrowNear_Plano_Financeiro.md`).
-> Os números da §3 e da §7 são calculados por `GrowNear_Plano_Financeiro.js` (`node GrowNear_Plano_Financeiro.js`). Os valores marcados **[Pressuposto — validar com o grupo]** não vêm do repositório; as questões **Q1, Q2, …** estão no compêndio (`GrowNear_Plano_Financeiro.md`, §8).
-> Numeração do capítulo: os slides de produção chamam-lhe "V. Production Plan", os do plano financeiro "V. Operational Plan" e a apresentação da UC "VI. Operational Plan" (Q21).
+> Os números da §3, §4.1, §7 e §8 vêm do modelo `GrowNear_Plano_Financeiro.xlsx` (cenário de referência, com as decisões de 18/11). Os valores marcados **[Pressuposto — validar com o grupo]** não vêm do repositório; as questões **Q1, Q2, …** estão no compêndio (`GrowNear_Plano_Financeiro.md`, §10).
+> Numeração do capítulo: decidida a 18/11 (Q21). No plano de negócio é o capítulo VI, "Plano Operacional (Plano de Produção)", pela numeração do Milestone 02.
 
 ## 0. O que o material pede e como se adapta à GrowNear
 
@@ -60,33 +60,46 @@ Atividades primárias (P7, slides 4 e 6) adaptadas a um marketplace, com o respo
 
 **Margem.** A margem da GrowNear é a taxa de serviço menos o custo de pagamento por reserva e os custos fixos (§7). Vender é grátis: o produtor não gera receita direta, mas sem ele não há reservas.
 
-## 3. Programa de vendas (previsão mínima)
+## 3. Programa de vendas
 
-**Porque é precisa.** O Plano de Produção parte da previsão de vendas do plano de marketing (slides 3 e 5). O plano de marketing ainda não existe no repositório. Para avançar, constrói-se aqui a previsão **mínima**, a substituir pela do plano de marketing quando existir (Q1).
+**Origem.** O Plano de Produção parte da previsão de vendas do plano de marketing (slides 3 e 5). A previsão está no rascunho do Plano de Marketing (`GrowNear_Plano_Marketing.md`, §6.3) e é calculada mês a mês no modelo `GrowNear_Plano_Financeiro.xlsx` (folha Mensal). Substitui a previsão mínima da 1.ª versão deste plano (decisão de 18/11).
 
-**Derivação.** Reservas por ano = agregados da zona × quota de compradores × fração da quota atingida (rampa) × reservas por comprador e por mês × 12.
+**Derivação, por zona e por mês:**
+- compradores ativos = agregados da zona × quota × conversão da intenção (0,75) × adoção da zona;
+- procura no pico = compradores × reservas declaradas por mês × desconto da frequência (0,75);
+- oferta no pico = produtores captados × reservas por produtor;
+- **reservas = mínimo entre procura e oferta × sazonalidade do mês.**
 
 | Parâmetro | Valor | Origem |
 |---|---|---|
-| Quota de compradores na maturidade | **15,9 %** (referência) / 45,1 % (otimista) | Entusiastas (P19 = 5 e P20 = 5) e núcleo de potenciais utilizadores; a análise manda planear com o cenário prudente como referência (Análise §11.1 e §15, "Metas") |
-| Reservas por comprador e por mês | **3,44** (entusiastas) / 3,10 (núcleo) | P21 de cada grupo convertida em reservas por mês: semanal = 52/12; 2 a 3 vezes = 2,5; 1 vez = 1; menos de 1 vez = 0,5 **[Pressuposto — validar com o grupo]** (só afeta o núcleo). É intenção declarada: sobrestima o uso (Análise §14) |
-| Gasto por encomenda | 19,40 € (IC: 17,63 € a 21,17 €) | P12, amostra toda (Análise §11.1). Os entusiastas preveem 20,97 €; usa-se 19,40 €, o valor fixado na análise |
-| Taxa por reserva | **1,47 €** (0,50 € + 5 % × 19,40 €) | D16; Análise §11.1 |
-| Agregados por zona | **10 000** | **[Pressuposto — validar com o grupo]** A zona de lançamento ainda não está escolhida. Valor redondo para uma zona urbana ou suburbana com raio de 10 minutos (Análise §7); substituir pelos Censos (INE) da zona escolhida (Q2) |
-| Zonas ativas | Ano 1: 1 · ano 2: 3 · ano 3: 5 | Ano 1 numa zona e "novas zonas" no ano 2 (Plano Organizacional §1). O número de zonas novas é **[Pressuposto — validar com o grupo]** (Q3) |
-| Rampa de adoção numa zona | 25 % da quota no 1.º ano, 60 % no 2.º, 90 % no 3.º (média do ano) | **[Pressuposto — validar com o grupo]** Um marketplace de dois lados cresce devagar: primeiro a oferta, depois os compradores (Q3) |
+| Lançamento aos compradores | Mês 7 (julho do ano 1); captação de produtores nos meses 5–6 | Decisão de 18/11 (§9) |
+| Agregados por zona | ≈ 10 650 (Águas Santas, Maia: 26 632 residentes ÷ 2,5) | INE, Censos 2021; proposta de 18/11 (Q2) |
+| Zonas abertas | 1 / 3 / 5 / 7 / 9 nos anos 1–5; as novas abrem em abril | Plano Organizacional §1; anos 4–5 extrapolados **[Pressuposto]** (Q3) |
+| Quota na maturidade | 9,2 % / **15,9 %** / 45,1 % (pessimista / referência / otimista) | Análise §11.1 |
+| Conversão da intenção e desconto da frequência | 0,75 e 0,75 | **[Pressuposto]**: a intenção declarada sobrestima o uso (Análise §14) |
+| Reservas declaradas por comprador e por mês | 3,44 (entusiastas) / 3,10 (núcleo) | P21; `GrowNear_Plano_Financeiro.js` |
+| Adoção da zona | Linear até à maturidade aos 30 meses (≈ 25 % / 60 % / 90 % da quota nos anos 1–3 da zona) | **[Pressuposto]** (Q3) |
+| Sazonalidade | Pico de junho a setembro; inverno a 0,4 do pico; média anual de 0,725 | **[Pressuposto]** (SWOT: "Oferta irregular e sazonal") |
+| Produtores na maturidade | 2 % dos agregados; captação 2 meses antes da abertura; maturidade aos 18 meses | **[Pressuposto]** (Q17) |
+| Reservas por produtor ativo no pico | 15 por mês | **[Pressuposto]** (Q17) |
+| Cancelamentos pelo produtor | 5 % (taxa devolvida) | Q15, decidida a 18/11 |
+| Gasto por encomenda / taxa por reserva | 19,40 € / 1,47 € com IVA (1,20 € sem IVA) | Análise §11.1; D16; Q4 |
 
 **Resultado (cenário de referência):**
 
-| Ano | Zonas | Compradores ativos (média do ano) | Reservas/ano | Reservas/mês | Taxas cobradas |
-|---|---|---|---|---|---|
-| 1 | 1 | 398 | 16 416 | 1 368 | 24 134 € |
-| 2 | 3 | 1 752 | 72 230 | 6 019 | 106 188 € |
-| 3 | 5 | 4 142 | 170 726 | 14 227 | 250 989 € |
+| Ano | Zonas | Compradores ativos (fim do ano) | Produtores captados (fim do ano) | Reservas no ano | Reservas por mês (com a app lançada) | Taxas sem IVA |
+|---|---|---|---|---|---|---|
+| 1 | 1 | 254 | 95 | 1 595 | 266 | 1 811 € |
+| 2 | 3 | 1 524 | 473 | 19 665 | 1 639 | 22 327 € |
+| 3 | 5 | 3 811 | 900 | 61 114 | 5 093 | 69 387 € |
+| 4 | 7 | 6 352 | 1 326 | 118 208 | 9 851 | 134 210 € |
+| 5 | 9 | 8 892 | 1 752 | 175 237 | 14 603 | 198 958 € |
 
-Cenário otimista (núcleo, 45 %): 41 991 / 184 761 / 436 708 reservas nos anos 1–3. Se a taxa de 0,50 € + 5 % incluir IVA, a receita da GrowNear é 23 % menor do que as taxas cobradas (Q4).
+Pessimista: 923 / 11 378 / 35 362 / 68 397 / 101 395 reservas. Otimista: 4 077 / 50 266 / 144 751 / 229 302 / 312 713 reservas, **limitado pela oferta** em 7 a 12 meses por ano a partir do ano 3.
 
-**Sazonalidade.** A oferta é de produtos da época (SWOT, fraquezas: "Oferta irregular e sazonal") e 60 % compram noutro lado quando falta o produto (Análise §9). A previsão anual não tem perfil mensal; o orçamento de tesouraria (Plano Financeiro, VI.5) vai precisar dele (Q11).
+**Diferença face à 1.ª versão** (16 416 / 72 230 / 170 726 nos anos 1–3, que o modelo reproduz se se retirarem os ajustes): lançamento no mês 7, desconto da intenção, sazonalidade no volume e teto pela oferta.
+
+**Sazonalidade.** Já está no volume e no perfil mensal (folha Mensal), que alimenta o orçamento de tesouraria (Plano Financeiro, §7). O lançamento em julho aproveita o pico da época.
 
 ## 4. Quantidades a "produzir" e "stocks"
 
@@ -94,14 +107,17 @@ Cenário otimista (núcleo, 45 %): 41 991 / 184 761 / 436 708 reservas nos anos 
 
 A app processa reservas sem limite prático. O que tem de crescer com as reservas é a **oferta** (produtores e pontos de recolha) e o **apoio**.
 
-| Recurso | Fórmula | Ano 1 | Ano 2 | Ano 3 | Origem do rácio |
-|---|---|---|---|---|---|
-| Reservas a processar por mês | Programa de vendas (§3) | 1 368 | 6 019 | 14 227 | §3 |
-| Produtores ativos necessários | Reservas/mês ÷ 15 reservas por produtor ativo | ≈ 91 | ≈ 401 | ≈ 948 | **[Pressuposto — validar com o grupo]** Não há dados de produtores (o estudo só inquiriu compradores; Análise §14) (Q17) |
-| Contactos de apoio por mês | 5 % das reservas | ≈ 68 | ≈ 301 | ≈ 711 | **[Pressuposto — validar com o grupo]** (Q18) |
-| Pontos de recolha | Pelo menos 3 por zona ativa | 3 | 9 | 15 | **[Pressuposto — validar com o grupo]** 44 % preferem o ponto de recolha (Análise §7) |
+| Recurso | Fórmula | Ano 1 | Ano 2 | Ano 3 | Ano 5 | Origem do rácio |
+|---|---|---|---|---|---|---|
+| Reservas a processar por mês (com a app lançada) | Programa de vendas (§3) | 266 | 1 639 | 5 093 | 14 603 | §3 |
+| Produtores captados (fim do ano) | Agregados × 2 % × captação da zona | 95 | 473 | 900 | 1 752 | **[Pressuposto]** (Q17). Nos meses de pico, a capacidade da oferta (produtores × 15) fica acima da procura no cenário de referência; no otimista não |
+| Contactos de apoio humano por dia útil (máximo do ano) | 5 % das reservas ÷ 21 dias úteis | 0,8 | 7,0 | 19,5 | 51,5 | **[Pressuposto]** (Q18) |
+| Pontos de recolha | 3 por zona aberta | 3 | 9 | 15 | 27 | **[Pressuposto]**; 44 % preferem o ponto de recolha (Análise §7) |
+| Pessoas pagas pela empresa (fim do ano) | Regras de entrada (Plano Organizacional §13) | 2 | 2 | 3 | 3 | CTO + Operações; assistente de apoio a partir do mês 27 |
 
-**Ligação ao Plano Organizacional.** O apoio fica com os fundadores no ano 1 e o assistente de apoio e comunidade só entra "se o volume o justificar" (D8, D10; não orçamentado). Com o rácio acima, o ano 1 dá cerca de 3 contactos por dia útil, o que cabe nos fundadores. No ano 3 seriam cerca de 32 por dia útil. Propõe-se um critério objetivo para abrir a vaga (Q18); a decisão continua a ser dos sócios, no orçamento.
+**Ligação ao Plano Organizacional.** Com a equipa mínima proposta a 18/11, o apoio e a captação ficam com o responsável de Operações, ajudado a tempo parcial pelos outros fundadores e, a partir do ano 2, pelos embaixadores. O assistente de apoio e comunidade entra quando passar um destes limites: mais de 20 contactos humanos por dia útil, ou mais de 500 produtores captados (Q18, decidida a 18/11). No cenário de referência entra no mês 27, pelos produtores.
+
+**Estrangulamento.** No ano 5 há ≈ 1 750 produtores e ≈ 50 contactos por dia útil para 2 pessoas de Operações. A capacidade de apoio é o primeiro limite operacional a rever no marco 3 (Plano Financeiro, §6).
 
 ### 4.2 Stocks
 
@@ -152,16 +168,16 @@ O P7 (slide 5) descreve seis passos, da necessidade do cliente ao valor entregue
 | CO2 | Descobrir no mapa | Localização; raio de 10 minutos por omissão (Análise §7) | Lista de produtos perto de casa | App (CTO) | Oferta ativa (PR3) |
 | CO3 | Reservar e pagar a taxa | Produto, quantidade, forma de recolha, forma de pagamento do produto | Reserva com taxa cobrada na app; código de recolha | App (CTO); faturação da taxa: Finanças e Administração | Produtor (PR4) |
 | CO4 | Recolher | Código, janela de recolha | Recolha confirmada na app | Comprador; produtor ou ponto de recolha | Operações (pontos de recolha) |
-| CO5 | Pagar o produto, se não pagou na app | Valor da reserva | Produtor pago | Comprador → produtor | Ver Q16 (pagamento num ponto de recolha) |
+| CO5 | Pagar o produto, se não pagou na app | Valor da reserva | Produtor pago | Comprador → produtor | Num ponto de recolha: na app ou por MB WAY direto ao produtor; o parceiro não recebe dinheiro (Q16, decidida a 18/11) |
 | CO6 | Avaliar | Experiência | Avaliação visível | App | Moderação |
 
 ### 5.3 Exceções (onde a confiança se ganha ou se perde)
 
 | Situação | Tratamento | Responsável | Estado |
 |---|---|---|---|
-| Produtor cancela ou não tem o produto | Reserva cancelada; sugerir alternativas na zona | App; Operações e Comunidade | Devolução da taxa: regra a decidir (Q15) |
-| Comprador não recolhe | Lembrete antes do fim da janela; reserva expira; o produtor volta a anunciar | App | Retenção ou devolução da taxa: regra a decidir (Q15) |
-| Produto com problema (qualidade, quantidade) | Reclamação na app; reembolso garantido para compras pagas na app (BMC, relação com clientes) | Operações e Comunidade; Finanças e Administração (reembolso) | Decidido (BMC); custo a estimar (Q19) |
+| Produtor cancela ou não tem o produto | Reserva cancelada; sugerir alternativas na zona; **taxa devolvida** | App; Operações e Comunidade | Decidido a 18/11 (Q15) |
+| Comprador não recolhe | Lembrete antes do fim da janela; reserva expira; o produtor volta a anunciar; **taxa retida** | App | Decidido a 18/11 (Q15) |
+| Produto com problema (qualidade, quantidade) | Reclamação na app; reembolso garantido para compras pagas na app (BMC, relação com clientes). A GrowNear reembolsa e desconta ao produtor quando a falha é dele; a transferência ao produtor só se faz depois da recolha confirmada | Operações e Comunidade; Finanças e Administração (reembolso) | Decidido a 18/11 (Q19, Q11); custo no modelo |
 | Anúncio impróprio ou risco alimentar | Moderação e remoção; regras de anúncio (SWOT, ameaças: "Um caso de intoxicação afeta a marca") | Operações e Comunidade | Regras a redigir |
 | Combinar fora da app (30 %; Análise §8) | Razões para ficar: reembolso, avaliações, histórico, alertas | Marketing e Crescimento; Operações e Comunidade | Decidido (Análise §15) |
 
@@ -181,15 +197,23 @@ O P7 (slide 16) define um processo pelas entradas, saídas, clientes, responsáv
 
 ## 7. Custo por reserva
 
-| Componente | Valor | Origem |
-|---|---|---|
-| Taxa cobrada ao comprador | 1,47 € | D16; Análise §11.1 |
-| Custo de pagamento por reserva | 0,27 € (só a taxa) · 0,56 € (taxa + produto na app) · **0,32 € em média** (21,7 % da taxa) | Tarifa de 1,5 % + 0,25 € por cobrança **[Pressuposto — validar com o grupo]** (tarifa pública da Stripe para cartões do EEE; confirmar a do MB Way); 15,9 % pagam o produto na app (P13; Análise §8) (Q10) |
-| **Margem por reserva** | **1,15 €** se a taxa não incluir IVA · **0,88 €** se incluir | Q4 |
-| Gastos com pessoal por reserva | Ano 1: 7,44 € · ano 2: 2,27 € · ano 3: 1,08 € | 122 141 € / 163 721 € / 183 645 € (Plano Organizacional §5.4) ÷ reservas do cenário de referência (§3) |
-| Outros custos fixos e variáveis | Por estimar | Nuvem, mapas, contas nas lojas de apps, *coworking*, contabilista, marketing, seguros (Plano Financeiro, VI.2) |
+Valores do modelo (`GrowNear_Plano_Financeiro.xlsx`), com a taxa a incluir IVA (Q4, decidida a 18/11).
 
-**Leitura.** A parte fixa de 0,25 € por cobrança pesa muito numa taxa de 1,47 €: come cerca de um quinto da receita. E só no ano 3 o cenário de referência cobre os gastos com pessoal (Plano Financeiro, §3). As duas coisas são decisões para o grupo (Q4, Q10, Q5).
+| Componente | Valor por reserva | Origem |
+|---|---|---|
+| Taxa cobrada ao comprador | 1,47 € (com IVA) | D16; Análise §11.1 |
+| Receita sem IVA, depois de 5 % de cancelamentos com devolução | 1,14 € | Q4; Q15 |
+| Comissões de pagamento (Stripe) | 0,32 € | 1,5 % + 0,25 € por cobrança (Stripe, preços para Portugal); 15,9 % pagam também o produto na app (Q10) |
+| Stripe Connect (transferências aos produtores) | 0,25 € (ano 1) → 0,16 € (ano 5) | 2 € por produtor com transferências no mês + 0,25 % + 0,10 € por transferência (Q23) |
+| Reembolsos suportados e nuvem | 0,03 € | Q19; pressupostos |
+| **Margem de contribuição** | **0,54 € (ano 1) → 0,65 € (ano 5)** | Modelo |
+| Gastos com pessoal por reserva | 15,33 € (ano 1) · 2,68 € (ano 2) · 1,13 € (ano 3) · 0,41 € (ano 5) | Equipa mínima (Plano Organizacional §13) ÷ reservas (§3) |
+| FSE fixos e de crescimento por reserva | 12,61 € (ano 1) · 0,41 € (ano 5) | Marketing, deslocações, *coworking*, contabilista, nuvem, seguros (Plano Financeiro, §3) |
+
+**Leitura.**
+- **A parte fixa da comissão de pagamento come ≈ 22 % da receita da taxa**, e o Connect mais ≈ 14 %.
+- **As reservas com o produto pago na app custam mais do que rendem** (≈ 1,3–1,5 € de custo contra 1,14 € de receita). Mantêm-se por decisão de 18/11, porque são a base do reembolso garantido.
+- **O ponto crítico é de ≈ 18 600 reservas por mês no ano 5**, contra 14 603 previstas (Plano Financeiro, §4).
 
 ## 8. Indicadores (KPI)
 
@@ -197,11 +221,11 @@ Os KPI seguem os princípios do P7 (slide 12): relevantes, definidos (fórmula, 
 
 | KPI | Dimensão | Fórmula | Unidade | Frequência | Responsável | Meta do ano 1 | Origem da meta |
 |---|---|---|---|---|---|---|---|
-| Reservas concluídas | Cliente / volume | Reservas com recolha confirmada no mês | n.º/mês | Semanal | CEO / Gerente | 1 368 em média | §3 (pressupostos Q2–Q3) |
-| Compradores ativos | Cliente | Compradores com ≥ 1 reserva nos últimos 30 dias | n.º | Mensal | Marketing e Crescimento | ≈ 400 em média | §3 |
+| Reservas concluídas | Cliente / volume | Reservas com recolha confirmada no mês | n.º/mês | Semanal | CEO / Gerente | 266 em média de julho a dezembro; 328 em setembro (marco 1) | §3; Plano Financeiro §6 |
+| Compradores ativos | Cliente | Compradores com ≥ 1 reserva nos últimos 30 dias | n.º | Mensal | Marketing e Crescimento | ≈ 250 no fim do ano 1; ≥ 267 em março do ano 2 (marco 2) | §3; Plano Financeiro §6 |
 | Compradores recorrentes | Cliente | Compradores com ≥ 2 reservas no mês ÷ compradores ativos | % | Mensal | Marketing e Crescimento | ≥ 50 % | Pressuposto; os entusiastas preveem 3,4 reservas/mês |
-| Custo por aquisição | Custo | Gasto de marketing ÷ novos compradores | €/comprador | Mensal | Marketing e Crescimento | A fixar com o orçamento | Q20 |
-| Produtores ativos por zona | Oferta | Produtores com ≥ 1 anúncio ativo no mês | n.º | Semanal | Operações e Comunidade | ≈ 90 | §4.1 (pressuposto Q17) |
+| Custo por aquisição | Custo | Gasto de marketing ÷ novos compradores | €/comprador | Mensal | Marketing e Crescimento | ≤ 6 € | Plano de Marketing §6.4 (M3) |
+| Produtores ativos por zona | Oferta | Produtores com ≥ 1 anúncio ativo no mês | n.º | Semanal | Operações e Comunidade | ≈ 95 captados no fim do ano 1; ≥ 124 em março do ano 2 (marco 2) | §4.1 (pressuposto Q17) |
 | Pontos de recolha ativos | Oferta | Pontos com ≥ 1 recolha no mês | n.º | Mensal | Operações e Comunidade | ≥ 3 por zona | §4.1 |
 | Taxa de recolha concluída (equivalente ao OTIF) | Cliente / serviço | Reservas recolhidas ÷ reservas confirmadas | % | Semanal | Operações e Comunidade | ≥ 95 % | Pressuposto |
 | Cancelamentos por falta de produto (rutura) | Serviço | Reservas canceladas pelo produtor ÷ reservas | % | Semanal | Operações e Comunidade | ≤ 5 % | Pressuposto |
@@ -214,9 +238,9 @@ Os KPI seguem os princípios do P7 (slide 12): relevantes, definidos (fórmula, 
 | % de reservas com o produto pago na app | Confiança | Reservas com produto pago na app ÷ reservas | % | Mensal | Marketing e Crescimento | > 16 % (subir) | Base: 16 % preferem pagar na app (Análise §8) |
 | Disponibilidade da app | Qualidade técnica | Tempo disponível ÷ tempo total | % | Mensal | CTO / Tecnologia | ≥ 99,5 % | Pressuposto |
 | Erros críticos | Qualidade técnica | Erros que impedem reservar ou pagar | n.º/mês | Semanal | CTO / Tecnologia | 0 por mais de 24 h | Pressuposto |
-| Custo de pagamento por reserva | Custo | Comissões de pagamento ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≤ 0,32 € | §7 |
-| Margem por reserva | Custo | (Taxas sem IVA − custos variáveis) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≥ 1,15 € (ou 0,88 €) | §7 (Q4) |
-| Cobertura dos custos fixos | Financeiro | Margem total ÷ custos fixos do mês | % | Mensal | Finanças e Administração | Ano 1: ≈ 15 % dos gastos com pessoal; 100 % dos custos fixos durante um trimestre abre os aumentos | §3; regra dos aumentos (D3) |
+| Custo de pagamento por reserva | Custo | (Comissões Stripe + Stripe Connect) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≤ 0,57 € no ano 1; ≤ 0,48 € no ano 5 | §7 |
+| Margem por reserva | Custo | (Taxas sem IVA − custos variáveis) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≥ 0,54 € no ano 1; ≥ 0,65 € no ano 5 | §7 (Q4 decidida) |
+| Cobertura dos custos fixos | Financeiro | Margem de contribuição dos últimos 12 meses ÷ custos fixos anualizados | % | Mensal | Finanças e Administração | Ano 5: ≈ 79 % do ponto crítico. Acima de 100 % mais o custo de quem entra, abre a fase 2 da equipa | Plano Financeiro §4; Plano Organizacional §13 |
 | Erro da previsão | Planeamento | \|reservas reais − previstas\| ÷ previstas | % | Mensal | Marketing e Crescimento | ≤ 25 % | Pressuposto; P7, slide 7 |
 | Desvio ao orçamento | Planeamento | (Real − orçamentado) ÷ orçamentado | % | Mensal | Finanças e Administração | ± 10 % | Pressuposto |
 
@@ -230,3 +254,21 @@ Os KPI seguem os princípios do P7 (slide 12): relevantes, definidos (fórmula, 
 | Custo | Margem por reserva | O custo de pagamento subiu? A encomenda média desceu? | Finanças e Administração | Rever meios de pagamento e valor mínimo (Q10, Q5) |
 
 Como no caso do P7 (slides 14–15), os indicadores leem-se juntos: subir as reservas com mais cancelamentos por falta de produto é crescer sem oferta, o contrário de "oferta primeiro".
+
+## 9. Calendário de implementação e marcos
+
+O modelo assume a Lda. constituída em janeiro do ano 1 (2027) **[Pressuposto]** e o lançamento aos compradores em julho (decisão de 18/11).
+
+| Mês | Quando | O que acontece | Responsável |
+|---|---|---|---|
+| 1 | Janeiro do ano 1 | Constituição da Lda.; capital social e empréstimo (1.ª tranche); contas nas lojas de apps; equipamento de teste | CEO; Finanças e Administração |
+| 1–4 | Janeiro a abril | MVP da app: mapa, anúncio, reserva, pagamento da taxa (e do produto, opcional), avaliações; testes com utilizadores. Registo da marca (mês 2) | CTO |
+| 4–5 | Abril e maio | Termos de uso, RGPD e regras de anúncio (jurídico, mês 5); escolha da tarifa e do modelo de contas da Stripe (Q23) | Finanças e Administração; CTO |
+| 5–6 | Maio e junho | **Oferta primeiro:** sessões com a junta de freguesia de Águas Santas e cooperativas; registo assistido dos primeiros produtores; acordo com 3 pontos de recolha | Operações e Comunidade |
+| 7 | Julho | **Lançamento aos compradores** em Águas Santas; campanha de lançamento; salários do CTO e do responsável de Operações | Marketing e Crescimento |
+| 9 | Setembro | **Marco 1:** reservas no mês (previsto 328; mínimo 229) | CEO |
+| 15 | Março do ano 2 | **Marco 2:** compradores ativos (≥ 267) e produtores captados (≥ 124) na zona 1 → 2.ª tranche de financiamento e captação nas zonas 2 e 3 | Sócios |
+| 16 | Abril do ano 2 | Abertura das zonas 2 e 3 (embaixadores a partir daqui) | Operações e Comunidade |
+| 25 | Janeiro do ano 3 | GrowNear Pro | CTO; Marketing e Crescimento |
+| 27 | Março do ano 3 | **Marco 3:** reservas no mês (previsto 2 950; mínimo 2 065) → zonas 4 e 5. No cenário de referência entra o assistente de apoio | Sócios |
+
