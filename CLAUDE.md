@@ -18,7 +18,7 @@ Língua de trabalho: **português de Portugal**, grafia do Acordo Ortográfico (
 | `GrowNear_Missao_Visao.md` | Missão, visão e mantra ("Do quintal para a mesa do vizinho") |
 | `GrowNear_Proposta_Valor.docx` | Declaração de proposta de valor |
 | `GrowNear_Business_Model_Canvas.docx` / `.pdf` | Business Model Canvas (9 blocos) |
-| `GrowNear_SWOT.pdf` / `.png` | Análise SWOT (códigos S/W/O/T usados nos outros documentos, ex. T1, W3) |
+| `GrowNear_SWOT.pdf` / `.png` | Análise SWOT. Cita-se sempre pelo texto do item (ex.: "Risco de fuga à plataforma"), nunca por códigos (decisão de 18/11) |
 | `GrowNear_Decisoes_Plano_Organizacional.html` | Página de apoio à reunião de 12/11 (não entregável): decisões D1–D16 para o Plano Organizacional (semana 9), com contexto, opções e recomendação; gera um resumo para colar no Claude |
 | `GrowNear_Plano_Organizacional.md` | Plano Organizacional redigido a partir das decisões de 12/11: estrutura, organograma, funções, decisão, gestão de pessoas, recrutamento, pressupostos para o plano financeiro (salários de entrada de mercado por perfil; salários do ano 1 financiados por empréstimo de ≈ 125 000 €) |
 | `GrowNear_Plano_Organizacional.html` | Mesmo conteúdo em página: organograma com os perfis de cada equipa, cartões das funções e restantes secções. Abre-se no browser; ao mudar o `.md`, atualizar também o `.html` |

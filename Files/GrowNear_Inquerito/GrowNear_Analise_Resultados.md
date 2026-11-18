@@ -208,7 +208,7 @@ Diferença entre importância (P8) e satisfação (P7) nos atributos comuns:
 
 Leitura:
 - A **frescura** é o fator mais importante, acima de todos os outros com significância (QI2, Friedman), e o que tem maior lacuna. É o argumento central da comunicação ("colhido hoje, perto de si").
-- A **variedade** é o segundo na média, mas não se distingue estatisticamente de desperdício, pesticidas, proximidade e apoio ao produtor local (QI2). Choca com a oferta limitada à época (T4): é um risco a gerir, não a esconder.
+- A **variedade** é o segundo na média, mas não se distingue estatisticamente de desperdício, pesticidas, proximidade e apoio ao produtor local (QI2). Choca com a oferta limitada à época (SWOT: "Oferta irregular e sazonal"): é um risco a gerir, não a esconder.
 - **Saber quem produziu** é o fator menos importante (abaixo de todos, exceto do preço; QI2). A rastreabilidade não deve ser o argumento principal, mas sim o meio para garantir frescura e confiança.
 - O preço gera insatisfação (43 % com 1–2), mas pesa pouco na decisão (7.º lugar). Não convém posicionar a app como alternativa mais barata.
 
@@ -265,7 +265,7 @@ Confiança (P15):
 Leitura:
 - A **taxa não é o problema**: 64 % aceitam-na e só 5 % a apontam como principal motivo para não usar a app (P22). A aceitação não depende da forma de pagamento preferida (59 % a 69 %, χ² p = 0,59).
 - O **problema é pagar antecipadamente a um desconhecido**: 54 % discordam de que se sentiriam seguros. Quem prefere pagar na recolha tem confiança média de 2,03; quem prefere pagar na app, 3,56.
-- **Risco de fuga à plataforma (W3, T6):** 30 % admitem que passariam a combinar fora da app. Como as pessoas tendem a não o admitir, é um valor mínimo.
+- **Risco de fuga à plataforma** (SWOT: "Risco de fuga à plataforma")**:** 30 % admitem que passariam a combinar fora da app. Como as pessoas tendem a não o admitir, é um valor mínimo.
 - Implicação: só 16 % preferem pagar na app. **Decisão do grupo (05/11):** o comprador paga o produto na app ou ao produtor na recolha, à escolha. A taxa (0,50 € + 5 % do valor reservado) é cobrada sempre na app, no momento da reserva. Assim a receita não depende de pagar o produto na app, e a aceitação da taxa não depende da forma de pagamento preferida (QI8). Riscos a gerir: reservas não recolhidas e combinar fora da app (30 %), por isso as avaliações e o reembolso continuam a ser necessários.
 
 ## 9. Produtos da época (OE8)
@@ -598,15 +598,15 @@ Os dados não chegam para escolher um segmento pela idade ou pela região. Chega
 
 | Área | Recomendação | Base | SWOT / BMC |
 |---|---|---|---|
-| Proposta de valor | Liderar com **frescura** e "do vizinho", não com rastreabilidade nem com preço | §6, QI2, QI3 | Proposta de valor; O2 |
+| Proposta de valor | Liderar com **frescura** e "do vizinho", não com rastreabilidade nem com preço | §6, QI2, QI3 | Proposta de valor; SWOT: "Procura de produtos locais e naturais" |
 | Comunicação | Mensagens de apoio ao produtor local e de redução do desperdício (valores associados ao interesse) e garantias de confiança (reembolso, avaliações) | §10, QI12 | Relação com clientes |
 | Segmento-alvo | Pessoas sem acesso a produtos de horta, abertas ao pagamento digital, em zona urbana ou suburbana. Perfil típico: responsáveis pelas compras de 35 a 54 anos | §12, H4, QI18 | Segmentos de clientes |
-| Raio de pesquisa | 10 minutos por omissão (≈ 3–5 km de carro; ≈ 800 m a pé) | §7, H5, QI5 | T7 |
+| Raio de pesquisa | 10 minutos por omissão (≈ 3–5 km de carro; ≈ 800 m a pé) | §7, H5, QI5 | — |
 | Recolha | Prioridade a **pontos de recolha** (cafés, mercearias); a casa do produtor é secundária | §7, QI6 | Parceiros-chave |
 | Taxa | Manter 0,50 € + 5 % (aceite por 64 %; só 5 % a veem como barreira). Receita média de 1,47 € por encomenda | §8, H6, QI8, §11.1 | Fontes de receita |
 | Valor mínimo | **5 €** (aceite por 86 %); 10 € só é aceite por 63 % | §8 | Fontes de receita |
-| Pagamento | O produto paga-se na app ou ao produtor na recolha, à escolha (52 % preferem a recolha). A taxa é cobrada sempre na app, no momento da reserva, por isso a receita não depende da forma de pagamento. A preferência pela recolha vem da desconfiança (QI9): reembolso garantido e avaliações visíveis para ganhar confiança no pagamento na app | §8, QI8, QI9, QI18 | W3, T6 |
-| Fuga à plataforma | 30 % admitem combinar fora da app: dar razões para ficar (reembolso, avaliações, histórico, alertas) | §8 | W3, T6 |
-| Sazonalidade | Mostrar alternativas disponíveis quando falta um produto; o alerta "avisem-me" é secundário | §9, QI10 | T4 |
+| Pagamento | O produto paga-se na app ou ao produtor na recolha, à escolha (52 % preferem a recolha). A taxa é cobrada sempre na app, no momento da reserva, por isso a receita não depende da forma de pagamento. A preferência pela recolha vem da desconfiança (QI9): reembolso garantido e avaliações visíveis para ganhar confiança no pagamento na app | §8, QI8, QI9, QI18 | SWOT: "Risco de fuga à plataforma" |
+| Fuga à plataforma | 30 % admitem combinar fora da app: dar razões para ficar (reembolso, avaliações, histórico, alertas) | §8 | SWOT: "Risco de fuga à plataforma" |
+| Sazonalidade | Mostrar alternativas disponíveis quando falta um produto; o alerta "avisem-me" é secundário | §9, QI10 | SWOT: "Oferta irregular e sazonal" |
 | Metas | Planear com 16 % (entusiastas; IC de 9 % a 23 %) como cenário prudente e **de referência**, porque o interesse está provavelmente sobrestimado pela amostra por conveniência (§14), e 45 % (núcleo; IC de 36 % a 54 %) como cenário otimista, aplicados à população-alvo da zona de lançamento | §10, §11.1 | — |
-| Próximo estudo | Inquirir produtores (oferta e variedade) e alargar a amostra aos 25–44 anos antes do lançamento | §14 | W2 |
+| Próximo estudo | Inquirir produtores (oferta e variedade) e alargar a amostra aos 25–44 anos antes do lançamento | §14 | SWOT: "Pouca experiência no setor" |

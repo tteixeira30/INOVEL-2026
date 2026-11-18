@@ -111,7 +111,7 @@ As funções são conceptuais (D5). No ano 1, cada fundador assume uma. O salár
 |---|---|---|
 | Desenvolver e manter a app | Fundadores (Tecnologia) | D6. É a competência crítica, por isso fica dentro. Também é o maior corte de custos |
 | Captar produtores | Fundadores na 1.ª zona, com o apoio de juntas e cooperativas. Embaixadores locais, pagos por comissão, a partir da abertura de novas zonas | D7. O custo acompanha o crescimento |
-| Apoio, moderação e reembolsos | Fundadores no ano 1 (Operações e Comunidade, com o apoio dos outros quando houver picos). A primeira linha é automática: FAQ e *chatbot* com respostas às perguntas mais comuns. Contrata-se um colaborador de apoio só quando o volume o justificar (não orçamentado) | D8. Fica dentro: a confiança é o ponto fraco (W3) e um serviço externo não conhece a comunidade |
+| Apoio, moderação e reembolsos | Fundadores no ano 1 (Operações e Comunidade, com o apoio dos outros quando houver picos). A primeira linha é automática: FAQ e *chatbot* com respostas às perguntas mais comuns. Contrata-se um colaborador de apoio só quando o volume o justificar (não orçamentado) | D8. Fica dentro: a confiança é o ponto fraco (SWOT: "Risco de fuga à plataforma") e um serviço externo não conhece a comunidade |
 | Contabilidade | Contabilista certificado externo | Obrigatório; custo fixo do BMC |
 
 ### 5.3 Plano de contratações (D10)

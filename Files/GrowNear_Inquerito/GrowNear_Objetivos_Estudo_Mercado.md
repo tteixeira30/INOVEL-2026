@@ -13,13 +13,13 @@
 | # | Objetivo específico | Decisão do negócio que alimenta | Ligação à SWOT |
 |---|---|---|---|
 | OE1 | Caracterizar o perfil dos inquiridos (idade, agregado, zona e região de residência, situação profissional, papel nas compras) | Variáveis de segmentação | — |
-| OE2 | Caracterizar os hábitos atuais de compra de frutas e legumes frescos (local, frequência, gasto, canais já usados, acesso a horta própria) | Concorrentes e substitutos; dimensão da necessidade | T1, T5 |
-| OE3 | Medir o interesse e a intenção de usar a app, e a principal barreira à utilização | Metas de compradores e de encomendas | O2 |
-| OE4 | Determinar a disposição para se deslocar (tempo máximo e forma de recolha preferida) | Pontos de recolha; raio de pesquisa | T7 |
-| OE5 | Avaliar a importância relativa de preço, frescura, origem, comodidade e outros fatores na decisão de compra | Proposta de valor e comunicação | O2 |
-| OE6 | Avaliar a aceitação do pagamento na app e da taxa de serviço, e o valor previsto por encomenda | Taxa, valor mínimo, pagamento na recolha | W3, T6 |
-| OE7 | Comparar o interesse (OE3) entre perfis (OE1) e hábitos (OE2) para identificar os segmentos prioritários | Segmento-alvo do plano de marketing | W2 |
-| OE8 | Avaliar a aceitação de uma oferta limitada aos produtos da época e da região | Alertas "avisem-me" e pré-reservas | T4 |
+| OE2 | Caracterizar os hábitos atuais de compra de frutas e legumes frescos (local, frequência, gasto, canais já usados, acesso a horta própria) | Concorrentes e substitutos; dimensão da necessidade | "Alternativas grátis: OLX, Facebook…"; "Hábito de dar ou trocar o excedente" |
+| OE3 | Medir o interesse e a intenção de usar a app, e a principal barreira à utilização | Metas de compradores e de encomendas | "Procura de produtos locais e naturais" |
+| OE4 | Determinar a disposição para se deslocar (tempo máximo e forma de recolha preferida) | Pontos de recolha; raio de pesquisa | — |
+| OE5 | Avaliar a importância relativa de preço, frescura, origem, comodidade e outros fatores na decisão de compra | Proposta de valor e comunicação | "Procura de produtos locais e naturais" |
+| OE6 | Avaliar a aceitação do pagamento na app e da taxa de serviço, e o valor previsto por encomenda | Taxa, valor mínimo, pagamento na recolha | "Risco de fuga à plataforma" |
+| OE7 | Comparar o interesse (OE3) entre perfis (OE1) e hábitos (OE2) para identificar os segmentos prioritários | Segmento-alvo do plano de marketing | "Pouca experiência no setor" |
+| OE8 | Avaliar a aceitação de uma oferta limitada aos produtos da época e da região | Alertas "avisem-me" e pré-reservas | "Oferta irregular e sazonal" |
 
 Notas:
 - O **OE7 não tem perguntas próprias**: é respondido na análise, cruzando as respostas dos outros objetivos. É o que responde diretamente ao objetivo geral.

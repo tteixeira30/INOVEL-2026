@@ -224,13 +224,12 @@ Ordenadas por urgência: primeiro o que bloqueia o Plano Financeiro.
 - *Contexto:* as metas do Plano de Produção §8 que não vêm do programa de vendas são **[Pressupostos]** (recolha ≥ 95 %, avaliação ≥ 4,5, resposta ≤ 24 h, etc.). O Plano Organizacional diz que as metas se fixam com o plano financeiro.
 - *Recomendação:* aprovar na reunião de sócios junto com o orçamento.
 
-**Q21. Numeração e nome dos capítulos (ambiguidade do enunciado).**
-- *Contexto:* os slides de produção e do plano organizacional numeram I–VI (IV Organizacional, V Produção, VI Financeiro); o P8 chama ao V "Operational Plan"; a apresentação da UC (Milestone 02) lista I–VIII, com o Estudo de Mercado como IV, o Organizacional como V, o Operacional como VI e o Financeiro como VII.
-- *Recomendação:* seguir a lista do Milestone 02 (é a da avaliação) e perguntar ao professor. Chamar ao capítulo "Plano Operacional (Plano de Produção)".
+**Q21. Numeração e nome dos capítulos — decidido a 18/11.**
+- *Contexto:* os slides numeram os capítulos de formas diferentes (I–VI nos de produção e do plano organizacional; o P8 chama ao V "Operational Plan"; o Milestone 02 da UC lista I–VIII).
+- *Decisão:* fazer só o suficiente para os documentos ficarem coerentes entre si; não é questão para o professor. Usa-se "Plano Operacional (Plano de Produção)" e a numeração do Milestone 02 quando se montar o plano de negócio.
 
-**Q22. Códigos da SWOT inconsistentes.**
-- *Contexto:* a SWOT tem 6 ameaças (`GrowNear_SWOT.pdf`), mas os objetivos do estudo de mercado referem "T7" (OE4). Os novos documentos citam a SWOT pelo texto, não pelo código, para não propagar o erro.
-- *Recomendação:* numerar a SWOT na imagem (S1–S6, W1–W5, O1–O6, T1–T6) e corrigir as referências.
+**Q22. Referências à SWOT — decidido a 18/11.**
+- *Decisão:* nunca usar códigos de letra e número para os itens da SWOT; citar sempre o texto do item. Os códigos antigos não correspondiam à SWOT atual (um deles nem existia) e foram substituídos pelo texto em todos os `.md` e `.html`.
 
 **Q23. Pagamentos por conta dos produtores e obrigações da plataforma.**
 - *Contexto:* quando o produto é pago na app, a GrowNear recebe dinheiro de terceiros. Isso costuma exigir uma solução de "marketplace" do prestador de pagamentos (conta do produtor ligada, com verificação de identidade), e as plataformas têm obrigações de comunicação à Autoridade Tributária sobre os vendedores (diretiva DAC7). O BMC prevê "garantir as regras fiscais".
