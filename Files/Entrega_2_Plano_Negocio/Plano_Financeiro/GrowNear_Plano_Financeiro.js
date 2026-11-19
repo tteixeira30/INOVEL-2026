@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// ---------- Leitura do CSV (igual a GrowNear_Inquerito/GrowNear_Analise_Estatistica.js) ----------
+// ---------- Leitura do CSV (igual a ../Analise_Inquerito/GrowNear_Analise_Estatistica.js) ----------
 function parseCsv(t) {
   const rows = []; let r = [], f = '', q = false;
   for (let i = 0; i < t.length; i++) {
@@ -20,7 +20,7 @@ function parseCsv(t) {
   if (f || r.length) { r.push(f); rows.push(r); }
   return rows;
 }
-const csv = path.join(__dirname, 'GrowNear_Inquerito', 'GrowNear_Inquerito_Respostas.csv');
+const csv = path.join(__dirname, '..', '..', 'Entrega_1_Ideia_Estudo_Mercado', 'Estudo_Mercado', 'GrowNear_Inquerito_Respostas.csv');
 const C = { P12: 26, P13: 27, P19: 36, P20: 37, P21: 38, P25: 42 };
 const D = parseCsv(fs.readFileSync(csv, 'utf8')).slice(1).filter(r => r[C.P25] !== 'Resido fora de Portugal');
 const n = (r, j) => Number(r[j]);

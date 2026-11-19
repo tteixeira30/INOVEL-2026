@@ -1,7 +1,7 @@
 # GrowNear — Plano de Produção (Plano Operacional)
 
 > Base: slides "The Production Plan" (Capítulo V; `Inovel.Context/Production_Plan (1).pptx`) e "The Organisational Operating Model" (P7; `Inovel.Context/INOVEL_P7_Organizational_Operating_Model_EN.pptx`). As notas do orador das duas apresentações estão vazias.
-> Liga-se ao BMC (atividades, recursos, custos), ao Plano Organizacional (`GrowNear_Plano_Organizacional.md`: funções, decisões D1–D16), à análise do inquérito (`GrowNear_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o Plano Financeiro (`GrowNear_Plano_Financeiro.md`).
+> Liga-se ao BMC (atividades, recursos, custos), ao Plano Organizacional (`GrowNear_Plano_Organizacional.md`: funções, decisões D1–D16), à análise do inquérito (`Analise_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o Plano Financeiro (`GrowNear_Plano_Financeiro.md`).
 > Os números da §3, §4.1, §7 e §8 vêm do modelo `GrowNear_Plano_Financeiro.xlsx` (cenário de referência, com as decisões de 18/11). Os valores marcados **[Pressuposto — validar com o grupo]** não vêm do repositório; as questões **Q1, Q2, …** estão no compêndio (`GrowNear_Plano_Financeiro.md`, §10).
 > Numeração do capítulo: decidida a 18/11 (Q21). No plano de negócio é o capítulo VI, "Plano Operacional (Plano de Produção)", pela numeração do Milestone 02.
 

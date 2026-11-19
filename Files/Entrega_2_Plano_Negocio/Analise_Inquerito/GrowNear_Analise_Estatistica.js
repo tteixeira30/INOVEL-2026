@@ -21,7 +21,7 @@ function parseCsv(t) {
   return rows;
 }
 
-const all = parseCsv(fs.readFileSync(path.join(__dirname, 'GrowNear_Inquerito_Respostas.csv'), 'utf8')).slice(1);
+const all = parseCsv(fs.readFileSync(path.join(__dirname, '..', '..', 'Entrega_1_Ideia_Estudo_Mercado', 'Estudo_Mercado', 'GrowNear_Inquerito_Respostas.csv'), 'utf8')).slice(1);
 // Índices das colunas no CSV (coluna 0 = carimbo de data/hora)
 const C = {
   P1: 1, P2: 2, P3: 3, P4: 4, P5: 5, P6: [6, 7, 8, 9, 10], P7: [11, 12, 13, 14], P8: [15, 16, 17, 18, 19, 20, 21, 22],

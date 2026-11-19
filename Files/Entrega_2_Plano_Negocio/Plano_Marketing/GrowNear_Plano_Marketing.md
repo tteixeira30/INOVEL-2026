@@ -1,6 +1,6 @@
 # GrowNear — Plano de Marketing (rascunho para o grupo)
 
-> Base: slides "Marketing Fundamentals" (`Inovel.Context/Marketing_Fundamentals.pdf`, secção 6: as cinco partes do plano de marketing e a análise económica), análise do inquérito (`GrowNear_Inquerito/GrowNear_Analise_Resultados.md`), SWOT (`GrowNear_SWOT.pdf`), BMC e proposta de valor.
+> Base: slides "Marketing Fundamentals" (`Inovel.Context/Marketing_Fundamentals.pdf`, secção 6: as cinco partes do plano de marketing e a análise económica), análise do inquérito (`Analise_Inquerito/GrowNear_Analise_Resultados.md`), SWOT (`Entrega_1_Ideia_Estudo_Mercado/Modelo_Negocio/GrowNear_SWOT.pdf`), BMC e proposta de valor.
 > **Estado:** rascunho de 18/11, para o grupo rever. Vale 20 % da nota final (Milestone 02). Os números de vendas e do orçamento vêm do modelo `GrowNear_Plano_Financeiro.xlsx` (cenário de referência, salvo indicação). Valores sem origem no repositório estão marcados **[Pressuposto]**; as questões **M1, M2, …** estão na §7.
 > Os itens da SWOT citam-se pelo texto, nunca por códigos (decisão de 18/11).
 
@@ -77,7 +77,7 @@ Não há um concorrente dedicado ao excedente de particulares (SWOT: "Nicho sem 
 
 ## 3. SWOT revisitada e objetivos estratégicos
 
-A SWOT do grupo (`GrowNear_SWOT.pdf`) mantém-se. O estudo de mercado e o modelo financeiro acrescentam três leituras:
+A SWOT do grupo (`Entrega_1_Ideia_Estudo_Mercado/Modelo_Negocio/GrowNear_SWOT.pdf`) mantém-se. O estudo de mercado e o modelo financeiro acrescentam três leituras:
 - **"Valor por venda baixo (2 a 5 €)"** contradiz o gasto previsto no inquérito (19,40 € por encomenda; P12). A previsão usa 19,40 €. Se o valor real ficar perto da SWOT, a taxa desce para ≈ 0,68 € e não cobre o custo de pagamento (0,25 € fixos + 1,5 %). O valor mínimo de 5 € e o incentivo a juntar produtos do mesmo produtor numa reserva protegem a margem (M2).
 - **"Pagamento seguro e avaliações"** é a força que responde à maior barreira (54 % não se sentem seguros a pagar antecipadamente). Tem custo: cada reserva com o produto pago na app custa à GrowNear mais do que a taxa rende (Plano Financeiro, §3). Mantém-se por decisão de 18/11.
 - **"Oferta irregular e sazonal"** limita o volume no inverno e justifica lançar em julho.

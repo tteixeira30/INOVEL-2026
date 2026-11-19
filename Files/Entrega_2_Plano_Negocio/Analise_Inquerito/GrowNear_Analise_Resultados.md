@@ -1,6 +1,6 @@
 # GrowNear — Análise de Resultados do Inquérito
 
-> Base: respostas exportadas do Google Forms (`GrowNear_Inquerito_Respostas.csv`; o mesmo em `.xlsx`). Análise feita a 14/10/2026; revista a 05/11/2026 com as orientações da análise de dados (variáveis, questões de investigação, inferência).
+> Base: respostas exportadas do Google Forms (`Entrega_1_Ideia_Estudo_Mercado/Estudo_Mercado/GrowNear_Inquerito_Respostas.csv`; o mesmo em `.xlsx`). Análise feita a 14/10/2026; revista a 05/11/2026 com as orientações da análise de dados (variáveis, questões de investigação, inferência).
 > Perguntas em `GrowNear_Inquerito_Estrutura_e_Perguntas.md`; objetivos e hipóteses em `GrowNear_Objetivos_Estudo_Mercado.md`.
 > Escalas 1 a 5: "% 4–5" é a percentagem que respondeu 4 ou 5 (*top-2-box*); "% 1–2" a que respondeu 1 ou 2.
 

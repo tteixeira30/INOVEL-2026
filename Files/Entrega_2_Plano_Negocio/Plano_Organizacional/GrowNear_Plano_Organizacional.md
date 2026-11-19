@@ -1,7 +1,7 @@
 # GrowNear — Plano Organizacional
 
 > Base: decisões do grupo na reunião de 12/11/2026 (D1–D16, em `GrowNear_Decisoes_Plano_Organizacional.html`) e slides "As pessoas no contexto das organizações" (`Inovel.Context/Plano organizacional.pdf`).
-> Liga-se ao BMC (atividades, recursos e custos), à análise do inquérito (`GrowNear_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o plano financeiro (semanas 10–11).
+> Liga-se ao BMC (atividades, recursos e custos), à análise do inquérito (`Analise_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o plano financeiro (semanas 10–11).
 > Numeração: no plano de negócio é o capítulo V, pela numeração do Milestone 02 (Q21, decidida a 18/11).
 > **Propostas de 18/11 (§13):** o Plano Financeiro mostrou que a D3 e a D10, como decididas, não são financiáveis. Há propostas de alteração para os sócios aprovarem. Enquanto não forem aprovadas, as secções §4–§12 descrevem as decisões de 12/11.
 
