@@ -125,25 +125,25 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <h1>Plano Organizacional</h1>
   <p class="lede">Como a GrowNear se organiza: estrutura, funções, decisão e gestão de pessoas, a partir das decisões do grupo de 12/11/2026 e dos slides "As pessoas no contexto das organizações".</p>
   <nav aria-label="Secções">
-    <a href="#organograma">Organograma</a><a href="#funcoes">Funções</a><a href="#estrategia">Da missão às iniciativas</a><a href="#fatores">Fatores do desenho</a><a href="#juridica">Forma jurídica</a><a href="#dentro-fora">Dentro e fora</a><a href="#contratacoes">Contratações</a><a href="#salarios">Salários</a><a href="#decisao">Decisão</a><a href="#pessoas">Gestão de pessoas</a><a href="#recrutamento">Recrutamento</a><a href="#retencao">Retenção</a><a href="#financeiro">Pressupostos financeiros</a><a href="#propostas">Propostas de 18/11</a><a href="#decisoes">Decisões D1–D16</a>
+    <a href="#organograma">Organograma</a><a href="#funcoes">Funções</a><a href="#estrategia">Da missão às iniciativas</a><a href="#fatores">Fatores do desenho</a><a href="#juridica">Forma jurídica</a><a href="#dentro-fora">Dentro e fora</a><a href="#contratacoes">Contratações</a><a href="#salarios">Salários</a><a href="#decisao">Decisão</a><a href="#pessoas">Gestão de pessoas</a><a href="#recrutamento">Recrutamento</a><a href="#retencao">Retenção</a><a href="#financeiro">Pressupostos financeiros</a><a href="#financiamento">Financiamento</a><a href="#propostas">Propostas e decisões de 20/11</a><a href="#decisoes">Decisões D1–D16</a>
   </nav>
-  <div class="note"><b>Propostas de 18/11 (a aprovar pelos sócios).</b> O Plano Financeiro mostrou que a D3 e a D10, como decididas a 12/11, não são financiáveis (≈ 965 000 € de prejuízo em 5 anos). Há propostas de alteração em <a href="#propostas">Propostas de 18/11</a>. Até serem aprovadas, as secções seguintes descrevem as decisões de 12/11.</div>
+  <div class="note"><b>Decisões de 20/11 (a confirmar com o grupo).</b> A 19/11 o professor respondeu às perguntas PP1–PP9 e a 20/11 as respostas foram aplicadas ao modelo financeiro. Esta página descreve a versão do modelo: os 5 fundadores com salário desde o mês 1 (PP4, que substitui as propostas P1 e P2 de 18/11), as contratações da D10 por fases (P3), o assistente de apoio pelo volume (P4) e o financiamento por tranches com apoios públicos (P5, PP8). As decisões de 12/11 e as propostas de 18/11 ficam como histórico. Números do cenário de referência, salvo indicação. Ver <a href="#propostas">Propostas e decisões de 20/11</a>.</div>
 
   <h2 id="organograma">Estrutura e organograma</h2>
-  <p>Estrutura <b>funcional simples</b>: o CEO no topo e quatro equipas abaixo, cada uma liderada por um fundador. Escolha o ano para ver quem está em cada equipa. Cada caixa lista os perfis da equipa; só contam as pessoas orçamentadas. Os perfis "se o volume justificar" aparecem a partir do ano 2: desde então podem entrar quando o volume de trabalho o exigir. Clique no nome de uma equipa para ver a descrição da função.</p>
+  <p>Estrutura <b>funcional simples</b>: o CEO no topo e quatro equipas abaixo, cada uma liderada por um fundador. Escolha o período para ver quem está em cada equipa no modelo financeiro (cenário de referência). Os colaboradores já não têm ano marcado: entram por regra (volume ou fase 3; ver Contratações). Clique no nome de uma equipa para ver a descrição da função.</p>
   <div class="toolbar">
-    <div class="seg" role="group" aria-label="Ano do organograma">
-      <button type="button" data-y="1" aria-pressed="false">Ano 1</button>
-      <button type="button" data-y="2" aria-pressed="false">Ano 2</button>
-      <button type="button" data-y="3" aria-pressed="true">Ano 3</button>
+    <div class="seg" role="group" aria-label="Período do organograma">
+      <button type="button" data-y="1" data-label="Meses 1–22 (ano 1 e quase todo o ano 2)" aria-pressed="false">Meses 1–22</button>
+      <button type="button" data-y="2" data-label="Meses 23–75 (fim do ano 2 ao início do ano 7)" aria-pressed="false">Meses 23–75</button>
+      <button type="button" data-y="3" data-label="Desde o mês 76 (abril do ano 7)" aria-pressed="true">Desde o mês 76</button>
     </div>
     <div class="legend">
       <span><i class="dot f"></i>Fundador</span>
-      <span><i class="dot c"></i>Colaborador orçamentado</span>
+      <span><i class="dot c"></i>Colaborador no modelo</span>
       <span><i class="dot v"></i>Só se o volume justificar (não orçamentado)</span>
       <span><i class="dot e"></i>Externo</span>
     </div>
-    <div class="total" id="total" aria-live="polite">Ano 3: 8 pessoas</div>
+    <div class="total" id="total" aria-live="polite">Desde o mês 76 (abril do ano 7): 9 pessoas</div>
   </div>
   <div class="tree-wrap">
     <div class="tree">
@@ -152,34 +152,34 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
           <div class="node top"><a href="#f-ceo">CEO / Gerente</a><div class="prof"><span><i class="dot f"></i>CEO</span></div><span class="hc" data-n="1,1,1">1 pessoa</span></div>
           <ul>
             <li class="first">
-              <div class="node"><a href="#f-cto">Tecnologia</a><div class="prof"><span><i class="dot f"></i>CTO</span><span data-from="2"><i class="dot c"></i>Programador júnior</span><span class="v" data-from="2"><i class="dot v"></i>2.º programador júnior</span></div><span class="hc" data-n="1,2,2">2 pessoas</span></div>
+              <div class="node"><a href="#f-cto">Tecnologia</a><div class="prof"><span><i class="dot f"></i>CTO</span><span data-from="3"><i class="dot c"></i>Programador júnior <small>(fase 3, mês 76)</small></span><span class="v"><i class="dot v"></i>2.º programador júnior</span></div><span class="hc" data-n="1,1,2">2 pessoas</span></div>
             </li>
             <li>
-              <div class="node"><a href="#f-mkt">Marketing e Crescimento</a><div class="prof"><span><i class="dot f"></i>Responsável de marketing</span><span data-from="2"><i class="dot c"></i>Marketing júnior</span></div><span class="hc" data-n="1,2,2">2 pessoas</span></div>
+              <div class="node"><a href="#f-mkt">Marketing e Crescimento</a><div class="prof"><span><i class="dot f"></i>Responsável de marketing</span><span data-from="3"><i class="dot c"></i>Marketing júnior <small>(fase 3, mês 76)</small></span></div><span class="hc" data-n="1,1,2">2 pessoas</span></div>
             </li>
             <li>
-              <div class="node"><a href="#f-ops">Operações e Comunidade</a><div class="prof"><span><i class="dot f"></i>Responsável de operações e comunidade</span><span class="v" data-from="2"><i class="dot v"></i>Assistente de apoio e comunidade</span><span data-from="2"><i class="dot e"></i>Embaixadores locais <small>(comissão)</small></span></div><span class="hc" data-n="1,1,1">1 pessoa</span></div>
+              <div class="node"><a href="#f-ops">Operações e Comunidade</a><div class="prof"><span><i class="dot f"></i>Responsável de operações e comunidade</span><span data-from="2"><i class="dot c"></i>Assistente de apoio e comunidade <small>(volume, mês 23)</small></span><span data-from="2"><i class="dot e"></i>Embaixadores locais <small>(comissão)</small></span></div><span class="hc" data-n="1,2,2">2 pessoas</span></div>
             </li>
             <li class="last">
-              <div class="node"><a href="#f-fin">Finanças e Administração</a><div class="prof"><span><i class="dot f"></i>Responsável financeiro</span><span data-from="3"><i class="dot c"></i>Técnico administrativo e financeiro</span><span><i class="dot e"></i>Contabilista certificado</span></div><span class="hc" data-n="1,1,2">2 pessoas</span></div>
+              <div class="node"><a href="#f-fin">Finanças e Administração</a><div class="prof"><span><i class="dot f"></i>Responsável financeiro</span><span data-from="3"><i class="dot c"></i>Técnico administrativo e financeiro <small>(fase 3, mês 76)</small></span><span><i class="dot e"></i>Contabilista certificado</span></div><span class="hc" data-n="1,1,2">2 pessoas</span></div>
             </li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
-  <p class="small muted">A assembleia geral de sócios não entra no organograma: é um órgão social (ver Forma jurídica). Os embaixadores e o contabilista não são trabalhadores da empresa.</p>
+  <p class="small muted">Cenário de referência: 5 pessoas no ano 1; 6 a partir do mês 23 (novembro do ano 2); 9 a partir do mês 76 (abril do ano 7). Otimista: assistente no mês 19 e fase 3 no mês 61. Pessimista: assistente no mês 27; a fase 3 não chega nos 10 anos. A 12/11 a D10 previa 7 pessoas no ano 2 e 8 no ano 3. A assembleia geral de sócios não entra no organograma: é um órgão social (ver Forma jurídica). Os embaixadores e o contabilista não são trabalhadores da empresa.</p>
 
   <h2 id="funcoes">Descrição de funções</h2>
-  <p>As funções são conceptuais: o plano não atribui nomes. No ano 1, cada um dos 5 fundadores assume uma.</p>
+  <p>As funções são conceptuais: o plano não atribui nomes. Desde o mês 1, cada um dos 5 fundadores assume uma, a tempo inteiro e com salário.</p>
   <div class="roles">
     <article class="role" id="f-ceo">
       <h3>CEO / Gerente</h3>
       <div class="mis">Coordenar a empresa e representá-la</div>
       <dl>
-        <div><dt>Responsabilidades</dt><dd><ul><li>Estratégia e prioridades</li><li>Coordenação das quatro áreas</li><li>Representação legal da empresa</li><li>Parcerias institucionais: juntas, câmaras, cooperativas</li><li>Relação com o banco (empréstimo) e com investidores</li></ul></dd></div>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Estratégia e prioridades</li><li>Coordenação das quatro áreas</li><li>Representação legal da empresa</li><li>Parcerias institucionais: juntas, câmaras, cooperativas</li><li>Relação com o banco (empréstimo), com o IEFP (apoios) e com investidores</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Liderança, negociação, visão de negócio</dd></div>
-        <div><dt>Indicadores</dt><dd>Cumprimento das metas; parcerias ativas; novas zonas abertas</dd></div>
+        <div><dt>Indicadores</dt><dd>Cumprimento das metas e dos marcos; parcerias ativas; novas zonas abertas</dd></div>
         <div><dt>Salário base</dt><dd>1 700 € bruto/mês × 14, o mais alto da empresa, mais uma parte variável ligada aos resultados</dd></div>
       </dl>
     </article>
@@ -217,7 +217,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       <h3>Finanças e Administração</h3>
       <div class="mis">Garantir a saúde financeira e o cumprimento legal</div>
       <dl>
-        <div><dt>Responsabilidades</dt><dd><ul><li>Orçamento e tesouraria, incluindo o empréstimo</li><li>Faturação e relação com o contabilista</li><li>Obrigações fiscais e de Segurança Social</li><li>RGPD e termos de uso</li><li>Processos de pessoal: contratos, seguros, HSST</li></ul></dd></div>
+        <div><dt>Responsabilidades</dt><dd><ul><li>Orçamento e tesouraria, incluindo o empréstimo e as tranches</li><li>Candidaturas e obrigações dos apoios (Empreende XXI, +Emprego)</li><li>Faturação e relação com o contabilista</li><li>Obrigações fiscais e de Segurança Social</li><li>RGPD e termos de uso</li><li>Processos de pessoal: contratos, seguros, HSST</li></ul></dd></div>
         <div><dt>Competências</dt><dd>Gestão financeira, conhecimento legal e fiscal</dd></div>
         <div><dt>Indicadores</dt><dd>Desvios ao orçamento; obrigações cumpridas nos prazos</dd></div>
         <div><dt>Salário base</dt><dd>1 250 € bruto/mês × 14</dd></div>
@@ -236,9 +236,9 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       <tr><td>Valores</td><td class="wrap muted">Que conduta nos guia?</td><td><b>Proximidade</b> (a comunidade antes da escala); <b>Confiança</b> (pagamento seguro, avaliações reais, reembolso garantido); <b>Desperdício zero</b>; <b>Simplicidade</b> (vender é grátis e rápido)</td></tr>
       <tr><td>Competências críticas</td><td class="wrap muted">O que nos dá vantagem?</td><td>Tecnologia feita dentro de casa; construção de comunidade local; gestão da confiança</td></tr>
       <tr><td>Diretrizes</td><td class="wrap muted">Que temas nos guiam?</td><td>"Oferta primeiro, zona a zona"; operação leve e automatizada; confiança como prioridade</td></tr>
-      <tr><td>Objetivos</td><td class="wrap muted">Em que se concretizam?</td><td>Ano 1: lançar a app e validar o modelo numa zona. Ano 2: abrir novas zonas. Ano 3: lançar o GrowNear Pro</td></tr>
+      <tr><td>Objetivos</td><td class="wrap muted">Em que se concretizam?</td><td>Ano 1: lançar a app e validar o modelo numa zona. Ano 2: abrir novas zonas e lançar o GrowNear Pro (mês 13; era o ano 3 até à PP1 de 20/11). Anos 3–5: chegar às 16 zonas</td></tr>
       <tr><td>Indicadores</td><td class="wrap muted">Como medimos?</td><td>Produtores ativos por zona; reservas por mês; % de reservas pagas na app; nota média das avaliações; tempo de resposta; reembolsos por 100 reservas</td></tr>
-      <tr><td>Metas</td><td class="wrap muted">Que valores, quando?</td><td>Fixadas no plano financeiro. Referência do inquérito: cenário prudente de 16 % da população-alvo da zona</td></tr>
+      <tr><td>Metas</td><td class="wrap muted">Que valores, quando?</td><td>Marcos de validação do plano financeiro: reservas no mês 9; compradores e produtores na zona 1 no mês 15 (marco 2, condição da 2.ª tranche); reservas no mês 27. Referência do inquérito: cenário prudente de 16 % da população-alvo da zona</td></tr>
       <tr><td>Iniciativas</td><td class="wrap muted">Que ações?</td><td>Sessões com produtores e juntas; "convida um vizinho"; reembolso garantido; pontos de recolha</td></tr>
       <tr><td>Avaliação</td><td class="wrap muted">Como acompanhamos?</td><td>Reunião semanal de equipa e reunião mensal de sócios, sobre os indicadores</td></tr>
     </tbody>
@@ -250,7 +250,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <thead><tr><th>Fator</th><th>GrowNear</th><th>Consequência no desenho</th></tr></thead>
     <tbody>
       <tr><td>Objetivos</td><td>Validar o modelo numa zona antes de crescer</td><td>Estrutura mínima no ano 1</td></tr>
-      <tr><td>Estratégia</td><td>Liderança pelo custo, operação leve; crescimento zona a zona</td><td>Salários de entrada de mercado; apoio automatizado (FAQ e <i>chatbot</i>); contratações só com volume; embaixadores por comissão</td></tr>
+      <tr><td>Estratégia</td><td>Liderança pelo custo, operação leve; crescimento zona a zona</td><td>Salários de entrada de mercado; apoio automatizado (FAQ e <i>chatbot</i>); contratações só com volume ou margem; embaixadores por comissão</td></tr>
       <tr><td>Tecnologia</td><td>O produto é uma app; a equipa é de engenharia</td><td>Desenvolvimento interno; Tecnologia é uma área central</td></tr>
       <tr><td>Dimensão</td><td>5 fundadores</td><td>Estrutura funcional simples, uma área por fundador</td></tr>
       <tr><td>Ambiente</td><td>Mercado local; o supermercado é o concorrente real; desconfiança no pagamento antecipado</td><td>Área dedicada à comunidade e à confiança; presença no terreno</td></tr>
@@ -260,7 +260,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <h2 id="juridica">Forma jurídica e órgãos sociais</h2>
   <div class="tw"><table>
     <tbody>
-      <tr><td>Forma</td><td>Sociedade por quotas (Lda.) com 5 sócios, cada um com 20 %. Responsabilidade limitada ao capital. Constituição online (Empresa Online, cerca de 360 €). Capital social a definir no plano financeiro (mínimo de 1 € por quota)</td></tr>
+      <tr><td>Forma</td><td>Sociedade por quotas (Lda.) com 5 sócios, cada um com 20 %. Responsabilidade limitada ao capital. Constituição online (Empresa Online, cerca de 360 €). Capital social de 5 000 € no modelo financeiro (1 000 € por sócio, realizado no mês 1)</td></tr>
       <tr><td>Assembleia geral</td><td>Aprova o orçamento (incluindo o de cada contratação), as contas e as novas zonas por <b>maioria</b> (3 de 5). Alterações ao contrato de sociedade: 3/4 dos votos, por lei</td></tr>
       <tr><td>Gerência</td><td>Um gerente, o CEO. Representa a empresa e coordena as áreas. É o fundador com o salário mais alto e tem uma parte variável ligada aos resultados</td></tr>
     </tbody>
@@ -270,45 +270,53 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <div class="tw"><table>
     <thead><tr><th>Atividade-chave (BMC)</th><th>Quem faz</th><th>Porquê</th></tr></thead>
     <tbody>
-      <tr><td>Desenvolver a app</td><td>Fundadores (Tecnologia)</td><td>É a competência crítica e o maior corte de custos</td></tr>
-      <tr><td>Captar produtores</td><td>Fundadores na 1.ª zona, com juntas e cooperativas; embaixadores locais por comissão nas zonas novas</td><td>O custo acompanha o crescimento</td></tr>
-      <tr><td>Apoio e moderação</td><td>Fundadores no ano 1. Primeira linha automática: FAQ e <i>chatbot</i>. Contrata-se alguém só quando o volume o justificar (não orçamentado)</td><td>A confiança é o ponto fraco (SWOT: Risco de fuga à plataforma); um serviço externo não conhece a comunidade</td></tr>
-      <tr><td>Contabilidade</td><td>Contabilista certificado externo</td><td>Obrigatório; custo fixo do BMC</td></tr>
+      <tr><td>Desenvolver a app</td><td>Fundadores (Tecnologia)</td><td>É a competência crítica. O custo do CTO nos meses 1–4 (MVP, ≈ 9 315 €) é capitalizado como ativo intangível (PP6)</td></tr>
+      <tr><td>Captar produtores</td><td>Fundadores na 1.ª zona, com juntas e cooperativas; embaixadores locais por comissão (10 € por produtor novo) nas zonas novas</td><td>O custo acompanha o crescimento</td></tr>
+      <tr><td>Apoio e moderação</td><td>Fundadores. Primeira linha automática: FAQ e <i>chatbot</i>. O assistente de apoio e comunidade entra pela regra do volume (mês 23 no cenário de referência)</td><td>A confiança é o ponto fraco (SWOT: Risco de fuga à plataforma); um serviço externo não conhece a comunidade. A capacidade no pico está em aberto</td></tr>
+      <tr><td>Contabilidade</td><td>Contabilista certificado externo</td><td>Obrigatório; custo fixo do BMC (200 €/mês no modelo)</td></tr>
     </tbody>
   </table></div>
 
-  <h2 id="contratacoes">Plano de contratações (3 anos)</h2>
-  <p>No ano 1 a equipa são os 5 fundadores; no ano 2 entram um programador e um marketing júnior; no ano 3 entra o técnico administrativo e financeiro. Antes de abrir uma vaga, a equipa tenta reorganizar as tarefas.</p>
+  <h2 id="contratacoes">Plano de contratações</h2>
+  <p>Desde 18/11 (propostas P3 e P4, mantidas a 20/11), as contratações deixam de ter ano marcado e entram por regra, verificada todos os meses no modelo. O mês do modelo é o momento em que a regra se cumpre: os sócios continuam a aprovar o orçamento da vaga e a pessoa é escolhida pelo CEO e pelo líder da equipa. Antes de abrir uma vaga, a equipa tenta reorganizar as tarefas.</p>
   <div class="years">
-    <div class="year"><div class="eyebrow">Ano 1</div><div class="big num">5 pessoas</div><p class="small">Os 5 fundadores, a tempo inteiro.</p></div>
-    <div class="year"><div class="eyebrow" style="color:var(--soil)">Ano 2</div><div class="big num">7 pessoas</div><p class="small">+1 programador júnior (Tecnologia) e +1 marketing júnior (Marketing e Crescimento). Entram os embaixadores locais nas zonas novas (externos, por comissão).</p></div>
-    <div class="year"><div class="eyebrow" style="color:var(--ink)">Ano 3</div><div class="big num">8 pessoas</div><p class="small">+1 técnico administrativo e financeiro (ISCAP / IEFP) em Finanças e Administração.</p></div>
+    <div class="year"><div class="eyebrow">Mês 1</div><div class="big num">5 pessoas</div><p class="small">Os 5 fundadores, a tempo inteiro e com salário (PP4, 20/11).</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--soil)">Mês 23 · regra do volume</div><div class="big num">6 pessoas</div><p class="small">+1 assistente de apoio e comunidade, quando há mais de 20 contactos humanos por dia útil ou mais de 500 produtores captados. Entra pelos produtores (os contactos estavam em ≈ 15 por dia). Otimista: mês 19; pessimista: mês 27.</p></div>
+    <div class="year"><div class="eyebrow" style="color:var(--ink)">Mês 76 · fase 3</div><div class="big num">9 pessoas</div><p class="small">+ programador júnior, marketing júnior e técnico administrativo e financeiro, quando a margem dos últimos 12 meses cobre os custos fixos (fase 2, mês 65) e também o custo dos 3 (≈ 61 500 €/ano). Otimista: mês 61; pessimista: não entram em 120 meses.</p></div>
   </div>
-  <div class="note"><b>Só se o volume justificar, a partir do ano 2 (não orçamentados).</b> 2.º programador júnior (Tecnologia) e assistente de apoio e comunidade (Operações e Comunidade). Os sócios aprovam o orçamento da vaga; a pessoa é escolhida pelo CEO e pelo líder da equipa.</div>
+  <div class="note"><b>Não orçamentado:</b> 2.º programador júnior, só se o volume justificar. <b>Histórico:</b> a 12/11 a D10 previa o programador e o marketing júnior no ano 2 e o técnico no ano 3 (7 e 8 pessoas).</div>
 
   <h2 id="salarios">Salários e remuneração</h2>
   <p>Cada perfil recebe o salário base de entrada do mercado no Porto: bruto por mês, pago 14 vezes por ano. O custo anual inclui a TSU da empresa (23,75 %).</p>
   <div class="tw"><table class="num">
-    <thead><tr><th>Perfil</th><th>Bruto/mês</th><th>Custo anual</th><th>Referência de mercado (entrada)</th><th>Orçamento</th></tr></thead>
+    <thead><tr><th>Perfil</th><th>Bruto/mês</th><th>Custo anual</th><th>Referência de mercado (entrada)</th><th>No modelo</th></tr></thead>
     <tbody>
-      <tr><td>CEO / Gerente</td><td>1 700 € + variável</td><td>≈ 29 450 €</td><td>Licenciado em gestão: ≈ 1 215–1 600 €. Fica acima por ser a função com mais responsabilidade</td><td>Fundador</td></tr>
-      <tr><td>CTO / Tecnologia</td><td>1 600 €</td><td>≈ 27 700 €</td><td>Programador júnior: 1 500–1 600 € no Porto; ≈ 1 820 € de média nacional júnior em TI</td><td>Fundador</td></tr>
-      <tr><td>Responsável de marketing</td><td>1 300 €</td><td>≈ 22 500 €</td><td>Marketing júnior: 1 100–1 600 €; ofertas no Porto entre 1 200 e 1 500 €</td><td>Fundador</td></tr>
-      <tr><td>Responsável de operações</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Sem referência direta: entre o apoio ao cliente (≈ 1 000 €) e o marketing júnior</td><td>Fundador</td></tr>
-      <tr><td>Responsável financeiro</td><td>1 250 €</td><td>≈ 21 650 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>Fundador</td></tr>
-      <tr><td>Técnico adm. e financeiro</td><td>1 150 €</td><td>≈ 19 900 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>A partir do ano 3</td></tr>
-      <tr><td>Programador júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Ofertas júnior no Porto: 1 500–1 600 €. O grupo fixou 1 200 € (primeiro emprego ou estágio)</td><td>A partir do ano 2</td></tr>
-      <tr><td>2.º programador júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Igual ao programador júnior</td><td class="muted">Se o volume justificar (ano 2+)</td></tr>
-      <tr><td>Marketing júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Marketing júnior: 1 100–1 600 €</td><td>A partir do ano 2</td></tr>
-      <tr><td>Apoio e comunidade</td><td>1 000 €</td><td>≈ 17 300 €</td><td>Apoio ao cliente no Porto: ≈ 900–1 100 €</td><td class="muted">Se o volume justificar (ano 2+)</td></tr>
+      <tr><td>CEO / Gerente</td><td>1 700 € + variável</td><td>≈ 29 450 €</td><td>Licenciado em gestão: ≈ 1 215–1 600 €. Fica acima por ser a função com mais responsabilidade</td><td>Desde o mês 1 (sem a variável)</td></tr>
+      <tr><td>CTO / Tecnologia</td><td>1 600 €</td><td>≈ 27 700 €</td><td>Programador júnior: 1 500–1 600 € no Porto; ≈ 1 820 € de média nacional júnior em TI</td><td>Desde o mês 1</td></tr>
+      <tr><td>Responsável de marketing</td><td>1 300 €</td><td>≈ 22 500 €</td><td>Marketing júnior: 1 100–1 600 €; ofertas no Porto entre 1 200 e 1 500 €</td><td>Desde o mês 1</td></tr>
+      <tr><td>Responsável de operações</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Sem referência direta: entre o apoio ao cliente (≈ 1 000 €) e o marketing júnior</td><td>Desde o mês 1</td></tr>
+      <tr><td>Responsável financeiro</td><td>1 250 €</td><td>≈ 21 650 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>Desde o mês 1</td></tr>
+      <tr><td>Técnico adm. e financeiro</td><td>1 150 €</td><td>≈ 19 900 €</td><td>Técnico de contabilidade júnior no Porto: ≈ 1 000–1 500 €</td><td>Fase 3 (mês 76)</td></tr>
+      <tr><td>Programador júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Ofertas júnior no Porto: 1 500–1 600 €. O grupo fixou 1 200 € (primeiro emprego ou estágio)</td><td>Fase 3 (mês 76)</td></tr>
+      <tr><td>2.º programador júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Igual ao programador júnior</td><td class="muted">Se o volume justificar (não orçamentado)</td></tr>
+      <tr><td>Marketing júnior</td><td>1 200 €</td><td>≈ 20 800 €</td><td>Marketing júnior: 1 100–1 600 €</td><td>Fase 3 (mês 76)</td></tr>
+      <tr><td>Apoio e comunidade</td><td>1 000 €</td><td>≈ 17 300 €</td><td>Apoio ao cliente no Porto: ≈ 900–1 100 €</td><td>Volume (mês 23)</td></tr>
     </tbody>
   </table></div>
-  <div class="note"><b>Custo com pessoal orçamentado:</b> ano 1, os 5 fundadores (7 050 €/mês × 14 + TSU) ≈ <b>122 100 €</b>, financiado por um <b>empréstimo de ≈ 125 000 €</b>. Ano 2, com o programador e o marketing júnior, ≈ <b>163 700 €</b>. Ano 3, com o técnico administrativo, ≈ <b>183 600 €</b>. Não inclui a parte variável do CEO.</div>
-  <div class="note"><b>Com as propostas de 18/11:</b> <b>24 451 €</b> no ano 1 (CTO e Operações, de julho a dezembro), <b>52 782 €</b> no ano 2 e <b>68 953 €</b> no ano 3 (com o assistente de apoio desde o mês 27), incluindo subsídios, TSU, seguro, benefícios e formação. Ver <a href="#propostas">Propostas de 18/11</a>.</div>
+  <h3>Custo com pessoal no modelo financeiro (cenário de referência)</h3>
+  <div class="tw"><table class="num">
+    <thead><tr><th></th><th>Ano 1</th><th>Ano 2</th><th>Anos 3–6</th><th>Ano 7</th><th>Anos 8–10</th></tr></thead>
+    <tbody>
+      <tr><td>Pessoas pagas (fim do ano)</td><td>5</td><td>6</td><td>6</td><td>9</td><td>9</td></tr>
+      <tr><td>Gastos com pessoal</td><td><b>123 128 €</b></td><td><b>136 062 €</b></td><td><b>152 233 €</b>/ano</td><td><b>203 099 €</b></td><td><b>220 054 €</b>/ano</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Inclui salários (× 14), TSU, seguro de acidentes de trabalho (1 % das remunerações), benefícios (120 € por pessoa e por mês desde o mês 13) e formação (500 € por pessoa e por ano desde o mês 13). Não inclui a parte variável do CEO. O custo do CTO nos meses 1–4 (≈ 9 315 €) é capitalizado como ativo intangível (PP6). Os apoios ao emprego entram como subsídios à exploração (ver <a href="#financiamento">Financiamento</a>).</p>
+  <div class="note"><b>Histórico.</b> A 12/11 o custo orçamentado era de ≈ 122 100 € no ano 1 (financiado por um empréstimo de ≈ 125 000 €), ≈ 163 700 € no ano 2 e ≈ 183 600 € no ano 3. A 18/11, com as propostas P1–P4, passou a 24 451 €, 52 782 € e 68 953 € (só CTO e Operações pagos, desde o mês 7). A 20/11 a PP4 substituiu as propostas P1 e P2.</div>
   <ul>
-    <li><b>CEO:</b> salário base mais alto e uma parte variável ligada aos resultados. Proposta a confirmar: prémio anual de até 2 salários base (até 3 400 €), pago só se as metas anuais forem cumpridas.</li>
-    <li><b>Aumentos:</b> quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios.</li>
-    <li><b>Dividendos:</b> como sócios, os 5 fundadores recebem dividendos na proporção das quotas (20 % cada) quando houver lucros, depois de constituída a reserva legal.</li>
+    <li><b>CEO:</b> salário base mais alto e uma parte variável ligada aos resultados. Proposta a confirmar: prémio anual de até 2 salários base (até 3 400 €), pago só se as metas anuais forem cumpridas. Não está no modelo.</li>
+    <li><b>Aumentos:</b> quando a receita cobrir os custos fixos durante um trimestre, com aprovação dos sócios. Não estão no modelo.</li>
+    <li><b>Dividendos:</b> como sócios, os 5 fundadores recebem dividendos na proporção das quotas (20 % cada) quando houver lucros, depois de constituída a reserva legal e de cobertos os prejuízos acumulados.</li>
   </ul>
   <details>
     <summary>Fontes da pesquisa salarial (12/11/2026; agregadores e ofertas de emprego, valores indicativos)</summary>
@@ -357,20 +365,26 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td>Agregar</td><td>Recrutamento interno primeiro; ISEP, IEFP e rede local; entrevista, prova prática e período experimental</td></tr>
       <tr><td>Orientar</td><td>Descrição de funções e indicadores por área; acolhimento com um "padrinho"</td></tr>
-      <tr><td>Desenvolver</td><td>Orçamento de formação por pessoa; 40 horas anuais de formação, obrigatórias por lei</td></tr>
+      <tr><td>Desenvolver</td><td>Orçamento de formação por pessoa (500 € por ano); 40 horas anuais de formação, obrigatórias por lei</td></tr>
       <tr><td>Recompensar</td><td>Salário base de entrada por perfil; parte variável do CEO; aumentos quando a receita cobrir os custos fixos durante um trimestre; prémio ligado aos resultados para os colaboradores; dividendos para os sócios</td></tr>
       <tr><td>Reter</td><td>Horário flexível e trabalho remoto; missão e cultura; progressão para responsável de área ou de zona</td></tr>
       <tr><td>Acompanhar</td><td>Indicadores na reunião semanal; conversa de objetivos no fim do período experimental e depois anual</td></tr>
     </tbody>
   </table></div>
-  <p class="small muted">Obrigações legais desde o ano 1, a cargo de Finanças e Administração: o gerente é remunerado como membro de órgão estatutário e os outros quatro fundadores têm contrato de trabalho; inscrição na Segurança Social; seguro de acidentes de trabalho; serviços de saúde e segurança no trabalho (HSST).</p>
+  <p class="small muted">Obrigações legais desde o mês 1, a cargo de Finanças e Administração: o gerente é remunerado como membro de órgão estatutário e os outros quatro fundadores têm contrato de trabalho; inscrição na Segurança Social; seguro de acidentes de trabalho; serviços de saúde e segurança no trabalho (HSST).</p>
+  <div class="note"><b>Obrigações dos apoios ao emprego</b> (PP8, decidido a 20/11, a confirmar com o grupo; ver <a href="#financiamento">Financiamento</a>).
+    <ul>
+      <li><b>Empreende XXI (5 promotores):</b> a empresa tem de <b>manter os 5 postos de trabalho dos fundadores durante pelo menos 2 anos</b>. Nenhum fundador pode sair nem passar a tempo parcial nesse período sem pôr em risco o apoio (≈ 40 285 €, a fundo perdido). Elegibilidade dos promotores e contagem do prazo por confirmar no regulamento, quando o programa reabrir.</li>
+      <li><b>+Emprego (colaboradores):</b> só há apoio se a pessoa contratada for <b>desempregada inscrita no IEFP</b>, não for sócia e tiver contrato sem termo; o valor do modelo (8 702 €) é o de contratados com até 35 anos. Condiciona o recrutamento.</li>
+    </ul>
+  </div>
 
   <h2 id="recrutamento">Recrutamento e seleção</h2>
   <p>O processo segue os slides (Cardoso, 2001).</p>
   <ol class="steps">
-    <li><div><b>Vaga e decisão de preenchimento.</b> Primeiro tenta-se redistribuir tarefas. Só se abre a vaga se a carga não couber na equipa, e só se os sócios aprovarem o orçamento.</div></li>
+    <li><div><b>Vaga e decisão de preenchimento.</b> Primeiro tenta-se redistribuir tarefas. Só se abre a vaga se a carga não couber na equipa, e só se os sócios aprovarem o orçamento. As regras do modelo (volume e fase 3) dizem quando a vaga é possível, não a abrem sozinhas.</div></li>
     <li><div><b>Perfil da função.</b> Parte da descrição de funções.</div></li>
-    <li><div><b>Recrutamento.</b> Programador e estagiários: ISEP / P.Porto e IEFP. Marketing e finanças: P.Porto (ISCAP) e IEFP. Apoio e comunidade: IEFP e rede local. Embaixadores: juntas, cooperativas e produtores ativos na app.</div></li>
+    <li><div><b>Recrutamento.</b> Programador e estagiários: ISEP / P.Porto e IEFP. Marketing e finanças: P.Porto (ISCAP) e IEFP. Apoio e comunidade: IEFP e rede local. Embaixadores: juntas, cooperativas e produtores ativos na app. <b>Condição dos apoios:</b> o modelo conta com o +Emprego para os 4 colaboradores (assistente e os 3 perfis da fase 3). O candidato escolhido tem de estar inscrito no IEFP como desempregado antes da contratação, com contrato sem termo. Os recém-licenciados do ISEP ou do P.Porto inscrevem-se no IEFP antes da oferta; a vaga publica-se também no IEFP. Sem isto perde-se ≈ 8 702 € por contratação.</div></li>
     <li><div><b>Pré-seleção</b> pelo currículo e pelo perfil.</div></li>
     <li><div><b>Seleção.</b> Entrevista com o líder da equipa e o CEO, mais uma prova prática (exercício técnico ou caso de comunidade).</div></li>
     <li><div><b>Decisão final:</b> a pessoa é escolhida pelo CEO e pelo líder da equipa.</div></li>
@@ -381,48 +395,76 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
   <div class="tw"><table>
     <thead><tr><th>Medida</th><th>Quando</th><th>Notas</th></tr></thead>
     <tbody>
-      <tr><td>Prémio ligado aos resultados</td><td>Colaboradores</td><td>Sem cedência de quotas: cada sócio mantém os 20 %</td></tr>
+      <tr><td>Prémio ligado aos resultados</td><td>Colaboradores</td><td>Valor a fixar; não está no modelo. Sem cedência de quotas: cada sócio mantém os 20 %</td></tr>
       <tr><td>Horário flexível e remoto</td><td>Desde o início</td><td>Custo zero</td></tr>
-      <tr><td>Formação e conferências</td><td>A partir do ano 2</td><td>Referência: 500 € por pessoa por ano</td></tr>
-      <tr><td>Benefícios</td><td>A partir do ano 2</td><td>Seguro de saúde e cartão refeição, com os primeiros colaboradores</td></tr>
+      <tr><td>Formação e conferências</td><td>Desde o mês 13, toda a equipa</td><td>500 € por pessoa por ano no modelo</td></tr>
+      <tr><td>Benefícios</td><td>Desde o mês 13, toda a equipa</td><td>Seguro de saúde e cartão refeição: 120 € por pessoa por mês no modelo (pressuposto)</td></tr>
       <tr><td>Cultura e missão</td><td>Desde o início</td><td>Toda a equipa participa nas sessões com produtores</td></tr>
     </tbody>
   </table></div>
-  <p class="small muted">Local de trabalho: remoto, com <i>coworking</i> nos dias presenciais (100–200 € por posto por mês). As sessões com produtores fazem-se em espaços de juntas e cooperativas.</p>
+  <p class="small muted">Local de trabalho: remoto, com <i>coworking</i> nos dias presenciais (100–200 € por posto por mês; o modelo usa 100 € por pessoa). As sessões com produtores fazem-se em espaços de juntas e cooperativas.</p>
 
   <h2 id="financeiro">Pressupostos para o plano financeiro</h2>
+  <p>Valores usados no modelo (<code>Plano_Financeiro/GrowNear_Plano_Financeiro.xlsx</code>, folha Pressupostos), com as decisões de 20/11 (a confirmar com o grupo).</p>
   <div class="tw"><table class="num">
-    <thead><tr><th>Rubrica</th><th>Ano 1</th><th>Ano 2</th><th>Ano 3</th></tr></thead>
+    <thead><tr><th>Rubrica</th><th>No modelo</th><th>Origem</th></tr></thead>
     <tbody>
-      <tr><td>Salários dos fundadores</td><td>≈ <b>122 100 €</b></td><td colspan="2">Os mesmos; aumentos quando a receita cobrir os custos fixos durante um trimestre</td></tr>
-      <tr><td>Variável do CEO</td><td colspan="3">Até ≈ 4 200 € por ano com TSU, só se as metas forem cumpridas</td></tr>
-      <tr><td>Empréstimo</td><td>≈ <b>125 000 €</b></td><td colspan="2">Reembolso + juros (taxa e prazo a fixar)</td></tr>
-      <tr><td>Colaboradores orçamentados</td><td>—</td><td>Programador + marketing júnior: ≈ 41 600 €</td><td>+ técnico adm. e financeiro: ≈ 61 500 €</td></tr>
-      <tr><td>Se o volume justificar</td><td colspan="3">Não orçamentados (valores de referência na secção Salários)</td></tr>
-      <tr><td>Embaixadores</td><td>—</td><td colspan="2">Comissão por produtor que faça as primeiras vendas</td></tr>
-      <tr><td>Formação</td><td>—</td><td colspan="2">≈ 500 € por pessoa</td></tr>
-      <tr><td>Benefícios</td><td>—</td><td colspan="2">Seguro de saúde, cartão refeição (a fixar)</td></tr>
-      <tr><td><i>Coworking</i></td><td colspan="3">100–200 € por posto por mês, nos dias presenciais</td></tr>
-      <tr><td>Constituição</td><td>≈ 360 € + capital social</td><td colspan="2">—</td></tr>
-      <tr><td>Taxa de serviço</td><td colspan="3">0,50 € + 5 % por reserva (≈ 1,47 € numa encomenda média de 19,40 €)</td></tr>
+      <tr><td>Salários dos fundadores</td><td class="wrap">5 desde o mês 1: 7 050 €/mês × 14 + 23,75 % TSU ≈ <b>122 100 €</b>/ano</td><td>PP4 (20/11); D3</td></tr>
+      <tr><td>Variável do CEO</td><td class="wrap">Não incluída (até ≈ 4 200 €/ano com TSU, só se as metas forem cumpridas)</td><td>D3</td></tr>
+      <tr><td>Assistente de apoio</td><td class="wrap">Regra do volume (&gt; 20 contactos por dia útil ou &gt; 500 produtores): mês 23</td><td>P4 (18/11)</td></tr>
+      <tr><td>Perfis da fase 3</td><td class="wrap">Programador júnior, marketing júnior, técnico adm. e financeiro (≈ 61 500 €/ano com TSU): mês 76</td><td>P3 (18/11)</td></tr>
+      <tr><td>Gastos com pessoal</td><td class="wrap">123 128 € (ano 1); 136 062 € (ano 2); 152 233 € (anos 3–6); 203 099 € (ano 7); 220 054 € (anos 8–10)</td><td>Salários</td></tr>
+      <tr><td>Seguro de acidentes</td><td class="wrap">1 % das remunerações</td><td>Pressuposto</td></tr>
+      <tr><td>Embaixadores</td><td class="wrap">10 € por produtor novo nas zonas dos anos 2–5</td><td>Pressuposto</td></tr>
+      <tr><td>Formação</td><td class="wrap">500 € por pessoa por ano, desde o mês 13</td><td>Retenção</td></tr>
+      <tr><td>Benefícios</td><td class="wrap">120 € por pessoa por mês, desde o mês 13</td><td>Pressuposto</td></tr>
+      <tr><td><i>Coworking</i></td><td class="wrap">100 € por pessoa por mês</td><td>Local de trabalho</td></tr>
+      <tr><td>Constituição</td><td class="wrap">360 € + capital social de 5 000 €</td><td>Forma jurídica</td></tr>
+      <tr><td>Contabilista</td><td class="wrap">200 €/mês</td><td>Pressuposto</td></tr>
+      <tr><td>Financiamento</td><td class="wrap">5 000 € + 150 000 € + 455 000 € = 610 000 €, mais apoios (ver Financiamento)</td><td>PP8 (20/11); P5</td></tr>
+      <tr><td>Taxa de serviço</td><td class="wrap">0,50 € + 5 % por reserva (≈ 1,47 € numa encomenda média de 19,40 €), IVA incluído</td><td>D16</td></tr>
     </tbody>
   </table></div>
-  <p class="small muted">Valores de referência. Os salários são de entrada no mercado do Porto (pesquisa de 12/11/2026).</p>
+  <p class="small muted">Histórico: a 12/11 os salários do ano 1 seriam pagos com um empréstimo de ≈ 125 000 €, e os colaboradores da D10 custariam ≈ 41 600 € no ano 2 e ≈ 61 500 € no ano 3. Os salários são de entrada no mercado do Porto (pesquisa de 12/11/2026).</p>
 
-  <h2 id="propostas">Propostas de 18/11 (a aprovar pelos sócios)</h2>
-  <p>O modelo financeiro (<code>GrowNear_Plano_Financeiro.xlsx</code>) mostra o seguinte, no cenário de referência. Com a D3 e a D10 como decididas a 12/11, a GrowNear perde <b>≈ 965 000 €</b> em 5 anos e precisa de <b>≈ 940 000 €</b>. Cada reserva deixa ≈ 0,62 € de margem, e uma equipa de 9 pessoas precisa de ≈ 38 000 reservas por mês, quando a previsão do ano 5 é de 14 600. Abrir mais zonas não resolve: a estrutura de custos tem de acompanhar a receita.</p>
+  <h2 id="financiamento">Financiamento dos salários e aumentos</h2>
+  <p>Plano de financiamento por tranches (P5 de 18/11, com os valores de 20/11; PP8, a confirmar com o grupo).</p>
   <div class="tw"><table>
-    <thead><tr><th>#</th><th>Proposta</th><th>Altera</th><th>Efeito (cenário de referência)</th></tr></thead>
+    <thead><tr><th>Fonte</th><th>Valor</th><th>Quando</th><th>Condições</th></tr></thead>
     <tbody>
-      <tr><td>P1</td><td class="wrap"><b>Equipa mínima até ao ponto crítico.</b> CTO e responsável de Operações com salário desde o lançamento. CEO, marketing e finanças a tempo parcial, sem salário, até a margem dos últimos 12 meses cobrir os custos fixos mais o seu custo (≈ 73 600 €/ano)</td><td>D3</td><td>Pessoal de 24 451 € (ano 1) a 72 187 € (ano 5), em vez de 61 564 € a 220 054 €</td></tr>
-      <tr><td>P2</td><td class="wrap"><b>Salários só a partir do lançamento</b> (mês 7); os meses 1–6 (MVP e captação) sem salário</td><td>D3</td><td>≈ 6 meses de salários a menos</td></tr>
-      <tr><td>P3</td><td class="wrap"><b>Contratações por fases.</b> Programador júnior, marketing júnior e técnico administrativo entram quando a margem também cobrir o seu custo (≈ 61 500 €/ano)</td><td>D10</td><td>Não entram nos 5 anos</td></tr>
-      <tr><td>P4</td><td class="wrap"><b>Assistente de apoio pelo volume:</b> mais de 20 contactos humanos por dia útil ou mais de 500 produtores captados</td><td>D8, D10</td><td>Entra no mês 27</td></tr>
-      <tr><td>P5</td><td class="wrap"><b>Financiamento por fases.</b> 5 000 € de capital + empréstimo de 75 000 € no arranque; 2.ª tranche de 310 000 € no mês 15, só se o marco 2 for cumprido</td><td>D3</td><td>390 000 € no total; se o marco 2 falhar, a perda fica limitada à 1.ª tranche</td></tr>
+      <tr><td>Capital social</td><td class="num">5 000 €</td><td>Mês 1</td><td class="wrap">1 000 € por sócio</td></tr>
+      <tr><td class="wrap">Empréstimo, <b>Linha Impulsar Portugal</b></td><td class="num"><b>150 000 €</b></td><td class="wrap">Mês 1 (pedido antes da constituição)</td><td class="wrap">Sublinha Novos Negócios: BPF + garantia mútua até 80 %, através dos bancos. 120 meses: 24 de carência + 96 de reembolso; TAN ≈ 6,1 % (exemplo do ABANCA). Exige ≥ 15 % de capitais próprios; provavelmente avales dos sócios. Linha ativa até 31/12/2028</td></tr>
+      <tr><td class="wrap"><b>2.ª tranche</b> (sócios ou investidor)</td><td class="num"><b>455 000 €</b></td><td>Mês 15</td><td class="wrap">Só se o <b>marco 2</b> for cumprido (compradores e produtores na zona 1 a ≥ 70 % do previsto). Um investidor exige 3/4 dos votos e dilui os 20 % de cada sócio</td></tr>
+      <tr><td class="wrap"><b>Empreende XXI</b> (IEFP, fundo perdido)</td><td class="num">≈ <b>40 285 €</b></td><td class="wrap">65 % no mês 3; 35 % no mês 13</td><td class="wrap">15 × IAS × 5 promotores. Fechado desde 23/06/2023; <b>presume-se a reabertura em 2027</b> (orientação do professor, 19/11). Obriga a manter os 5 postos ≥ 2 anos</td></tr>
+      <tr><td class="wrap"><b>+Emprego</b> (IEFP, contratação)</td><td class="num">≈ <b>8 702 €</b> por colaborador</td><td class="wrap">40 % / 40 % / 20 % (1, 12 e 24 meses depois)</td><td class="wrap">Desempregado inscrito no IEFP, até 35 anos, contrato sem termo, não sócio. No modelo: o assistente (mês 23) e os 3 perfis da fase 3 (mês 76), ≈ 34 806 € no total</td></tr>
     </tbody>
   </table></div>
-  <div class="note"><b>Resultado:</b> −310 834 € acumulados em 5 anos (contra −965 091 €); −31 723 € no ano 5. Viável sob condições, com marcos de validação. <b>Riscos:</b> três fundadores sem salário durante todo o horizonte (dedicação a tempo parcial); capacidade de Operações (2 pessoas para ≈ 1 750 produtores no ano 5); a 2.ª tranche pode exigir um investidor e diluir os 20 % de cada sócio.</div>
+  <div class="note"><b>Total: 5 000 + 150 000 + 455 000 = 610 000 €</b>, mais ≈ 75 000 € de apoios a fundo perdido. A necessidade até ao mês 120 é de ≈ 506 000 €; a caixa mínima nos 120 meses é de ≈ 17 100 € (acima dos 15 000 € de segurança). Os salários sobem quando a receita cobrir os custos fixos durante um trimestre (não está no modelo). Os dividendos só depois de cobertos os prejuízos acumulados: no cenário de referência não há nos 10 anos (≈ −456 000 € acumulados).</div>
+  <p class="small muted">Histórico: a 12/11, empréstimo de ≈ 125 000 € para os salários do ano 1; a 18/11 (P5), 75 000 € no arranque + 310 000 € no mês 15 (390 000 €). A 20/11 a 1.ª tranche passou a 150 000 € (caixa mínima até ao marco 2, com os 5 salários desde o mês 1) e a 2.ª a 455 000 € (caixa mínima até ao mês 120).</p>
 
+  <h2 id="propostas">Propostas de 18/11 e decisões de 20/11</h2>
+  <p><b>Porque houve propostas a 18/11.</b> O modelo de então (5 anos; zonas 1 / 3 / 5 / 7 / 9) mostrava que a D3 e a D10, como decididas a 12/11, não eram financiáveis: ≈ 965 000 € de perda em 5 anos, ≈ 940 000 € de necessidade, ≈ 0,62 € de margem por reserva e ≈ 38 000 reservas por mês para pagar 9 pessoas (a previsão do ano 5 era de 14 600). O grupo propôs cinco alterações (P1–P5).</p>
+  <p><b>O que mudou.</b> A 19/11 o professor respondeu à PP4 que se deve pôr salário aos fundadores, presumindo que não têm outro rendimento. A 20/11 (a confirmar com o grupo) o modelo passou a pagar os 5 fundadores desde o mês 1. Aplicaram-se também as outras respostas: zonas 1 / 4 / 8 / 12 / 16 e GrowNear Pro desde o mês 13 (PP1), 10 anos (PP2), 9 % de taxa de atualização (PP3), app como ativo intangível (PP6), apoios e Linha Impulsar (PP8).</p>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>Proposta de 18/11</th><th>Estado a 20/11</th><th>Efeito (cenário de referência)</th></tr></thead>
+    <tbody>
+      <tr><td>P1</td><td class="wrap"><b>Equipa mínima até ao ponto crítico.</b> Só CTO e Operações com salário; CEO, marketing e finanças a tempo parcial, sem salário</td><td class="wrap"><b>Substituída pela PP4</b>: os 5 com salário desde o mês 1</td><td class="wrap">Pessoal de 123 128 € (ano 1) a 152 233 € (anos 3–6), em vez de 24 451 € a 72 187 €</td></tr>
+      <tr><td>P2</td><td class="wrap"><b>Salários só a partir do lançamento</b> (mês 7)</td><td class="wrap"><b>Substituída pela PP4</b>: salários desde o mês 1 (custo do CTO nos meses 1–4 capitalizado, PP6)</td><td class="wrap">Mais 6 meses de salários no ano 1; daí a 1.ª tranche de 150 000 €</td></tr>
+      <tr><td>P3</td><td class="wrap"><b>Contratações por fases.</b> Programador, marketing júnior e técnico quando a margem também cobrir o seu custo (≈ 61 500 €/ano)</td><td class="wrap"><b>Mantida</b></td><td class="wrap">Fase 2 no mês 65; contratações no mês 76 (otimista: 61; pessimista: não entram)</td></tr>
+      <tr><td>P4</td><td class="wrap"><b>Assistente pelo volume:</b> &gt; 20 contactos humanos por dia útil ou &gt; 500 produtores</td><td class="wrap"><b>Mantida</b></td><td class="wrap">Mês 23, pelos produtores (era o 27 a 18/11; otimista: 19; pessimista: 27)</td></tr>
+      <tr><td>P5</td><td class="wrap"><b>Financiamento por fases</b>, 2.ª tranche condicionada ao marco 2</td><td class="wrap"><b>Mantida, valores novos</b> (PP8)</td><td class="wrap">5 000 € + 150 000 € + 455 000 € = 610 000 €, mais Empreende XXI e +Emprego</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>Resultado (referência, 20/11):</b> resultado líquido de −117 / −153 / −146 / −87 / −26 mil € nos anos 1–5, +45 mil € no ano 6 e perto de zero nos anos 7–10 (+22 / +6 / +2 / −1 mil €). Acumulado a 10 anos ≈ −456 000 €; VAL a 10 anos (9 %) ≈ −326 000 €; TIR −33 %; sem payback. Necessidade ≈ 506 000 €, coberta pelos 610 000 €. <b>Pessimista:</b> ≈ −1 089 000 € acumulados; faltam ≈ 624 000 € e a caixa fica abaixo do mínimo a partir do mês 44. <b>Otimista:</b> ≈ +206 000 €; VAL ≈ +46 000 €; TIR 12 %; payback ≈ 7,4 anos. A 18/11, com a P1 e a P2, o acumulado a 5 anos era de −310 834 € (contra −965 091 € com a equipa de 12/11).</div>
+  <h3>Riscos e pontos em aberto para o grupo</h3>
+  <ul>
+    <li><b>Capacidade de Operações e Comunidade.</b> 2 pessoas desde o mês 23 até ao fim, para ≈ 3 400 produtores e até ≈ 122 contactos de apoio por dia útil no pico (anos 6–10): ≈ 1 700 produtores e ≈ 61 contactos por dia por pessoa, além da captação, das sessões e dos 48 pontos de recolha. O próprio modelo assume ≈ 500 produtores por pessoa e 20 contactos por dia como limite para um assistente: seriam precisas ≈ 6–7 pessoas no pico, cujo custo não está no modelo. <b>Decisão em aberto.</b></li>
+    <li><b>A regra da fase 3.</b> Mede se a empresa pode pagar, não se precisa: nos anos 6–10 não há zonas novas e os 3 perfis não trazem receita no modelo. O lucro do ano 6 (+45 000 €) desaparece (≈ 0 nos anos 8–10). No mês 76 a margem dos últimos 12 meses (≈ 299 700 €) passa a ficar abaixo dos custos fixos anualizados com as novas pessoas (≈ 303 700 €), porque o custo real das contratações é maior do que os 61 500 € da regra. A regra mantém-se; <b>decisão em aberto:</b> manter, ligar as contratações a uma necessidade (zonas novas, volume) ou trocar estes perfis por reforço de operações.</li>
+    <li><b>Empreende XXI</b> fechado desde 23/06/2023: se não reabrir em 2027, faltam ≈ 40 285 € no arranque. Obriga a manter os 5 postos ≥ 2 anos.</li>
+    <li><b>+Emprego</b> exige desempregados inscritos no IEFP: sem isso perdem-se ≈ 8 702 € por contratação.</li>
+    <li><b>Linha Impulsar</b> exige ≥ 15 % de capitais próprios; com 5 000 € de capital (≈ 3 % dos 155 000 € do arranque) o banco deve pedir mais capital ou avales dos sócios.</li>
+    <li><b>2.ª tranche de 455 000 €:</b> na prática exige um investidor, que dilui os 20 % de cada sócio e precisa de 3/4 dos votos.</li>
+  </ul>
   <h2 id="decisoes">Decisões do grupo (D1–D16)</h2>
   <p>Decisões tomadas na reunião de 12/11/2026 e revistas na mesma semana. São a base de todas as secções acima.</p>
   <div class="tw"><table>
@@ -430,24 +472,24 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
     <tbody>
       <tr><td>D1</td><td class="wrap">Forma jurídica</td><td>Sociedade por quotas (Lda.) com os 5 sócios</td></tr>
       <tr><td>D2</td><td class="wrap">Quotas</td><td>Partes iguais (20 % cada)</td></tr>
-      <tr><td>D3</td><td class="wrap">Dedicação e salário dos fundadores</td><td>Os 5 a tempo inteiro, com o salário base de entrada do mercado para o seu perfil. O CEO tem o salário mais alto e uma parte variável ligada aos resultados. Aumentos quando a receita cobrir os custos fixos durante um trimestre. Salários do ano 1 financiados por empréstimo (≈ 125 000 €). Como sócios, recebem dividendos. <b>Proposta de alteração de 18/11: P1, P2, P5</b></td></tr>
+      <tr><td>D3</td><td class="wrap">Dedicação e salário dos fundadores</td><td>Os 5 a tempo inteiro, com o salário base de entrada do mercado para o seu perfil. O CEO tem o salário mais alto e uma parte variável ligada aos resultados. Aumentos quando a receita cobrir os custos fixos durante um trimestre. Como sócios, recebem dividendos. A 12/11 os salários do ano 1 seriam financiados por um empréstimo de ≈ 125 000 €; a 18/11 propôs-se pagar só o CTO e Operações (P1, P2); <b>a 20/11 (PP4, a confirmar) os 5 têm salário desde o mês 1</b>, com o financiamento da secção Financiamento</td></tr>
       <tr><td>D4</td><td class="wrap">Estrutura</td><td>Funcional simples</td></tr>
       <tr><td>D5</td><td class="wrap">Funções</td><td>5 funções conceptuais; o plano não atribui nomes</td></tr>
       <tr><td>D6</td><td class="wrap">Desenvolvimento da app</td><td>Equipa interna (fundadores)</td></tr>
       <tr><td>D7</td><td class="wrap">Captação de produtores</td><td>Por fases: fundadores, depois embaixadores locais</td></tr>
       <tr><td>D8</td><td class="wrap">Apoio ao cliente e moderação</td><td>Fundadores no ano 1, com FAQ e <i>chatbot</i> de respostas; contratação só quando o volume o justificar</td></tr>
       <tr><td>D9</td><td class="wrap">Decisão</td><td>Gerente (CEO) + decisões estratégicas por maioria dos sócios</td></tr>
-      <tr><td>D10</td><td class="wrap">Contratações (anos 1–3)</td><td>Ano 1: só os fundadores. Ano 2: + programador júnior e + marketing júnior. Ano 3: + técnico administrativo e financeiro. Um 2.º programador júnior e um assistente de apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa. <b>Proposta de alteração de 18/11: P3, P4</b></td></tr>
+      <tr><td>D10</td><td class="wrap">Contratações (anos 1–3)</td><td>Ano 1: só os fundadores. Ano 2: + programador júnior e + marketing júnior. Ano 3: + técnico administrativo e financeiro. Um 2.º programador júnior e um assistente de apoio e comunidade só se o volume o justificar, a partir do ano 2 (não orçamentados). Os sócios aprovam o orçamento de cada contratação; a pessoa é escolhida pelo CEO e pelo líder da equipa. <b>Proposta de 18/11, mantida a 20/11: P3, P4</b> (as contratações deixam de ter ano marcado)</td></tr>
       <tr><td>D11</td><td class="wrap">Gestão de pessoas</td><td>Modelo Soft, com objetivos claros</td></tr>
       <tr><td>D12</td><td class="wrap">Recrutamento e seleção</td><td>Interno primeiro; ISEP / P.Porto; IEFP; rede local; entrevista + prova prática + período experimental</td></tr>
       <tr><td>D13</td><td class="wrap">Retenção</td><td>Prémio ligado aos resultados (sem cedência de quotas); horário flexível e remoto; formação; benefícios; cultura e missão</td></tr>
       <tr><td>D14</td><td class="wrap">Local de trabalho</td><td>Remoto + <i>coworking</i> quando for preciso</td></tr>
-      <tr><td>D15</td><td class="wrap">Horizonte</td><td>3 anos</td></tr>
+      <tr><td>D15</td><td class="wrap">Horizonte</td><td>3 anos. A 20/11 (PP2, a confirmar) o modelo financeiro passou a 10 anos, com VAL a 3, 5 e 10 anos</td></tr>
       <tr><td>D16</td><td class="wrap">Taxa de serviço</td><td>0,50 € + 5 % do valor reservado (a proposta testada no inquérito)</td></tr>
     </tbody>
   </table></div>
 
-  <footer>GrowNear · "Do quintal para a mesa do vizinho" · Plano Organizacional com base nas decisões do grupo de 12/11/2026</footer>
+  <footer>GrowNear · "Do quintal para a mesa do vizinho" · Plano Organizacional com base nas decisões do grupo de 12/11/2026, revisto a 20/11/2026 com as respostas do professor (a confirmar com o grupo)</footer>
 </main>
 <script>
 (function(){
@@ -460,7 +502,7 @@ footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid 
       total += n;
       el.textContent = n + (n === 1 ? " pessoa" : " pessoas");
     });
-    document.getElementById("total").textContent = "Ano " + y + ": " + total + " pessoas";
+    document.getElementById("total").textContent = document.querySelector('.seg button[data-y="' + y + '"]').dataset.label + ": " + total + " pessoas";
     btns.forEach(function(b){ b.setAttribute("aria-pressed", +b.dataset.y === y ? "true" : "false"); });
   }
   btns.forEach(function(b){ b.addEventListener("click", function(){ show(+b.dataset.y); }); });

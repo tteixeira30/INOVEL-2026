@@ -32,9 +32,10 @@ Pasta `Entrega_2_Plano_Negocio/`
 | **Plano Organizacional** | `Plano_Organizacional/GrowNear_Plano_Organizacional.md` / `.html` |
 | Decisões D1–D16 (apoio à reunião de 12/11, não entregável) | `Plano_Organizacional/GrowNear_Decisoes_Plano_Organizacional.html` |
 | **Plano de Produção** | `Plano_Producao/GrowNear_Plano_Producao.md` |
+| Fluxogramas dos processos do comprador e do produtor (draw.io + imagem) | `Fluxogramas/GrowNear_Fluxograma_Comprador.drawio` / `.svg`, `Fluxogramas/GrowNear_Fluxograma_Vendedor.drawio` / `.svg` |
 | **Plano de Marketing** (rascunho) | `Plano_Marketing/GrowNear_Plano_Marketing.md` |
 | **Plano Financeiro** | `Plano_Financeiro/GrowNear_Plano_Financeiro.md` |
-| Modelo financeiro (Excel, fórmulas vivas) | `Plano_Financeiro/GrowNear_Plano_Financeiro.xlsx` |
+| Modelo financeiro (Excel, fórmulas vivas, 10 anos; respostas do professor de 19/11 aplicadas a 20/11) | `Plano_Financeiro/GrowNear_Plano_Financeiro.xlsx` |
 | Valores do inquérito para o Excel (`node GrowNear_Plano_Financeiro.js`) | `Plano_Financeiro/GrowNear_Plano_Financeiro.js` |
 
 Os dois scripts Node leem as respostas em `Entrega_1_Ideia_Estudo_Mercado/Estudo_Mercado/`.

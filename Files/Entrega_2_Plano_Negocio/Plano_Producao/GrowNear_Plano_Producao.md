@@ -2,7 +2,7 @@
 
 > Base: slides "The Production Plan" (Capítulo V; `Inovel.Context/Production_Plan (1).pptx`) e "The Organisational Operating Model" (P7; `Inovel.Context/INOVEL_P7_Organizational_Operating_Model_EN.pptx`). As notas do orador das duas apresentações estão vazias.
 > Liga-se ao BMC (atividades, recursos, custos), ao Plano Organizacional (`GrowNear_Plano_Organizacional.md`: funções, decisões D1–D16), à análise do inquérito (`Analise_Inquerito/GrowNear_Analise_Resultados.md`) e alimenta o Plano Financeiro (`GrowNear_Plano_Financeiro.md`).
-> Os números da §3, §4.1, §7 e §8 vêm do modelo `GrowNear_Plano_Financeiro.xlsx` (cenário de referência, com as decisões de 18/11). Os valores marcados **[Pressuposto — validar com o grupo]** não vêm do repositório; as questões **Q1, Q2, …** estão no compêndio (`GrowNear_Plano_Financeiro.md`, §10).
+> Os números da §3, §4.1, §7, §8 e §9 vêm do modelo `GrowNear_Plano_Financeiro.xlsx` (cenário de referência, 10 anos), com as decisões de 18/11 e as de 20/11, tomadas depois das respostas do professor de 19/11 (PP1–PP9, folha Perguntas_Professor do Excel). **As decisões de 20/11 estão por confirmar com o grupo.** Os valores marcados **[Pressuposto — validar com o grupo]** não vêm do repositório; as questões **Q1, Q2, …** estão no compêndio (`GrowNear_Plano_Financeiro.md`, §10).
 > Numeração do capítulo: decidida a 18/11 (Q21). No plano de negócio é o capítulo VI, "Plano Operacional (Plano de Produção)", pela numeração do Milestone 02.
 
 ## 0. O que o material pede e como se adapta à GrowNear
@@ -29,7 +29,7 @@ O P7 define o modelo operacional como a ligação entre a estratégia e a execu�
 | Componente | Pergunta | GrowNear |
 |---|---|---|
 | Processos | Que trabalho se faz? | Anunciar, descobrir, reservar, cobrar a taxa, recolher, avaliar; captar produtores e pontos de recolha; apoio e reembolsos (§5, §6) |
-| Pessoas | Quem responde? | 5 funções do Plano Organizacional (§5.1): CEO / Gerente; CTO / Tecnologia; Marketing e Crescimento; Operações e Comunidade; Finanças e Administração |
+| Pessoas | Quem responde? | 5 funções do Plano Organizacional (§5.1): CEO / Gerente; CTO / Tecnologia; Marketing e Crescimento; Operações e Comunidade; Finanças e Administração. Os 5 fundadores são pagos desde o mês 1 (PP4; decidido a 20/11, a confirmar com o grupo) |
 | Tecnologia | Que ferramentas e dados? | App iOS e Android desenvolvida dentro de casa (D6), nuvem (AWS / Azure), mapas (Google Maps / OpenStreetMap), pagamentos (Stripe / MB Way), FAQ e *chatbot* (D8) — BMC, parceiros e recursos-chave |
 | Governação | Como se decide? | Responsável de cada área no dia a dia; CEO entre áreas; sócios por maioria no orçamento e na abertura de zonas; reunião semanal de indicadores e mensal de sócios (Plano Organizacional §6) |
 
@@ -65,41 +65,59 @@ Atividades primárias (P7, slides 4 e 6) adaptadas a um marketplace, com o respo
 **Origem.** O Plano de Produção parte da previsão de vendas do plano de marketing (slides 3 e 5). A previsão está no rascunho do Plano de Marketing (`GrowNear_Plano_Marketing.md`, §6.3) e é calculada mês a mês no modelo `GrowNear_Plano_Financeiro.xlsx` (folha Mensal). Substitui a previsão mínima da 1.ª versão deste plano (decisão de 18/11).
 
 **Derivação, por zona e por mês:**
-- compradores ativos = agregados da zona × quota × conversão da intenção (0,75) × adoção da zona;
-- procura no pico = compradores × reservas declaradas por mês × desconto da frequência (0,75);
+- compradores ativos = agregados da zona × quota × conversão da intenção × adoção da zona;
+- procura no pico = compradores × reservas declaradas por mês × desconto da frequência;
 - oferta no pico = produtores captados × reservas por produtor;
 - **reservas = mínimo entre procura e oferta × sazonalidade do mês.**
 
 | Parâmetro | Valor | Origem |
 |---|---|---|
 | Lançamento aos compradores | Mês 7 (julho do ano 1); captação de produtores nos meses 5–6 | Decisão de 18/11 (§9) |
+| Horizonte | 10 anos (120 meses); anos 6–10 sem zonas novas, só maturação das existentes | PP2; decidido a 20/11 (a confirmar com o grupo) |
 | Agregados por zona | ≈ 10 650 (Águas Santas, Maia: 26 632 residentes ÷ 2,5) | INE, Censos 2021; proposta de 18/11 (Q2) |
-| Zonas abertas | 1 / 3 / 5 / 7 / 9 nos anos 1–5; as novas abrem em abril | Plano Organizacional §1; anos 4–5 extrapolados **[Pressuposto]** (Q3) |
+| Zonas abertas | **1 / 4 / 8 / 12 / 16** nos anos 1–5; as novas abrem em abril (meses 16, 28, 40 e 52), com captação de produtores 2 meses antes | PP1; decidido a 20/11 (a confirmar com o grupo). A proposta de 18/11 era 1 / 3 / 5 / 7 / 9; a 20/11 passou a 1 / 4 / 8 / 12 / 16 para aproximar a receita dos gastos |
 | Quota na maturidade | 9,2 % / **15,9 %** / 45,1 % (pessimista / referência / otimista) | Análise §11.1 |
-| Conversão da intenção e desconto da frequência | 0,75 e 0,75 | **[Pressuposto]**: a intenção declarada sobrestima o uso (Análise §14) |
+| Conversão da intenção e desconto da frequência | **1 e 1** na referência e no otimista; 0,75 e 0,75 no pessimista | PP5; decidido a 20/11 (a confirmar com o grupo). Até 20/11 eram 0,75 e 0,75 em todos os cenários (a intenção declarada sobrestima o uso; Análise §14) |
 | Reservas declaradas por comprador e por mês | 3,44 (entusiastas) / 3,10 (núcleo) | P21; `GrowNear_Plano_Financeiro.js` |
-| Adoção da zona | Linear até à maturidade aos 30 meses (≈ 25 % / 60 % / 90 % da quota nos anos 1–3 da zona) | **[Pressuposto]** (Q3) |
-| Sazonalidade | Pico de junho a setembro; inverno a 0,4 do pico; média anual de 0,725 | **[Pressuposto]** (SWOT: "Oferta irregular e sazonal") |
-| Produtores na maturidade | 2 % dos agregados; captação 2 meses antes da abertura; maturidade aos 18 meses | **[Pressuposto]** (Q17) |
-| Reservas por produtor ativo no pico | 15 por mês | **[Pressuposto]** (Q17) |
+| Adoção da zona | Linear até à maturidade aos 30 meses (≈ 22 % / 62 % / 96 % da quota nos anos 1–3 da zona) | **[Pressuposto]** (Q3) |
+| Sazonalidade | Pico de junho a setembro; inverno a 0,4 do pico; média anual de 0,725 (soma dos 12 meses: 8,7) | **[Pressuposto]** (SWOT: "Oferta irregular e sazonal") |
+| Produtores na maturidade | 1,5 % / **2 %** / 3 % dos agregados; captação 2 meses antes da abertura; maturidade aos 18 meses | **[Pressuposto sem dados]** (Q17): o inquérito só ouviu compradores. Ver §3.1 |
+| Reservas por produtor ativo no pico | 15 por mês | **[Pressuposto sem dados]** (Q17). Ver §3.1 |
 | Cancelamentos pelo produtor | 5 % (taxa devolvida) | Q15, decidida a 18/11 |
 | Gasto por encomenda / taxa por reserva | 19,40 € / 1,47 € com IVA (1,20 € sem IVA) | Análise §11.1; D16; Q4 |
+| GrowNear Pro | 5 € por mês (com IVA); 10 % dos produtores ativos; desde o mês 13 | PP1; decidido a 20/11 (a confirmar com o grupo). Era 5 % desde o mês 25. Preço sem base **[Pressuposto]** |
 
 **Resultado (cenário de referência):**
 
-| Ano | Zonas | Compradores ativos (fim do ano) | Produtores captados (fim do ano) | Reservas no ano | Reservas por mês (com a app lançada) | Taxas sem IVA |
-|---|---|---|---|---|---|---|
-| 1 | 1 | 254 | 95 | 1 595 | 266 | 1 811 € |
-| 2 | 3 | 1 524 | 473 | 19 665 | 1 639 | 22 327 € |
-| 3 | 5 | 3 811 | 900 | 61 114 | 5 093 | 69 387 € |
-| 4 | 7 | 6 352 | 1 326 | 118 208 | 9 851 | 134 210 € |
-| 5 | 9 | 8 892 | 1 752 | 175 237 | 14 603 | 198 958 € |
+| Ano | Zonas (fim do ano) | Compradores ativos (fim do ano) | Produtores captados (fim do ano) | Reservas no ano | Reservas por mês (com a app lançada) | Meses limitados pela oferta | Taxas sem IVA | GrowNear Pro sem IVA |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 1 | 339 | 95 | 2 836 | 473 | 0 | 3 219 € | 0 € |
+| 2 | 4 | 2 541 | 604 | 41 622 | 3 468 | 0 | 47 256 € | 1 342 € |
+| 3 | 8 | 7 283 | 1 373 | 139 252 | 11 604 | 6 | 158 102 € | 3 820 € |
+| 4 | 12 | 13 550 | 2 225 | 250 128 | 20 844 | 12 | 283 986 € | 6 779 € |
+| 5 | 16 | 20 326 | 3 077 | 361 343 | 30 112 | 12 | 410 256 € | 9 792 € |
+| 6 | 16 | 25 068 | 3 409 | 436 694 | 36 391 | 12 | 495 807 € | 11 835 € |
+| 7 a 10 (cada) | 16 | 27 101 | 3 409 | 444 861 | 37 072 | 12 | 505 080 € | 12 056 € |
 
-Pessimista: 923 / 11 378 / 35 362 / 68 397 / 101 395 reservas. Otimista: 4 077 / 50 266 / 144 751 / 229 302 / 312 713 reservas, **limitado pela oferta** em 7 a 12 meses por ano a partir do ano 3.
+Pessimista: 923 / 13 547 / 48 390 / 105 207 / 169 792 reservas nos anos 1–5 e 263 980 por ano nos anos 8–10; **nunca é limitado pela oferta** (a procura, com os descontos de 0,75, fica abaixo de 1,5 % de produtores × 15). Otimista: 6 070 / 74 241 / 211 431 / 375 192 / 542 014 reservas nos anos 1–5 e 667 291 por ano a partir do ano 7; **limitado pela oferta desde o ano 1** (4 meses no ano 1, 11 no ano 2, todos a partir do ano 3).
 
-**Diferença face à 1.ª versão** (16 416 / 72 230 / 170 726 nos anos 1–3, que o modelo reproduz se se retirarem os ajustes): lançamento no mês 7, desconto da intenção, sazonalidade no volume e teto pela oferta.
+**Diferença face às versões anteriores.** A 1.ª versão deste plano dava 16 416 / 72 230 / 170 726 reservas nos anos 1–3 (sem lançamento no mês 7, sem desconto da intenção, sem sazonalidade no volume e sem teto pela oferta). A versão de 18/11 dava 1 595 / 19 665 / 61 114 / 118 208 / 175 237 nos anos 1–5; a 20/11 passou aos valores acima. No ano 1 (uma só zona) a subida é de 1,78×, o efeito de retirar os dois descontos de 0,75 (1 ÷ 0,75²; PP5); nos anos 2–3 soma-se o efeito das zonas a mais (PP1); a partir do ano 3 a subida é travada pela oferta (§3.1).
+
+**Compradores ativos.** A linha "Compradores ativos" do modelo é a procura potencial e não está limitada pela oferta: nos anos 7–10 há 27 101 compradores, mas a oferta só serve ≈ 14 900 (51 133 reservas no pico ÷ 3,44). Desde a correção de 20/11, o modelo só paga a aquisição dos compradores que a oferta consegue servir no pico.
 
 **Sazonalidade.** Já está no volume e no perfil mensal (folha Mensal), que alimenta o orçamento de tesouraria (Plano Financeiro, §7). O lançamento em julho aproveita o pico da época.
+
+### 3.1 O peso do pressuposto dos produtores (Q17)
+
+O inquérito mediu a procura (quota, frequência, gasto), mas **não há dados sobre a oferta**: a percentagem de agregados que serão produtores ativos (2 %) e as reservas que cada um consegue servir no pico (15 por mês) são pressupostos sem base (Análise §14; Q17). No cenário de referência, são estes dois números, e não o inquérito, que determinam as reservas a partir do ano 3.
+
+- **A oferta é o limite a partir do mês 31** (julho do ano 3) e em todos os meses a partir do ano 4. Na maturidade, a procura no pico é de 93 226 reservas por mês e a oferta de 51 133 (3 409 produtores × 15): a procura fica 82 % acima do que os produtores conseguem servir.
+- **As reservas na maturidade são produtores × 15 × 8,7** (soma da sazonalidade): 3 409 × 15 × 8,7 = 444 861 por ano. A quota de 15,9 % e a retirada dos descontos (PP5) deixam de contar a partir do ano 3; contam só nos anos 1–2.
+- **A diferença entre a referência e o otimista na maturidade é só a dos produtores**: 667 291 ÷ 444 861 = 1,5 = 3 % ÷ 2 %. A quota de 45,1 % do otimista não chega a ser usada.
+- **O resultado está no ponto crítico porque o pressuposto é 2 %.** Nos anos 8–10 o ponto crítico é de ≈ 37 234 reservas por mês, contra 37 072 previstas (Plano Financeiro, §4). Com 15 reservas no pico, isso exige ≈ 3 424 produtores (37 234 × 12 ÷ (15 × 8,7)), ou seja ≈ 2,0 % dos 170 445 agregados das 16 zonas. Abaixo de 2 %, o resultado dos anos 8–10 (hoje entre −1 400 € e +5 700 €) fica negativo.
+- **Ordem de grandeza** (estimativa linear, não corrida no modelo): cada 0,1 ponto percentual de produtores (≈ 170 produtores nas 16 zonas) vale ≈ 22 200 reservas e ≈ 15 000 € de margem de contribuição por ano na maturidade, antes do custo de adquirir os compradores a mais. Com 1,5 % (o valor do pessimista) seriam ≈ −111 000 reservas e ≈ −75 000 € de margem por ano. As 15 reservas por produtor pesam o mesmo: 12 em vez de 15 equivale a 1,6 % em vez de 2 %.
+
+**Consequência para o plano.** O risco principal do programa de vendas não é a procura, é a oferta: confirma a estratégia "oferta primeiro, zona a zona" e a SWOT ("Oferta irregular e sazonal"). Antes do plano final, o grupo deve validar os dois números com entrevistas a produtores (Q17). Na operação, mede-se com dois KPI (§8): produtores ativos por zona e reservas por produtor ativo no pico. O marco 2 (§9) só mede a captação de produtores, não as reservas que cada um serve.
 
 ## 4. Quantidades a "produzir" e "stocks"
 
@@ -107,17 +125,33 @@ Pessimista: 923 / 11 378 / 35 362 / 68 397 / 101 395 reservas. Otimista: 4 077 /
 
 A app processa reservas sem limite prático. O que tem de crescer com as reservas é a **oferta** (produtores e pontos de recolha) e o **apoio**.
 
-| Recurso | Fórmula | Ano 1 | Ano 2 | Ano 3 | Ano 5 | Origem do rácio |
-|---|---|---|---|---|---|---|
-| Reservas a processar por mês (com a app lançada) | Programa de vendas (§3) | 266 | 1 639 | 5 093 | 14 603 | §3 |
-| Produtores captados (fim do ano) | Agregados × 2 % × captação da zona | 95 | 473 | 900 | 1 752 | **[Pressuposto]** (Q17). Nos meses de pico, a capacidade da oferta (produtores × 15) fica acima da procura no cenário de referência; no otimista não |
-| Contactos de apoio humano por dia útil (máximo do ano) | 5 % das reservas ÷ 21 dias úteis | 0,8 | 7,0 | 19,5 | 51,5 | **[Pressuposto]** (Q18) |
-| Pontos de recolha | 3 por zona aberta | 3 | 9 | 15 | 27 | **[Pressuposto]**; 44 % preferem o ponto de recolha (Análise §7) |
-| Pessoas pagas pela empresa (fim do ano) | Regras de entrada (Plano Organizacional §13) | 2 | 2 | 3 | 3 | CTO + Operações; assistente de apoio a partir do mês 27 |
+| Recurso | Fórmula | Ano 1 | Ano 2 | Ano 3 | Ano 5 | Anos 7–10 | Origem do rácio |
+|---|---|---|---|---|---|---|---|
+| Reservas a processar por mês (com a app lançada) | Programa de vendas (§3) | 473 | 3 468 | 11 604 | 30 112 | 37 072 | §3 |
+| Produtores captados (fim do ano) | Agregados × 2 % × captação da zona | 95 | 604 | 1 373 | 3 077 | 3 409 | **[Pressuposto sem dados]** (Q17; §3.1) |
+| Procura no pico ÷ oferta no pico (dezembro) | Compradores × 3,44 ÷ (produtores × 15) | 0,82 | 0,97 | 1,22 | 1,51 | 1,82 | Acima de 1, a oferta limita as reservas (§3.1) |
+| Contactos de apoio humano por dia útil (máximo do ano) | 5 % das reservas ÷ 21 dias úteis | 1,5 | 15 | 44 | 105 | 122 | **[Pressuposto]** (Q18) |
+| Pontos de recolha (fim do ano) | 3 por zona aberta | 3 | 12 | 24 | 48 | 48 | **[Pressuposto]**; 44 % preferem o ponto de recolha (Análise §7) |
+| Pessoas pagas pela empresa (fim do ano) | Regras de entrada (Plano Organizacional §13; PP4) | 5 | 6 | 6 | 6 | 9 | 5 fundadores desde o mês 1; assistente de apoio desde o mês 23; contratações da D10 no mês 76 |
+| Pessoas no apoio e na comunidade | Responsável de Operações + assistente | 1 | 2 | 2 | 2 | 2 | As contratações da D10 (programador, marketing, administrativo) não são de apoio |
 
-**Ligação ao Plano Organizacional.** Com a equipa mínima proposta a 18/11, o apoio e a captação ficam com o responsável de Operações, ajudado a tempo parcial pelos outros fundadores e, a partir do ano 2, pelos embaixadores. O assistente de apoio e comunidade entra quando passar um destes limites: mais de 20 contactos humanos por dia útil, ou mais de 500 produtores captados (Q18, decidida a 18/11). No cenário de referência entra no mês 27, pelos produtores.
+**Ligação ao Plano Organizacional.** A proposta de 18/11 era uma equipa mínima de 2 pessoas pagas (CTO e Operações) desde o lançamento; a 20/11 passou a 5 fundadores pagos desde o mês 1 (PP4; a confirmar com o grupo). Para a operação muda pouco: o apoio e a captação continuam com o responsável de Operações, ajudado a tempo parcial pelos outros fundadores e, a partir do ano 2, pelos embaixadores. O assistente de apoio e comunidade entra quando passar um destes limites: mais de 20 contactos humanos por dia útil, ou mais de 500 produtores captados (Q18, decidida a 18/11). No cenário de referência entra no **mês 23** (novembro do ano 2), pelos produtores (mais de 500 desde o mês 22; os contactos só passam 20 no mês 28). Na versão de 18/11 entrava no mês 27; com mais zonas (PP1), entra mais cedo. Pessimista: mês 27; otimista: mês 19.
 
-**Estrangulamento.** No ano 5 há ≈ 1 750 produtores e ≈ 50 contactos por dia útil para 2 pessoas de Operações. A capacidade de apoio é o primeiro limite operacional a rever no marco 3 (Plano Financeiro, §6).
+**A equipa de apoio não é credível face aos limites do próprio plano.** No modelo, a regra do assistente contrata **uma** pessoa e não volta a contratar, por mais que o volume cresça. Lendo os limites da Q18 como a capacidade de uma pessoa (20 contactos por dia útil; 500 produtores acompanhados):
+
+| | Ano 3 | Ano 5 | Anos 6–10 |
+|---|---|---|---|
+| Contactos por dia útil no pico | 44 | 105 | 122 |
+| Produtores captados | 1 373 | 3 077 | 3 409 |
+| Pessoas necessárias pelos contactos (÷ 20) | 3 | 6 | 7 |
+| Pessoas necessárias pelos produtores (÷ 500) | 3 | 7 | 7 |
+| Pessoas no apoio no modelo | 2 | 2 | 2 |
+
+- Nos anos 6–10 cada uma das 2 pessoas teria ≈ 61 contactos por dia útil no pico e ≈ 1 700 produtores, 3 vezes o limite que o próprio plano fixou. Nos meses de inverno os contactos descem para ≈ 49 por dia (3 pessoas pela regra), mas no pico precisam-se de ≈ 7.
+- **Custo** (cálculo à parte, com os salários e encargos dos Pressupostos; não corrido no modelo): cada assistente custa ≈ 19 400 € por ano (1 000 € × 14 × (1 + 23,75 % TSU + 1 % seguro) + 1 440 € de benefícios + 500 € de formação), sem *coworking* nem computador. Mais 4 a 5 assistentes a partir do ano 5 são ≈ 78 000 a 97 000 € por ano: o resultado positivo do ano 6 (+45 000 €) e o resultado ≈ 0 dos anos 7–10 passariam a negativos.
+- **Como reduzir a necessidade** (por decidir): baixar a taxa de 5 % de reservas com contacto humano (FAQ, *chatbot* e regras claras na app; meta no §8); contratos sazonais de junho a setembro; dar aos embaixadores o acompanhamento dos produtores da sua zona; aplicar a regra do assistente como rácio (1 pessoa por cada 20 contactos ou 500 produtores) e não como contratação única.
+
+**Estrangulamento.** A capacidade de apoio é o primeiro limite operacional e deve rever-se no marco 3 (mês 27; Plano Financeiro, §6), antes de abrir as zonas do ano 3. No ano 3 já são precisas ≈ 3 pessoas no apoio, contra 2 no modelo.
 
 ### 4.2 Stocks
 
@@ -180,6 +214,10 @@ O P7 (slide 5) descreve seis passos, da necessidade do cliente ao valor entregue
 | Produto com problema (qualidade, quantidade) | Reclamação na app; reembolso garantido para compras pagas na app (BMC, relação com clientes). A GrowNear reembolsa e desconta ao produtor quando a falha é dele; a transferência ao produtor só se faz depois da recolha confirmada | Operações e Comunidade; Finanças e Administração (reembolso) | Decidido a 18/11 (Q19, Q11); custo no modelo |
 | Anúncio impróprio ou risco alimentar | Moderação e remoção; regras de anúncio (SWOT, ameaças: "Um caso de intoxicação afeta a marca") | Operações e Comunidade | Regras a redigir |
 | Combinar fora da app (30 %; Análise §8) | Razões para ficar: reembolso, avaliações, histórico, alertas | Marketing e Crescimento; Operações e Comunidade | Decidido (Análise §15) |
+| Produtor cancela e o comprador já pagou o produto na app | Devolver também o valor do produto (a transferência ao produtor só se faz depois da recolha) | App; Finanças e Administração | Por decidir (não está no modelo nem nos fluxogramas) |
+| Comprador cancela antes da recolha, ou não recolhe tendo pago o produto na app | Taxa retida; regra para o valor do produto (devolver, ou pagar ao produtor que preparou a encomenda) | App; Finanças e Administração | Por decidir |
+
+Os fluxogramas `Fluxogramas/GrowNear_Fluxograma_Comprador` e `GrowNear_Fluxograma_Vendedor` (lado do produtor) representam a §5.2 e a §5.1 a partir da reserva e do anúncio; não incluem os passos CO1–CO2 nem PR1–PR2.
 
 ## 6. Sub-processos por atividade
 
@@ -204,16 +242,19 @@ Valores do modelo (`GrowNear_Plano_Financeiro.xlsx`), com a taxa a incluir IVA (
 | Taxa cobrada ao comprador | 1,47 € (com IVA) | D16; Análise §11.1 |
 | Receita sem IVA, depois de 5 % de cancelamentos com devolução | 1,14 € | Q4; Q15 |
 | Comissões de pagamento (Stripe) | 0,32 € | 1,5 % + 0,25 € por cobrança (Stripe, preços para Portugal); 15,9 % pagam também o produto na app (Q10) |
-| Stripe Connect (transferências aos produtores) | 0,25 € (ano 1) → 0,16 € (ano 5) | 2 € por produtor com transferências no mês + 0,25 % + 0,10 € por transferência (Q23) |
-| Reembolsos suportados e nuvem | 0,03 € | Q19; pressupostos |
-| **Margem de contribuição** | **0,54 € (ano 1) → 0,65 € (ano 5)** | Modelo |
-| Gastos com pessoal por reserva | 15,33 € (ano 1) · 2,68 € (ano 2) · 1,13 € (ano 3) · 0,41 € (ano 5) | Equipa mínima (Plano Organizacional §13) ÷ reservas (§3) |
-| FSE fixos e de crescimento por reserva | 12,61 € (ano 1) · 0,41 € (ano 5) | Marketing, deslocações, *coworking*, contabilista, nuvem, seguros (Plano Financeiro, §3) |
+| Stripe Connect (transferências aos produtores) | 0,19 € (ano 1) → 0,16 € (ano 2) → 0,14 € (ano 4 em diante) | 2 € por produtor com transferências no mês + 0,25 % + 0,10 € por transferência (Q23) |
+| Reembolsos suportados e nuvem | 0,03 € (0,015 + 0,010) | Q19; pressupostos |
+| **Margem de contribuição** | **0,61 € (ano 1) → 0,66 € (ano 2) → 0,68 € (ano 4 em diante)** | Modelo |
+| Gastos com pessoal por reserva | 43,42 € (ano 1) · 3,27 € (ano 2) · 1,09 € (ano 3) · 0,42 € (ano 5) · 0,50 € (anos 8–10) | Equipa (Plano Organizacional §5.4; PP4) ÷ reservas (§3) |
+| FSE fixos e de crescimento por reserva | 7,40 € (ano 1) · 1,19 € (ano 2) · 0,57 € (ano 3) · 0,31 € (ano 5) · 0,18 € (anos 8–10) | Marketing, captação de produtores, deslocações, *coworking*, contabilista, nuvem, seguros (Plano Financeiro, §3) |
+| **Custo total por reserva** (variáveis + pessoal + FSE fixos) | 1,22 € (ano 5) · 1,17 € (anos 8–10) | Contra 1,16 € de receita por reserva (taxa + GrowNear Pro, sem IVA) |
+
+O pessoal por reserva subiu face à versão de 18/11 (15,33 € no ano 1) porque os 5 fundadores passaram a ser pagos desde o mês 1 (PP4) e o ano 1 só tem 6 meses de vendas. O custo das contratações de apoio que faltam (§4.1) não está nestes valores.
 
 **Leitura.**
-- **A parte fixa da comissão de pagamento come ≈ 22 % da receita da taxa**, e o Connect mais ≈ 14 %.
-- **As reservas com o produto pago na app custam mais do que rendem** (≈ 1,3–1,5 € de custo contra 1,14 € de receita). Mantêm-se por decisão de 18/11, porque são a base do reembolso garantido.
-- **O ponto crítico é de ≈ 18 600 reservas por mês no ano 5**, contra 14 603 previstas (Plano Financeiro, §4).
+- **A parte fixa da comissão de pagamento come ≈ 22 % da receita da taxa** (0,25 € em 1,14 €), e o Connect mais 13 % a 16 %.
+- **As reservas com o produto pago na app custam mais do que rendem**: ≈ 1,5 € (ano 5) a 1,8 € (ano 1) de custo (uma cobrança de taxa + produto ≈ 0,56 €, o Connect repartido por estas reservas ≈ 0,90–1,17 €, reembolsos e nuvem) contra 1,14 € de receita. Mantêm-se por decisão de 18/11, porque são a base do reembolso garantido.
+- **O ponto crítico é de ≈ 32 600 reservas por mês no ano 5**, contra 30 112 previstas (92 %); no ano 6 as reservas ficam 22 % acima; nos anos 8–10 ficam no ponto crítico (37 072 contra ≈ 37 234; Plano Financeiro, §4). Na versão de 18/11 o ponto crítico do ano 5 era de ≈ 18 600 reservas por mês; subiu com os salários dos 5 fundadores (PP4) e com os custos de mais zonas (PP1). Como as reservas a partir do ano 3 dependem dos produtores, o ponto crítico corresponde a ≈ 2,0 % de produtores (§3.1).
 
 ## 8. Indicadores (KPI)
 
@@ -221,11 +262,12 @@ Os KPI seguem os princípios do P7 (slide 12): relevantes, definidos (fórmula, 
 
 | KPI | Dimensão | Fórmula | Unidade | Frequência | Responsável | Meta do ano 1 | Origem da meta |
 |---|---|---|---|---|---|---|---|
-| Reservas concluídas | Cliente / volume | Reservas com recolha confirmada no mês | n.º/mês | Semanal | CEO / Gerente | 266 em média de julho a dezembro; 328 em setembro (marco 1) | §3; Plano Financeiro §6 |
-| Compradores ativos | Cliente | Compradores com ≥ 1 reserva nos últimos 30 dias | n.º | Mensal | Marketing e Crescimento | ≈ 250 no fim do ano 1; ≥ 267 em março do ano 2 (marco 2) | §3; Plano Financeiro §6 |
+| Reservas concluídas | Cliente / volume | Reservas com recolha confirmada no mês | n.º/mês | Semanal | CEO / Gerente | 473 em média de julho a dezembro; 583 em setembro (marco 1; mínimo 408) | §3; Plano Financeiro §6 |
+| Compradores ativos | Cliente | Compradores com ≥ 1 reserva nos últimos 30 dias | n.º | Mensal | Marketing e Crescimento | ≈ 340 no fim do ano 1; ≥ 356 em março do ano 2 (marco 2; previsto 508) | §3; Plano Financeiro §6 |
 | Compradores recorrentes | Cliente | Compradores com ≥ 2 reservas no mês ÷ compradores ativos | % | Mensal | Marketing e Crescimento | ≥ 50 % | Pressuposto; os entusiastas preveem 3,4 reservas/mês |
 | Custo por aquisição | Custo | Gasto de marketing ÷ novos compradores | €/comprador | Mensal | Marketing e Crescimento | ≤ 6 € | Plano de Marketing §6.4 (M3) |
-| Produtores ativos por zona | Oferta | Produtores com ≥ 1 anúncio ativo no mês | n.º | Semanal | Operações e Comunidade | ≈ 95 captados no fim do ano 1; ≥ 124 em março do ano 2 (marco 2) | §4.1 (pressuposto Q17) |
+| Produtores ativos por zona | Oferta | Produtores com ≥ 1 anúncio ativo no mês | n.º | Semanal | Operações e Comunidade | ≈ 95 captados no fim do ano 1; ≥ 141 em março do ano 2 (marco 2; previsto 201) | §4.1 (pressuposto Q17) |
+| Reservas por produtor ativo no pico | Oferta | Reservas do mês ÷ produtores com ≥ 1 anúncio ativo, de junho a setembro | n.º/mês | Mensal | Operações e Comunidade | ≥ 15 | §3.1 (pressuposto Q17): com os produtores, determina as reservas a partir do ano 3 |
 | Pontos de recolha ativos | Oferta | Pontos com ≥ 1 recolha no mês | n.º | Mensal | Operações e Comunidade | ≥ 3 por zona | §4.1 |
 | Taxa de recolha concluída (equivalente ao OTIF) | Cliente / serviço | Reservas recolhidas ÷ reservas confirmadas | % | Semanal | Operações e Comunidade | ≥ 95 % | Pressuposto |
 | Cancelamentos por falta de produto (rutura) | Serviço | Reservas canceladas pelo produtor ÷ reservas | % | Semanal | Operações e Comunidade | ≤ 5 % | Pressuposto |
@@ -234,13 +276,14 @@ Os KPI seguem os princípios do P7 (slide 12): relevantes, definidos (fórmula, 
 | Tempo de resposta do produtor | Fluxo | Mediana do tempo entre reserva e confirmação | horas | Semanal | Operações e Comunidade | ≤ 4 h | Pressuposto |
 | Nota média das avaliações | Qualidade | Média das avaliações do mês | 1–5 | Mensal | Operações e Comunidade | ≥ 4,5 | Pressuposto |
 | Reembolsos por 100 reservas | Qualidade / custo | Reembolsos ÷ reservas × 100 | n.º | Mensal | Operações e Comunidade | ≤ 2 | Pressuposto |
+| Contactos de apoio humano por 100 reservas | Serviço / custo | Contactos tratados por pessoas ÷ reservas × 100 | n.º | Mensal | Operações e Comunidade | ≤ 5 | §4.1 (pressuposto Q18): acima disto, a equipa de apoio não chega |
 | Tempo de resposta ao apoio | Serviço | Mediana do tempo até à 1.ª resposta humana | horas | Semanal | Operações e Comunidade | ≤ 24 h | Pressuposto |
 | % de reservas com o produto pago na app | Confiança | Reservas com produto pago na app ÷ reservas | % | Mensal | Marketing e Crescimento | > 16 % (subir) | Base: 16 % preferem pagar na app (Análise §8) |
 | Disponibilidade da app | Qualidade técnica | Tempo disponível ÷ tempo total | % | Mensal | CTO / Tecnologia | ≥ 99,5 % | Pressuposto |
 | Erros críticos | Qualidade técnica | Erros que impedem reservar ou pagar | n.º/mês | Semanal | CTO / Tecnologia | 0 por mais de 24 h | Pressuposto |
-| Custo de pagamento por reserva | Custo | (Comissões Stripe + Stripe Connect) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≤ 0,57 € no ano 1; ≤ 0,48 € no ano 5 | §7 |
-| Margem por reserva | Custo | (Taxas sem IVA − custos variáveis) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≥ 0,54 € no ano 1; ≥ 0,65 € no ano 5 | §7 (Q4 decidida) |
-| Cobertura dos custos fixos | Financeiro | Margem de contribuição dos últimos 12 meses ÷ custos fixos anualizados | % | Mensal | Finanças e Administração | Ano 5: ≈ 79 % do ponto crítico. Acima de 100 % mais o custo de quem entra, abre a fase 2 da equipa | Plano Financeiro §4; Plano Organizacional §13 |
+| Custo de pagamento por reserva | Custo | (Comissões Stripe + Stripe Connect) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≤ 0,50 € no ano 1; ≤ 0,46 € no ano 5 | §7 |
+| Margem por reserva | Custo | (Taxas sem IVA − custos variáveis) ÷ reservas | €/reserva | Mensal | Finanças e Administração | ≥ 0,61 € no ano 1; ≥ 0,68 € no ano 5 | §7 (Q4 decidida) |
+| Cobertura dos custos fixos | Financeiro | Margem de contribuição dos últimos 12 meses ÷ custos fixos anualizados | % | Mensal | Finanças e Administração | Ano 5: ≈ 92 % do ponto crítico. A margem cobre os custos fixos no mês 65 (fase 2); acima de 100 % mais o custo de quem entra, abre a fase 3 (contratações da D10, mês 76) | Plano Financeiro §4; Plano Organizacional §13 |
 | Erro da previsão | Planeamento | \|reservas reais − previstas\| ÷ previstas | % | Mensal | Marketing e Crescimento | ≤ 25 % | Pressuposto; P7, slide 7 |
 | Desvio ao orçamento | Planeamento | (Real − orçamentado) ÷ orçamentado | % | Mensal | Finanças e Administração | ± 10 % | Pressuposto |
 
@@ -257,18 +300,29 @@ Como no caso do P7 (slides 14–15), os indicadores leem-se juntos: subir as res
 
 ## 9. Calendário de implementação e marcos
 
-O modelo assume a Lda. constituída em janeiro do ano 1 (2027) **[Pressuposto]** e o lançamento aos compradores em julho (decisão de 18/11).
+O modelo assume a Lda. constituída em janeiro do ano 1 (2027) **[Pressuposto]** e o lançamento aos compradores em julho (decisão de 18/11). Os marcos exigem 70 % do previsto para avançar (proposta de 18/11); os valores são os do Resumo do modelo, cenário de referência.
 
 | Mês | Quando | O que acontece | Responsável |
 |---|---|---|---|
-| 1 | Janeiro do ano 1 | Constituição da Lda.; capital social e empréstimo (1.ª tranche); contas nas lojas de apps; equipamento de teste | CEO; Finanças e Administração |
-| 1–4 | Janeiro a abril | MVP da app: mapa, anúncio, reserva, pagamento da taxa (e do produto, opcional), avaliações; testes com utilizadores. Registo da marca (mês 2) | CTO |
+| 1 | Janeiro do ano 1 | Constituição da Lda.; capital social (5 000 €); empréstimo da Linha Impulsar Portugal (150 000 €; PP8); salários dos 5 fundadores (PP4); candidatura ao Empreende XXI (fechado desde 23/06/2023; presume-se a reabertura em 2027); contas nas lojas de apps; equipamento de teste | CEO; Finanças e Administração |
+| 1–4 | Janeiro a abril | MVP da app: mapa, anúncio, reserva, pagamento da taxa (e do produto, opcional), avaliações; testes com utilizadores. O custo do CTO nestes meses (≈ 9 315 €) é ativo intangível (PP6). Registo da marca (mês 2) | CTO |
+| 3 | Março | Empreende XXI: adiantamento de 65 % (≈ 26 185 €) | Finanças e Administração |
 | 4–5 | Abril e maio | Termos de uso, RGPD e regras de anúncio (jurídico, mês 5); escolha da tarifa e do modelo de contas da Stripe (Q23) | Finanças e Administração; CTO |
 | 5–6 | Maio e junho | **Oferta primeiro:** sessões com a junta de freguesia de Águas Santas e cooperativas; registo assistido dos primeiros produtores; acordo com 3 pontos de recolha | Operações e Comunidade |
-| 7 | Julho | **Lançamento aos compradores** em Águas Santas; campanha de lançamento; salários do CTO e do responsável de Operações | Marketing e Crescimento |
-| 9 | Setembro | **Marco 1:** reservas no mês (previsto 328; mínimo 229) | CEO |
-| 15 | Março do ano 2 | **Marco 2:** compradores ativos (≥ 267) e produtores captados (≥ 124) na zona 1 → 2.ª tranche de financiamento e captação nas zonas 2 e 3 | Sócios |
-| 16 | Abril do ano 2 | Abertura das zonas 2 e 3 (embaixadores a partir daqui) | Operações e Comunidade |
-| 25 | Janeiro do ano 3 | GrowNear Pro | CTO; Marketing e Crescimento |
-| 27 | Março do ano 3 | **Marco 3:** reservas no mês (previsto 2 950; mínimo 2 065) → zonas 4 e 5. No cenário de referência entra o assistente de apoio | Sócios |
+| 7 | Julho | **Lançamento aos compradores** em Águas Santas; campanha de lançamento. (Na proposta de 18/11 era também o início dos salários do CTO e do responsável de Operações; a 20/11 os salários passaram ao mês 1, PP4) | Marketing e Crescimento |
+| 9 | Setembro | **Marco 1:** reservas no mês (previsto 583; mínimo 408). Se falhar: rever produto e captação antes do inverno | CEO |
+| 13 | Janeiro do ano 2 | GrowNear Pro (10 % dos produtores ativos; PP1, a confirmar com o grupo; era no mês 25); Empreende XXI: saldo de 35 % (≈ 14 100 €) | CTO; Marketing e Crescimento; Finanças e Administração |
+| 14 | Fevereiro do ano 2 | Captação de produtores nas 3 zonas do ano 2 (2 meses antes da abertura) | Operações e Comunidade |
+| 15 | Março do ano 2 | **Marco 2:** compradores ativos na zona 1 (previsto 508; mínimo 356) e produtores captados na zona 1 (previsto 201; mínimo 141) → 2.ª tranche de **455 000 €** (capital próprio: sócios ou investidor; PP8) e abertura das zonas do ano 2 | Sócios |
+| 16 | Abril do ano 2 | Abertura das zonas 2 a 4 (embaixadores a partir daqui) | Operações e Comunidade |
+| 23 | Novembro do ano 2 | Assistente de apoio e comunidade (mais de 500 produtores; §4.1) | CEO; Operações e Comunidade |
+| 27 | Março do ano 3 | **Marco 3:** reservas no mês antes de abrir as zonas do ano 3 (previsto 6 642; mínimo 4 650) → abertura das zonas 5 a 8 no mês 28. Rever aqui a capacidade de apoio (§4.1) | Sócios |
+| 31 | Julho do ano 3 | Primeiro mês em que a oferta limita as reservas (§3.1) | Operações e Comunidade |
+| 40 e 52 | Abril dos anos 4 e 5 | Abertura das zonas 9 a 12 e 13 a 16 (sem marco definido no modelo) | Sócios; Operações e Comunidade |
+| 65 | Maio do ano 6 | Fase 2: a margem de contribuição dos últimos 12 meses cobre os custos fixos | Finanças e Administração |
+| 76 | Abril do ano 7 | Fase 3: contratações da D10 (programador júnior, marketing júnior, técnico administrativo e financeiro); a equipa passa a 9 pessoas | CEO; sócios |
+
+Na versão de 18/11 os marcos eram: marco 1 com 328 reservas (mínimo 229); marco 2 com 267 compradores e 124 produtores; marco 3 com 2 950 reservas (mínimo 2 065), seguido das zonas 4 e 5. Subiram com a retirada dos descontos (PP5) e com as zonas a mais (PP1).
+
+**Pessimista e otimista.** Marco 1: 190 e 1 332 reservas; marco 2: 221 e 1 441 compradores, 151 e 302 produtores; marco 3: 2 162 e 10 866 reservas. No pessimista, a fase 2 e a fase 3 não chegam em 120 meses e o assistente entra no mês 27; no otimista, a fase 3 entra no mês 61 e o assistente no mês 19.
 
